@@ -1,0 +1,123 @@
+#buttonz {
+    width:670px;
+    height:220px;
+    font-size: 12px;
+    font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;
+    color:#ffffff;
+    text-align:center;
+    margin:0px auto;
+  -moz-border-radius   : 10px;
+  border-radius        : 10px;
+  background-color     : transparent;
+  background-image     : url(img/a1.png);
+}
+
+#buttonz h2,
+#movement h3 a,
+#statistics h3 {
+    color: #99cc00;
+    font: 700 12px Verdana, Arial, Helvetica, sans-serif;
+    line-height: 23px;
+/*  padding-top:9px; */
+    text-align:center;
+      -moz-border-radius   : 10px;
+  border-radius        : 10px;
+  background-color     : transparent;
+  background-image     : url(img/a1.png);
+}
+
+
+#buttonz ul#building {
+    width:640px;
+    height:100px;
+    margin:5px auto 0px 17px;
+    position:relative;
+}
+
+
+#buttonz ul#building li {
+    width:100px;
+    height:100px;
+   -moz-border-radius   : 10px;
+    border-radius        : 10px;
+    background-color     : transparent;
+    background-image     : url(styles/skins/wofplanet/img/a1.png);
+    background-repeat:no-repeat;
+    top:0px;
+    position:absolute;
+    list-style-type:none;
+}
+
+#premium #buttonz ul#building li a.detail_button:link,
+#premium #buttonz ul#building li a.detail_button:visited {
+    display:block;
+    height:100px;
+    width:100px;
+    text-decoration:none;
+}
+
+#premium #buttonz ul#building li a.detail_button:hover,
+#premium #buttonz ul#building li a.active {
+    background:url(../images/officiers/borde.png) no-repeat;
+    color:#ff9600;
+    text-decoration:none;
+}
+
+#premium ul#building span.ecke {
+	position:relative;
+	float:left;
+    top:85px;
+    left:10px;
+    width:80px;
+	text-align:right;
+}
+
+/**************************************/
+
+#buttonz ul#building li#button1 {
+    left:0px;
+}
+
+#buttonz ul#building li#button2 {
+    left:107px;
+}
+
+#buttonz ul#building li#button3 {
+    left:214px;
+}
+#buttonz ul#building li#button4 {
+    left:321px;
+}
+#buttonz ul#building li#button5 {
+    left:428px;
+}
+#buttonz ul#building li#button6 {
+    left:535px;
+}
+#buttonz ul#building li#button7 {
+    left:642px;
+}
+#buttonz ul#building li#button8 {
+    left:749px;
+}
+
+/********* Offiziere  **********/
+
+#premium ul#building li#button1 div.buildingimg {
+    background: url(../images/officiers/oficiales.png) no-repeat;
+}
+#premium ul#building li#button2 div.buildingimg {
+    background: url(../images/officiers/oficiales.png) no-repeat -100px 0px;
+}
+#premium ul#building li#button3 div.buildingimg {
+    background: url(../images/officiers/oficiales.png) no-repeat -200px 0px;
+}
+#premium ul#building li#button4 div.buildingimg {
+    background: url(../images/officiers/oficiales.png) no-repeat -300px 0px;
+}
+#premium ul#building li#button5 div.buildingimg {
+    background: url(../images/officiers/oficiales.png) no-repeat -400px 0px;
+}
+#premium ul#building li#button6 div.buildingimg {
+    background: url(../images/officiers/oficiales.png) no-repeat -500px 0px;
+}

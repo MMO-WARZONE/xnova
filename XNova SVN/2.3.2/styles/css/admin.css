@@ -1,0 +1,13 @@
+body{font-family:Arial, Helvetica, sans-serif;font-size:10px;font-style:normal;line-height:normal;font-weight:400;font-variant:normal;text-transform:none;color:#000;text-decoration:none;background-color:transparent;background-image:url(./../skins/xnova/img/bgmain.jpg);}
+table{font-size:10px;margin:1px;padding:1px;}
+td{color:#FFF;font-size:12px;font-weight:700;margin:3px;padding:3px;}
+th{color:#BECCF9;}
+a{font-family:Arial, Helvetica, sans-serif;font-size:10px;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;color:#BECCF9;text-decoration:none;line-height:normal;cursor:pointer;}
+a:hover{font-family:Arial, Helvetica, sans-serif;font-size:10px;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;color:#BC2A4D;text-decoration:underline;line-height:normal;cursor:pointer;}
+input{background-color:#E9E9E2;border:1px double #AFAEAA;}
+input:focus,textarea:focus{background-color:#E9E9E2;border:1px solid #BC2A4D;color:#BC2A4D;}
+#content{position:absolute;overflow:auto;left:10%;font-size:12px;top:100px;width:75%;height:80%;}
+#content table{width:80%;overflow:auto;}
+#topnav{position:absolute;right:150px;color:#FFF;}
+#menu{background-image:url(./../skins/xnova/img/menu.png);background-repeat:no-repeat;background-color:transparent;background-position:top;width:150px;height:100%;position:fixed !important;left:6px;top:0;}
+#publicidad{position:fixed;right:10px;top:10%;width:160px;height:600px;}

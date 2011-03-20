@@ -1,0 +1,1675 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+                <link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_01style.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_research.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_fleet.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_shipyard.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_defense.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_station.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_movement.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_empire.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_network.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_resources.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_trader.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_galaxy.css' media='screen' />
+
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_changelog.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_tooltip.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_toolbox.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_thickbox.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_techtree.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_statistics.css' media='screen' />
+<link rel='stylesheet' type='text/css' href='http://uni42.ogame.org/game/css/redesign-beta_jquery.cluetip.css' media='screen' />
+    
+        <!--[if lt IE 7]>
+        <link href="css/iefixes.css" rel="stylesheet" type="text/css" media="screen"> 
+        <![endif]-->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                <title>Universe 42 Ogame</title>
+            </head>
+
+    <body id="resources">
+
+
+<!-- GF-TOOLTIP -->
+<div id="tooltipPlain" class="tooltip">
+    <div id="tooltipBodyPlain" class="tooltipBody">Inhalt</div>
+</div>  
+
+<div id="tooltip" class="tooltip" style="display: none; position: absolute; left: 1000px; top: 500px; z-index:2000;">
+	<div id="TTWrapper">
+        <div id="tooltipBody" class="tooltipBody">Inhalt</div>
+    </div>
+
+</div> 	<!-- END GF-TOOLTIP -->
+
+
+<!-- HEADER -->
+<div id="box">
+	<a name="anchor"></a>
+	<div id="info">
+	<div id="clearAdvice"></div>    
+   	<a id="changelog_link" href="index.php?page=changelog&session=ef580060082c">BETA-universe</a>
+    <div id="bar">
+		<ul>
+
+        	<li><a href="index.php?page=preferences&session=ef580060082c">Options</a></li>
+        	<li><a href="index.php?page=statistics&session=ef580060082c">Highscore			(1118)        	</a></li>
+        	<li><a href="index.php?page=networkmsearch&session=ef580060082c">Search</a></li>
+        	<li><a href="http://tutorial.ogame.de/" target="_blank">Help</a></li>
+        	<li><a href="http://board.ogame.org/" target="_blank">Board</a></li>
+        	<li><a href="http://ogame.org?show=rules" target="_blank">Rules</a></li>
+
+        	<li><a href="http://impressum.gameforge.de/index.php?lang=en&art=impress&special=&&f_text=b1daf2&f_text_hover=ffffff&f_text_h=061229&f_text_hr=061229&f_text_hrbg=061229&f_text_hrborder=9EBDE4&f_text_font=arial%2C+arial%2C+arial%2C+sans-serif&f_bg=000000" target="_blank">Imprint</a></li>
+        	<li><a href="index.php?page=logout&session=ef580060082c">Log out</a></li>            
+        </ul>
+    </div>
+    	<ul id="resources">
+        	<li class="metal tips" 
+            	title="|Metal: 55">
+                <img src="/game/img/layout/ressourcen_metall.gif" />
+                    <span class="value">
+
+                    	<font id="resources_metal" >
+                    	   55                        </font>
+                   </span>
+            </li>
+        	<li class="crystal tips" 
+            	title="|Crystal: 355">
+                <img src="/game/img/layout/ressourcen_kristal.gif" />
+                <span class="value">
+                	<font  id="resources_crystal" > 
+						355                    </font>
+
+                </span>
+            </li>
+        	<li class="deuterium tips" 
+            	title="|Deuterium: 5">
+                <img src="/game/img/layout/ressourcen_deuterium.gif" />
+                <span class="value">
+                	<font  id="resources_deuterium" > 
+						5                    </font>
+               	</span>
+            </li>
+
+        	<li class="energy tips" 
+            	title="|Energy: -36<br><span class='overmark'>(58/22)</span>">
+				<img src="/game/img/layout/ressourcen_energie.gif" />
+                    <span class="value">
+                    	<font  id="resources_energy"
+							color='#ff0000'>-36</font>                    </span>
+            </li>
+			<li	class="darkmatter tips" 
+            	title="|Dark Matter: 0">
+                		<a href="index.php?page=premium&session=ef580060082c">
+                    		<img src="/game/img/layout/ressourcen_DM.gif" />
+
+                    	</a>
+                    <span class="value">0</span>
+            </li>                                      
+      </ul>
+      	<div id="officers">
+      	  	
+			<a href="index.php?page=premium&session=ef580060082c" class="tips" title="|Hire commander">
+            	<img src="/game/img/layout/commander_ikon_un.gif">
+            </a>        
+      	 
+			<a href="index.php?page=premium&session=ef580060082c" class="tips" title="|Hire admiral">
+
+            	<img src="/game/img/layout/admiral_ikon_un.gif">
+            </a>
+      	 
+			<a href="index.php?page=premium&session=ef580060082c" class="tips" title="|Hire engineer">
+            	<img src="/game/img/layout/ingenieur_ikon_un.gif">
+            </a>
+      	 
+			<a href="index.php?page=premium&session=ef580060082c" class="tips" title="|Hire geologist">
+            	<img src="/game/img/layout/geologe_ikon_un.gif">
+            </a>
+      	 
+			<a href="index.php?page=premium&session=ef580060082c" class="tips" title="|Hire technocrat">
+
+            	<img src="/game/img/layout/technokrat_ikon_un.gif">
+            </a>
+        </div>
+		<div id="selectedplanet">
+	
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="129" height="97">
+	            <param name="movie" value="/game/img/swf/jungle/jungle_8.swf">
+	            <param name="quality" value="high">
+                <param name="wmode" value="opaque">
+	            <embed src="/game/img/swf/jungle/jungle_8.swf" wmode="opaque" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="129" height="97"></embed>
+
+	         </object>
+		</div>
+
+    		  		<div id="message-wrapper">
+  			<div id="message_alert_box" style="visibility:hidden;">
+        		<a 	href="index.php?page=networkm&session=ef580060082c" 
+                	class="tips" 
+                    title="|0 new message(s)">
+                    <img src="img/layout/pixel.gif" height="13" width="25"/>
+                </a>
+        	</div>
+
+			<div id="messages_collapsed" style="position:relative;">
+        		<div id="eventboxFilled" style="display: none;">
+	<table border="0" width="100%" id="eventtype" style="border-collapse: collapse;">
+		<tr>
+	        <td width="152" class="friendly col1">Own Missions: <span id="eventFriendly"></span></td>
+	        <td width="156" class="neutral col2">Friendly missions: <span id="eventNeutral"></span></td>
+	        <td width="152" class="hostile col3">Hostile missions: <span id="eventHostile"></span></td>
+
+		</tr>
+	</table>
+	<table border="0" width="100%" id="eventdetails" style="border-collapse: collapse;">
+		<tr id="eventClass" class="">
+	    	<td width="152" class="col1"><div class="countdown" id="countdown_start-0-0" name="countdown"></div></td>
+	        <td width="208" class="col2"><div class="text" id="eventContent"></div></td>
+	        <td width="100" class="col3">
+	            <a class="tips thickbox" 
+	            href="index.php?page=eventList&session=ef580060082c&ajax=1&height=500&width=650&TB_iframe=1&modal=true"
+	            title="|More details">	            </a>
+
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="eventboxLoading" class="textCenter textBeefy" style="display: block;">
+	<img height="16" width="16" src="img/ajax-loader.gif" /> Loading...
+</div>
+<div id="eventboxBlank" class="textCenter" style="display: none;">
+No fleet movement</div>			</div>
+						<div id="attack_alert" style="visibility:hidden;">
+
+		        <a 	href="index.php?page=eventList&session=ef580060082c&ajax=1&height=500&width=650&TB_iframe=1&modal=true" 
+                    class="tips thickbox" 
+                    title="|Attack!">
+	                    <img src="img/layout/pixel.gif" height="13" width="25"/>
+                </a>
+	        </div>
+	        <br class="clearfloat" />
+		</div><!-- #message-wrapper -->
+        <div id="selectedPlanetName" class="textCenter">Homeworld</div>        
+ </div><!-- Info -->
+
+<!-- ERRORBOX -->
+<div id="decisionTB" style="display:none;">
+	<div id="errorBoxDecision">
+	    <div id="wrapper">
+	        <h4 id="errorBoxDecisionHead">-</h4>
+	        <p id="errorBoxDecisionContent">-</p>
+	        <div id="response">
+	            <div style="float:left; width:195px; height:25px;">
+				    <a href="#" onClick="handleErrorBoxClick('yes');return false;" class="yes"><span id="errorBoxDecisionYes">.</span></a>
+
+	            </div>
+	            <div style="float:left; width:195px; height:25px;">
+				    <a href="#" onClick="handleErrorBoxClick('no');return false;" class="no"><span id="errorBoxDecisionNo">.</span></a>
+	            </div>
+	            <br class="clearfloat" />
+	        </div>
+	    </div>    
+	</div> 
+</div>
+
+<div id="notifyTB" style="display:none;">
+	<div id="errorBoxNotify">
+	    <div id="wrapper">
+	        <h4 id="errorBoxNotifyHead">-</h4>
+	        <p id="errorBoxNotifyContent">-</p>
+	        <div id="response">
+	            <div>
+				    <a href="#" onClick="handleErrorBoxClick('ok');return false;" class="ok">
+
+	                	<span id="errorBoxNotifyOk">.</span>
+	                </a>
+	            </div>
+	            <br class="clearfloat" />
+	        </div>
+	    </div>    
+	</div> 
+</div>
+<!-- END ERRORBOX -->
+
+<!-- END HEADER -->
+
+<!-- LEFTMENU -->
+
+<div id="links">
+	<table cellpadding="0" cellspacing="0" width="173" id="menuTable">
+	    <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton " href="index.php?page=overview&session=ef580060082c" title="Overview"><span class="textlabel">Overview</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_overview_a.gif" height="29" width="38"></td>
+
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton selected" href="index.php?page=resources&session=ef580060082c" title="Resources"><span class="textlabel">Resources</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_resources_b.gif" height="29" width="38"></td>
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton " href="index.php?page=station&session=ef580060082c" title="Facilities"><span class="textlabel">Facilities</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_station_a.gif" height="29" width="38"></td>
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+
+        	<a class="menubutton " href="index.php?page=trader&session=ef580060082c" title="Merchant"><span class="textlabel">Merchant</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_trader_a.gif" height="29" width="38"></td>
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton " href="index.php?page=research&session=ef580060082c" title="Research"><span class="textlabel">Research</span></a>
+
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_research_a.gif" height="29" width="38"></td>
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton " href="index.php?page=shipyard&session=ef580060082c" title="Shipyard"><span class="textlabel">Shipyard</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_shipyard_a.gif" height="29" width="38"></td>
+
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton " href="index.php?page=defense&session=ef580060082c" title="Defense"><span class="textlabel">Defense</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_defense_a.gif" height="29" width="38"></td>
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton " href="index.php?page=fleet1&session=ef580060082c" title="Fleet"><span class="textlabel">Fleet</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_fleet1_a.gif" height="29" width="38"></td>
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+
+        	<a class="menubutton " href="index.php?page=galaxy&session=ef580060082c" title="Galaxy"><span class="textlabel">Galaxy</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_galaxy_a.gif" height="29" width="38"></td>
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton " href="index.php?page=networkm&session=ef580060082c" title="Network"><span class="textlabel">Network</span></a>
+
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_networkm_a.gif" height="29" width="38"></td>
+    </tr>
+
+    
+        <tr>
+    	<td class='menubutton_table' width="135" height="29">
+        	<a class="menubutton " href="index.php?page=premium&session=ef580060082c" title="Recruit Officers"><span class="textlabel">Recruit Officers</span></a>
+        </td>
+      	    	<td><img src="img/navigation/navi_ikon_premium_a.gif" height="29" width="38"></td>
+
+    </tr>
+
+    
+    			<tr>	
+	    		<td class='menubutton_table' width="135" height="29"><a class="menubutton" href="index.php?page=ticket&session=ef580060082c" title="Report issue" tabindex="1"><span class="textlabel">Report issue</span></a></td>
+	      		<td></td>
+	    	</tr>    	 	
+    	 	   
+	</table>
+    <div style="float:left; position:relative; height:20px; width:100%; margin-top:10px;">
+    	<div id="advice-bar">
+	    
+       
+     
+        
+    
+        
+
+</div>
+    </div>
+    <br class="clearfloat" />
+</div>
+
+<!-- END LEFTMENU -->
+
+<!-- CONTENT AREA -->
+
+<div id="inhalt">
+    <div id="ResourceLayer" style="display:none;">
+        <div id="RessLayer">
+            <a 	class="close_details" 
+	href="#" 
+    onClick="tb_remove(); return false;">
+
+</a>
+<h3><span>Resource settings on planet "Homeworld"</span></h3>
+
+<form method="POST" action="index.php?page=resources&session=ef580060082c&showLayer=1">
+    <input type="hidden" name="showLayer" value="1">
+    <input type="hidden" name="c" value="1">  
+    
+<table cellpadding="0" cellspacing="0" style="margin-top:15px;">
+    <tr>
+        <td colspan="7" id="factor">
+            <div class="secondcol">
+            	<div style="width:376px; margin: 0px auto;">
+
+                    <span class="factorkey">Production factor: 38%</span>
+                    <span class="factorbutton">
+                    	<input class="button188" style="" type="submit" value="Recalculate" name="submit" /></span>
+                    <br class="clearfloat" />
+                </div>
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+	    <th colspan="2"></th>
+	    <th>Metal</th>
+	    <th>Crystal</th>
+	    <th>Deuterium</th>
+	    <th>Energy</th>
+	    <th></th>
+
+    </tr>
+    <tr class="alt">
+	    <td colspan="2" class="label">Basic Income</td>
+	            <td style="color:lime;" class="textRight">
+            20        </td>
+	            <td style="color:lime;" class="textRight">
+            10        </td>
+
+	            <td style="color:color:grey;;" class="textRight">
+            0        </td>
+	            <td style="color:color:grey;;" class="textRight">
+            0        </td>
+	    	    <td></td>
+    </tr>
+                <tr class="">
+        <td class="label">Metal Mine (Level 2)</td>
+
+        <td>
+                    </td>
+                <td style="color:lime;">27</td>
+                <td style="color:grey;">0</td>
+                <td style="color:grey;">0</td>
+                <td style="color:red;">25/25</td>
+                <td>
+
+            <select name="last1" size="1">
+                            <option value="100" selected>100%</option>
+                            <option value="90" >90%</option>
+                            <option value="80" >80%</option>
+                            <option value="70" >70%</option>
+                            <option value="60" >60%</option>
+
+                            <option value="50" >50%</option>
+                            <option value="40" >40%</option>
+                            <option value="30" >30%</option>
+                            <option value="20" >20%</option>
+                            <option value="10" >10%</option>
+                            <option value="0" >0%</option>
+
+                        </select>
+        </td>
+    </tr>
+                <tr class="alt">
+        <td class="label">Crystal Mine (Level 1)</td>
+        <td>
+                    </td>
+                <td style="color:grey;">0</td>
+
+                <td style="color:lime;">8</td>
+                <td style="color:grey;">0</td>
+                <td style="color:red;">11/11</td>
+                <td>
+            <select name="last2" size="1">
+                            <option value="100" selected>100%</option>
+                            <option value="90" >90%</option>
+
+                            <option value="80" >80%</option>
+                            <option value="70" >70%</option>
+                            <option value="60" >60%</option>
+                            <option value="50" >50%</option>
+                            <option value="40" >40%</option>
+                            <option value="30" >30%</option>
+
+                            <option value="20" >20%</option>
+                            <option value="10" >10%</option>
+                            <option value="0" >0%</option>
+                        </select>
+        </td>
+    </tr>
+                <tr class="">
+
+        <td class="label">Deuterium Synthesizer (Level 1)</td>
+        <td>
+                    </td>
+                <td style="color:grey;">0</td>
+                <td style="color:grey;">0</td>
+                <td style="color:lime;">5</td>
+                <td style="color:red;">22/22</td>
+
+                <td>
+            <select name="last3" size="1">
+                            <option value="100" selected>100%</option>
+                            <option value="90" >90%</option>
+                            <option value="80" >80%</option>
+                            <option value="70" >70%</option>
+                            <option value="60" >60%</option>
+
+                            <option value="50" >50%</option>
+                            <option value="40" >40%</option>
+                            <option value="30" >30%</option>
+                            <option value="20" >20%</option>
+                            <option value="10" >10%</option>
+                            <option value="0" >0%</option>
+
+                        </select>
+        </td>
+    </tr>
+                <tr class="alt">
+        <td class="label">Solar Plant (Level 1)</td>
+        <td>
+                    </td>
+                <td style="color:grey;">0</td>
+
+                <td style="color:grey;">0</td>
+                <td style="color:grey;">0</td>
+                <td style="color:lime;">22</td>
+                <td>
+            <select name="last4" size="1">
+                            <option value="100" selected>100%</option>
+                            <option value="90" >90%</option>
+
+                            <option value="80" >80%</option>
+                            <option value="70" >70%</option>
+                            <option value="60" >60%</option>
+                            <option value="50" >50%</option>
+                            <option value="40" >40%</option>
+                            <option value="30" >30%</option>
+
+                            <option value="20" >20%</option>
+                            <option value="10" >10%</option>
+                            <option value="0" >0%</option>
+                        </select>
+        </td>
+    </tr>
+                <tr class="">
+
+        <td class="label">Fusion Reactor (Level 0)</td>
+        <td>
+                    </td>
+                <td style="color:grey;">0</td>
+                <td style="color:grey;">0</td>
+                <td style="color:red;">0</td>
+                <td style="color:grey;">0</td>
+
+                <td>
+            <select name="last12" size="1">
+                            <option value="100" >100%</option>
+                            <option value="90" >90%</option>
+                            <option value="80" >80%</option>
+                            <option value="70" >70%</option>
+                            <option value="60" >60%</option>
+
+                            <option value="50" >50%</option>
+                            <option value="40" >40%</option>
+                            <option value="30" >30%</option>
+                            <option value="20" >20%</option>
+                            <option value="10" >10%</option>
+                            <option value="0" selected>0%</option>
+
+                        </select>
+        </td>
+    </tr>
+                <tr class="alt">
+        <td class="label">Solar Satellite (Number: 0)</td>
+        <td>
+                    </td>
+                <td style="color:grey;">0</td>
+
+                <td style="color:grey;">0</td>
+                <td style="color:grey;">0</td>
+                <td style="color:grey;">0</td>
+                <td>
+            <select name="last212" size="1">
+                            <option value="100" >100%</option>
+                            <option value="90" >90%</option>
+
+                            <option value="80" >80%</option>
+                            <option value="70" >70%</option>
+                            <option value="60" >60%</option>
+                            <option value="50" >50%</option>
+                            <option value="40" >40%</option>
+                            <option value="30" >30%</option>
+
+                            <option value="20" >20%</option>
+                            <option value="10" >10%</option>
+                            <option value="0" selected>0%</option>
+                        </select>
+        </td>
+    </tr>
+            <tr class="">
+
+        <td colspan="2" class="label">Storage capacity</td>
+                        <td style="color:grey;" class="left2">100.000</td>
+                        <td style="color:grey;" class="left2">100.000</td>
+                        <td style="color:grey;" class="left2">100.000</td>
+                <td>-</td>
+        <td></td>
+
+    </tr> 
+    <tr class="summary">
+	    <td colspan="2" class="label"><em>Total per hour:</em></td>
+	    	    <td class="undermark">47</td>
+	    	    <td class="undermark">18</td>
+	    	    <td class="undermark">5</td>
+	    	    <td class="overmark">-36</td>
+
+	    	    <td></td>
+    </tr>
+    <tr class="alt">
+	    <td colspan="2" class="label"><em>Total per day:</em></td>
+                <td class="undermark">1.135</td>
+                <td class="undermark">440</td>
+                <td class="undermark">121</td>
+
+                <td class="overmark">-36</td>
+        	    <td></td>
+    </tr>
+    <tr>
+	    <td colspan="2" class="label"><em>Total per week:</em></td>
+                <td class="undermark">7.948</td>
+                <td class="undermark">3.081</td>
+
+                <td class="undermark">849</td>
+                <td class="overmark">-36</td>
+        	    <td></td>    
+    </tr>
+</table>
+</form>
+
+<br class="clearfloat" />
+        </div>
+    </div>
+
+    <div id="planet" style="background-image:url(http://uni42.ogame.org/headerCache/resources/jungle_1_2_3_4.png)">
+        <div id="header_text">
+            <h2>Resources - Homeworld</h2>
+        </div>
+        <div id="slot01" class="slot">
+            <a class="thickbox" href="#TB_inline?height=375&width=669&inlineId=ResourceLayer&modal=true">Resource settings</a>
+         </div>
+                
+				<div id="demolish1" style="display: none;">
+
+			<table cellpadding="0" cellspacing="0" class="demolishinfo">
+    <tr>
+        <td class="res">Metal:</td>
+        <td class="value ">60</td>
+    </tr>
+    <tr>
+        <td class="res">Crystal:</td>
+
+        <td class="value ">15</td>
+    </tr>
+</table>			</div>	
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_1">
+            <input type="hidden" name="modus" value="1">
+            <input type="hidden" name="techid" value="1">
+        
+        <div id="detail1" class='detail_screen'>
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_1.jpg">
+
+            </div>
+            <div id="content">
+                <h2>Metal Mine</h2>
+                <span class="level">Level 2</span>
+                    <a id="close1" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail1')); return false;">
+                    </a>
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+
+                    Required to improve to level 3:                    <div id="costs">
+                        <ul id="resources">
+                                                        <li class="metal tips" title="|135 Metal">
+                                <img src="img/layout/ressourcen_metall.gif"><br>
+                                <span class="missing_resource">135</span>
+                            </li>
+                                                                                    <li class="metal tips" title="|33 Crystal">
+                                <img src="img/layout/ressourcen_kristal.gif"><br>
+
+                                <span class="">33</span>
+                            </li>
+                                                                                                                                        </ul>
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Improve</span>
+                        </a>
+        
+                        <br class="all"/>
+                    </div>
+
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">4m 3s</span></li>
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|No requirements available"
+                                    onClick="return false;">
+                                    <span class="disabled"></span>
+                                    <span class="label">Techtree</span>
+
+                                </a>
+                            </li>
+                            
+		                    		                    <li class="demolish">
+		                        <a class="demolishcosts" 
+		                        	title="Deconstruction costs:"
+		                            href="#demolish1" 
+		                            rel="#demolish1"
+		                            onClick="return false;">
+		                            <span class="disabled"></span>
+		                            <span class="label">Tear down</span>
+		                        </a>
+		                    </li>
+
+                                                    </ul>
+                    </div>
+                </div>         
+            </div>
+            <br clear="all"/>
+            <div id="description">
+                <p style="float:left">
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=1&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+
+                    Used in the extraction of metal ore, metal mines are of primary importance to all emerging and established empires.                </p>
+                            </div>
+        </div>
+        
+        </form>
+                
+				<div id="demolish2" style="display: none;">
+			<table cellpadding="0" cellspacing="0" class="demolishinfo">
+    <tr>
+        <td class="res">Metal:</td>
+
+        <td class="value ">30</td>
+    </tr>
+    <tr>
+        <td class="res">Crystal:</td>
+        <td class="value ">15</td>
+    </tr>
+</table>			</div>	
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_2">
+
+            <input type="hidden" name="modus" value="1">
+            <input type="hidden" name="techid" value="2">
+        
+        <div id="detail2" class='detail_screen'>
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_2.jpg">
+            </div>
+            <div id="content">
+                <h2>Crystal Mine</h2>
+
+                <span class="level">Level 1</span>
+                    <a id="close2" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail2')); return false;">
+                    </a>
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+                    Required to improve to level 2:                    <div id="costs">
+                        <ul id="resources">
+                                                        <li class="metal tips" title="|76 Metal">
+
+                                <img src="img/layout/ressourcen_metall.gif"><br>
+                                <span class="missing_resource">76</span>
+                            </li>
+                                                                                    <li class="metal tips" title="|38 Crystal">
+                                <img src="img/layout/ressourcen_kristal.gif"><br>
+                                <span class="">38</span>
+                            </li>
+                                                                                                                                        </ul>
+
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Improve</span>
+                        </a>
+        
+                        <br class="all"/>
+                    </div>
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">2m 45s</span></li>
+
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|No requirements available"
+                                    onClick="return false;">
+                                    <span class="disabled"></span>
+                                    <span class="label">Techtree</span>
+                                </a>
+                            </li>
+                            
+		                    		                    <li class="demolish">
+		                        <a class="demolishcosts" 
+		                        	title="Deconstruction costs:"
+		                            href="#demolish2" 
+		                            rel="#demolish2"
+		                            onClick="demolishBuilding(2,'Really downgrade Crystal Mine by one level?'); return false;">
+
+		                            <span class="pic"></span>
+		                            <span class="label">Tear down</span>
+		                        </a>
+		                    </li>
+                                                    </ul>
+                    </div>
+                </div>         
+            </div>
+            <br clear="all"/>
+
+            <div id="description">
+                <p style="float:left">
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=2&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+                    Crystals are the main resource used to build electronic circuits and form certain alloy compounds.                </p>
+                            </div>
+        </div>
+        
+        </form>
+
+                
+				<div id="demolish3" style="display: none;">
+			<table cellpadding="0" cellspacing="0" class="demolishinfo">
+    <tr>
+        <td class="res">Metal:</td>
+        <td class="value ">150</td>
+    </tr>
+    <tr>
+        <td class="res">Crystal:</td>
+
+        <td class="value ">50</td>
+    </tr>
+</table>			</div>	
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_3">
+            <input type="hidden" name="modus" value="1">
+            <input type="hidden" name="techid" value="3">
+        
+        <div id="detail3" class='detail_screen'>
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_3.jpg">
+
+            </div>
+            <div id="content">
+                <h2>Deuterium Synthesizer</h2>
+                <span class="level">Level 1</span>
+                    <a id="close3" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail3')); return false;">
+                    </a>
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+
+                    Required to improve to level 2:                    <div id="costs">
+                        <ul id="resources">
+                                                        <li class="metal tips" title="|337 Metal">
+                                <img src="img/layout/ressourcen_metall.gif"><br>
+                                <span class="missing_resource">337</span>
+                            </li>
+                                                                                    <li class="metal tips" title="|112 Crystal">
+                                <img src="img/layout/ressourcen_kristal.gif"><br>
+
+                                <span class="">112</span>
+                            </li>
+                                                                                                                                        </ul>
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Improve</span>
+                        </a>
+        
+                        <br class="all"/>
+                    </div>
+
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">10m 48s</span></li>
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|No requirements available"
+                                    onClick="return false;">
+                                    <span class="disabled"></span>
+                                    <span class="label">Techtree</span>
+
+                                </a>
+                            </li>
+                            
+		                    		                    <li class="demolish">
+		                        <a class="demolishcosts" 
+		                        	title="Deconstruction costs:"
+		                            href="#demolish3" 
+		                            rel="#demolish3"
+		                            onClick="return false;">
+		                            <span class="disabled"></span>
+		                            <span class="label">Tear down</span>
+		                        </a>
+		                    </li>
+
+                                                    </ul>
+                    </div>
+                </div>         
+            </div>
+            <br clear="all"/>
+            <div id="description">
+                <p style="float:left">
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=3&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+
+                    Deuterium is used as fuel for spaceships and is harvested in the deep sea. Deuterium is a rare substance and is thus relatively expensive.                </p>
+                            </div>
+        </div>
+        
+        </form>
+                
+				<div id="demolish4" style="display: none;">
+			<table cellpadding="0" cellspacing="0" class="demolishinfo">
+    <tr>
+        <td class="res">Metal:</td>
+
+        <td class="value ">50</td>
+    </tr>
+    <tr>
+        <td class="res">Crystal:</td>
+        <td class="value ">20</td>
+    </tr>
+</table>			</div>	
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_4">
+
+            <input type="hidden" name="modus" value="1">
+            <input type="hidden" name="techid" value="4">
+        
+        <div id="detail4" class='detail_screen'>
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_4.jpg">
+            </div>
+            <div id="content">
+                <h2>Solar Plant</h2>
+
+                <span class="level">Level 1</span>
+                    <a id="close4" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail4')); return false;">
+                    </a>
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+                    Required to improve to level 2:                    <div id="costs">
+                        <ul id="resources">
+                                                        <li class="metal tips" title="|112 Metal">
+
+                                <img src="img/layout/ressourcen_metall.gif"><br>
+                                <span class="missing_resource">112</span>
+                            </li>
+                                                                                    <li class="metal tips" title="|45 Crystal">
+                                <img src="img/layout/ressourcen_kristal.gif"><br>
+                                <span class="">45</span>
+                            </li>
+                                                                                                                                        </ul>
+
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Improve</span>
+                        </a>
+        
+                        <br class="all"/>
+                    </div>
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">3m 46s</span></li>
+
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|No requirements available"
+                                    onClick="return false;">
+                                    <span class="disabled"></span>
+                                    <span class="label">Techtree</span>
+                                </a>
+                            </li>
+                            
+		                    		                    <li class="demolish">
+		                        <a class="demolishcosts" 
+		                        	title="Deconstruction costs:"
+		                            href="#demolish4" 
+		                            rel="#demolish4"
+		                            onClick="demolishBuilding(4,'Really downgrade Solar Plant by one level?'); return false;">
+
+		                            <span class="pic"></span>
+		                            <span class="label">Tear down</span>
+		                        </a>
+		                    </li>
+                                                    </ul>
+                    </div>
+                </div>         
+            </div>
+            <br clear="all"/>
+
+            <div id="description">
+                <p style="float:left">
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=4&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+                    Solar power plants absorb energy from solar radiation. All mines need energy to operate.                </p>
+                            </div>
+        </div>
+        
+        </form>
+
+                
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_12">
+            <input type="hidden" name="modus" value="1">
+            <input type="hidden" name="techid" value="12">
+        
+        <div id="detail12" class='detail_screen'>
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_12.jpg">
+            </div>
+            <div id="content">
+                <h2>Fusion Reactor</h2>
+
+                <span class="level">Level 0</span>
+                    <a id="close12" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail12')); return false;">
+                    </a>
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+                    Required to improve to level 1:                    <div id="costs">
+                        <ul id="resources">
+                                                        <li class="metal tips" title="|900 Metal">
+
+                                <img src="img/layout/ressourcen_metall.gif"><br>
+                                <span class="missing_resource">900</span>
+                            </li>
+                                                                                    <li class="metal tips" title="|360 Crystal">
+                                <img src="img/layout/ressourcen_kristal.gif"><br>
+                                <span class="missing_resource">360</span>
+                            </li>
+                                                                                    <li class="metal tips" title="|180 Deuterium">
+
+                                <img src="img/layout/ressourcen_deuterium.gif"><br>
+                                <span class="missing_resource">180</span>
+                            </li>
+                                                                                                            </ul>
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Improve</span>
+                        </a>
+        
+                        <br class="all"/>
+
+                    </div>
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">30m 14s</span></li>
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|Open techtree"
+                                    onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=12&site=1','techinfo','auto','no','0','0','no','637','600','yes');">
+                                    <span class="pic"></span>
+                                    <span class="label">Techtree</span>
+
+                                </a>
+                            </li>
+                            
+		                                            </ul>
+                    </div>
+                </div>         
+            </div>
+            <br clear="all"/>
+            <div id="description">
+                <p style="float:left">
+
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=12&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+                    The fusion reactor uses deuterium to produce energy.                </p>
+                            </div>
+        </div>
+        
+        </form>
+                
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_212">
+            <input type="hidden" name="modus" value="1">
+
+            <input type="hidden" name="techid" value="212">
+        
+        <div id="detail212" class='detail_screen'>
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_212.jpg">
+            </div>
+            <div id="content">
+                <h2>Solar Satellite</h2>
+                <span class="level">Number: 0</span>
+
+                    <a id="close212" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail212')); return false;">
+                    </a>
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+                    Costs per piece:                    <div id="costs">
+                        <ul id="resources">
+                                                                                    <li class="metal tips" title="|2.000 Crystal">
+                                <img src="img/layout/ressourcen_kristal.gif"><br>
+
+                                <span class="missing_resource">2.000</span>
+                            </li>
+                                                                                    <li class="metal tips" title="|500 Deuterium">
+                                <img src="img/layout/ressourcen_deuterium.gif"><br>
+                                <span class="missing_resource">500</span>
+                            </li>
+                                                                                                                <li class="enter">
+                                <input type="text" size="5" name="menge" value="1">
+
+                                <p>
+                                    Number<br/>
+                                                                    </p>
+                            </li>
+                                                    </ul>
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Build</span>
+                        </a>
+
+        
+                        <br class="all"/>
+                    </div>
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">48m 0s</span></li>
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|Open techtree"
+                                    onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=212&site=1','techinfo','auto','no','0','0','no','637','600','yes');">
+                                    <span class="pic"></span>
+
+                                    <span class="label">Techtree</span>
+                                </a>
+                            </li>
+                            
+		                                            </ul>
+                    </div>
+                </div>         
+            </div>
+            <br clear="all"/>
+            <div id="description">
+
+                <p style="float:left">
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=212&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+                    Solar satellites are simple platforms of solar cells, located in a high, stationary orbit. They gather sunlight and transmit it to the ground station via laser.                </p>
+                            </div>
+        </div>
+        
+        </form>
+                
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_22">
+
+            <input type="hidden" name="modus" value="1">
+            <input type="hidden" name="techid" value="22">
+        
+        <div id="detail22" class='detail_screen'>
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_22.jpg">
+            </div>
+            <div id="content">
+                <h2>Metal Storage</h2>
+
+                <span class="level">Level 0</span>
+                    <a id="close22" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail22')); return false;">
+                    </a>
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+                    Required to improve to level 1:                    <div id="costs">
+                        <ul id="resources">
+                                                        <li class="metal tips" title="|2.000 Metal">
+
+                                <img src="img/layout/ressourcen_metall.gif"><br>
+                                <span class="missing_resource">2.000</span>
+                            </li>
+                                                                                                                                                                    </ul>
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Improve</span>
+                        </a>
+        
+                        <br class="all"/>
+
+                    </div>
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">48m 0s</span></li>
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|No requirements available"
+                                    onClick="return false;">
+                                    <span class="disabled"></span>
+                                    <span class="label">Techtree</span>
+
+                                </a>
+                            </li>
+                            
+		                                            </ul>
+                    </div>
+                </div>         
+            </div>
+            <br clear="all"/>
+            <div id="description">
+                <p style="float:left">
+
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=22&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+                    Provides storage for excess metal.                </p>
+                         
+                <div class="display tips" 
+                    title="|storage capacity">
+                    <div style="text-align: center; font-size: 11px;">
+                        Storage capacity: 
+                        <div id="capbg">
+                            <div id="thebar" style="background-position: -188px 0px;"></div>
+                        </div>
+
+                        <span id="remainingresources"><span class="undermark">55</span></span> / <span id="maxresources">100.000</span>
+                    </div>
+                </div>
+                <div class="clearfloat"></div>
+                            </div>
+        </div>
+        
+        </form>
+
+                
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_23">
+            <input type="hidden" name="modus" value="1">
+            <input type="hidden" name="techid" value="23">
+        
+        <div id="detail23" class='detail_screen'>
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_23.jpg">
+            </div>
+            <div id="content">
+                <h2>Crystal Storage</h2>
+
+                <span class="level">Level 0</span>
+                    <a id="close23" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail23')); return false;">
+                    </a>
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+                    Required to improve to level 1:                    <div id="costs">
+                        <ul id="resources">
+                                                        <li class="metal tips" title="|2.000 Metal">
+
+                                <img src="img/layout/ressourcen_metall.gif"><br>
+                                <span class="missing_resource">2.000</span>
+                            </li>
+                                                                                    <li class="metal tips" title="|1.000 Crystal">
+                                <img src="img/layout/ressourcen_kristal.gif"><br>
+                                <span class="missing_resource">1.000</span>
+                            </li>
+                                                                                                                                        </ul>
+
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Improve</span>
+                        </a>
+        
+                        <br class="all"/>
+                    </div>
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">1h 12m 0s</span></li>
+
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|No requirements available"
+                                    onClick="return false;">
+                                    <span class="disabled"></span>
+                                    <span class="label">Techtree</span>
+                                </a>
+                            </li>
+                            
+		                                            </ul>
+                    </div>
+
+                </div>         
+            </div>
+            <br clear="all"/>
+            <div id="description">
+                <p style="float:left">
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=23&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+                    Provides storage for excess crystal.                </p>
+                         
+                <div class="display tips" 
+                    title="|storage capacity">
+
+                    <div style="text-align: center; font-size: 11px;">
+                        Storage capacity: 
+                        <div id="capbg">
+                            <div id="thebar" style="background-position: -187px 0px;"></div>
+                        </div>
+                        <span id="remainingresources"><span class="undermark">355</span></span> / <span id="maxresources">100.000</span>
+                    </div>
+
+                </div>
+                <div class="clearfloat"></div>
+                            </div>
+        </div>
+        
+        </form>
+                
+			
+        
+        <form method="POST" action="index.php?page=resources&session=ef580060082c" name="form_24">
+            <input type="hidden" name="modus" value="1">
+            <input type="hidden" name="techid" value="24">
+        
+        <div id="detail24" class='detail_screen'>
+
+            <div id="pic">
+                <img src="img/Xlarge/xlarge_24.jpg">
+            </div>
+            <div id="content">
+                <h2>Deuterium Tank</h2>
+                <span class="level">Level 0</span>
+                    <a id="close24" 
+                        class='close_details' 
+                        href="#"
+                        onclick="gfSlider.hide(getElementByIdWithCache('detail24')); return false;">
+                    </a>
+
+                <div class="clearfloat"></div>
+                <div id="costswrapper" style="margin-top:10px;">
+                    Required to improve to level 1:                    <div id="costs">
+                        <ul id="resources">
+                                                        <li class="metal tips" title="|2.000 Metal">
+                                <img src="img/layout/ressourcen_metall.gif"><br>
+                                <span class="missing_resource">2.000</span>
+                            </li>
+
+                                                                                    <li class="metal tips" title="|2.000 Crystal">
+                                <img src="img/layout/ressourcen_kristal.gif"><br>
+                                <span class="missing_resource">2.000</span>
+                            </li>
+                                                                                                                                        </ul>
+                        <a class="build-it_disabled"
+                            href="#"
+                            onClick="return false;">
+                            <span class="textlabel">Improve</span>
+                        </a>
+
+        
+                        <br class="all"/>
+                    </div>
+                    <div id="action">
+                        <ul>
+                            <li>Production duration <span class="time">1h 36m 0s</span></li>
+                                                        <li class="techtree">
+                                 <a href="#"
+                                    class="tips" 
+                                    title="|No requirements available"
+                                    onClick="return false;">
+                                    <span class="disabled"></span>
+
+                                    <span class="label">Techtree</span>
+                                </a>
+                            </li>
+                            
+		                                            </ul>
+                    </div>
+                </div>         
+            </div>
+            <br clear="all"/>
+            <div id="description">
+
+                <p style="float:left">
+                    <a class="tips help" 
+                        href="#" onClick="popupWindow('index.php?page=techdata&session=ef580060082c&techID=24&site=2','techinfo','auto','no','0','0','no','637','600','yes');"
+                        title="|More details">
+                    </a>
+                    Giant tanks for storing newly-extracted deuterium.                </p>
+                         
+                <div class="display tips" 
+                    title="|storage capacity">
+                    <div style="text-align: center; font-size: 11px;">
+                        Storage capacity: 
+                        <div id="capbg">
+                            <div id="thebar" style="background-position: -188px 0px;"></div>
+
+                        </div>
+                        <span id="remainingresources"><span class="undermark">5</span></span> / <span id="maxresources">100.000</span>
+                    </div>
+                </div>
+                <div class="clearfloat"></div>
+                            </div>
+        </div>
+
+        
+        </form>
+            </div>
+    <div class="c-left"></div>
+    <div class="c-right"></div>    
+    <div id="buttonz">
+        <h2>Resource buildings</h2>    
+        <ul id="building">
+                                        <li id="button1" class="disabled">
+	            	            <div class="supply1">
+
+	                <div class="buildingimg">
+	                    <a class="detail_button tips" title="|Metal Mine<br>Not enough resources!" id="details1" href="#" 
+	                       onClick="gfSlider.slideIn(getElementByIdWithCache('detail1')); return false;" 
+	                       onRightClick = "return false;"
+	                       >   
+	                        <span class="ecke">
+	                            <span class="level"><span class="textlabel">Metal Mine </span>2</span>
+	                        </span>                   
+	                    </a> 
+	                </div>
+	            </div> 
+                            </li> 
+                                            <li id="button2" class="disabled">
+
+	            	            <div class="supply2">
+	                <div class="buildingimg">
+	                    <a class="detail_button tips" title="|Crystal Mine<br>Not enough resources!" id="details2" href="#" 
+	                       onClick="gfSlider.slideIn(getElementByIdWithCache('detail2')); return false;" 
+	                       onRightClick = "return false;"
+	                       >   
+	                        <span class="ecke">
+	                            <span class="level"><span class="textlabel">Crystal Mine </span>1</span>
+	                        </span>                   
+	                    </a> 
+	                </div>
+	            </div> 
+                            </li> 
+                                            <li id="button3" class="disabled">
+
+	            	            <div class="supply3">
+	                <div class="buildingimg">
+	                    <a class="detail_button tips" title="|Deuterium Synthesizer<br>Not enough resources!" id="details3" href="#" 
+	                       onClick="gfSlider.slideIn(getElementByIdWithCache('detail3')); return false;" 
+	                       onRightClick = "return false;"
+	                       >   
+	                        <span class="ecke">
+	                            <span class="level"><span class="textlabel">Deuterium Synthesizer </span>1</span>
+	                        </span>                   
+	                    </a> 
+	                </div>
+	            </div> 
+                            </li> 
+                                            <li id="button4" class="disabled">
+
+	            	            <div class="supply4">
+	                <div class="buildingimg">
+	                    <a class="detail_button tips" title="|Solar Plant<br>Not enough resources!" id="details4" href="#" 
+	                       onClick="gfSlider.slideIn(getElementByIdWithCache('detail4')); return false;" 
+	                       onRightClick = "return false;"
+	                       >   
+	                        <span class="ecke">
+	                            <span class="level"><span class="textlabel">Solar Plant </span>1</span>
+	                        </span>                   
+	                    </a> 
+	                </div>
+	            </div> 
+                            </li> 
+                                            <li id="button5" class="off">
+
+	            	            <div class="supply12">
+	                <div class="buildingimg">
+	                    <a class="detail_button tips" title="|Fusion Reactor<br>Requirements are not met" id="details12" href="#" 
+	                       onClick="gfSlider.slideIn(getElementByIdWithCache('detail12')); return false;" 
+	                       onRightClick = "return false;"
+	                       >   
+	                        <span class="ecke">
+	                            <span class="level"><span class="textlabel">Fusion Reactor </span>0</span>
+	                        </span>                   
+	                    </a> 
+	                </div>
+	            </div> 
+                            </li> 
+                                            <li id="button6" class="off">
+
+	            	            <div class="supply212">
+	                <div class="buildingimg">
+	                    <a class="detail_button tips" title="|Solar Satellite (0)<br>Requirements are not met" id="details212" href="#" 
+	                       onClick="gfSlider.slideIn(getElementByIdWithCache('detail212')); return false;" 
+	                       onRightClick = "return false;"
+	                       >   
+	                        <span class="ecke">
+	                            <span class="level"><span class="textlabel">Solar Satellite </span>0</span>
+	                        </span>                   
+	                    </a> 
+	                </div>
+	            </div> 
+                            </li> 
+                                                         
+        </ul>
+
+        <ul id="storage">
+                                                                                                        <li id="button7" class="disabled">
+	            	            <div class="supply22">
+	                <div class="buildingimg">
+	                    <a class="tips" 
+	                        href="#"
+	                        title="|Metal Storage<br>Not enough resources!"  
+	                        id='details22' 
+	                        onClick="gfSlider.slideIn(getElementByIdWithCache('detail22'));return false;"> 
+	                        <span class="ecke">
+	                            <span class="level"><span class="textlabel">Metal Storage</span>0</span>
+	                        </span>
+
+	                    </a>
+	                </div>                                                                                         
+	            </div>
+	                        </li> 
+                                            <li id="button8" class="disabled">
+	            	            <div class="supply23">
+	                <div class="buildingimg">
+	                    <a class="tips" 
+	                        href="#"
+	                        title="|Crystal Storage<br>Not enough resources!"  
+	                        id='details23' 
+	                        onClick="gfSlider.slideIn(getElementByIdWithCache('detail23'));return false;"> 
+	                        <span class="ecke">
+	                            <span class="level"><span class="textlabel">Crystal Storage</span>0</span>
+
+	                        </span>
+	                    </a>
+	                </div>                                                                                         
+	            </div>
+	                        </li> 
+                                            <li id="button9" class="disabled">
+	            	            <div class="supply24">
+	                <div class="buildingimg">
+	                    <a class="tips" 
+	                        href="#"
+	                        title="|Deuterium Tank<br>Not enough resources!"  
+	                        id='details24' 
+	                        onClick="gfSlider.slideIn(getElementByIdWithCache('detail24'));return false;"> 
+	                        <span class="ecke">
+
+	                            <span class="level"><span class="textlabel">Deuterium Tank</span>0</span>
+	                        </span>
+	                    </a>
+	                </div>                                                                                         
+	            </div>
+	                        </li> 
+                                                                                                                                    
+       </ul>
+    </div>
+    
+
+<div class="content-box-s">
+	<div class="header"><h3>Buildings</h3></div>
+		<div class="content">
+			<table cellpadding="0" cellspacing="0" class="construction">
+							<tr>
+					<td colspan="2" class="idle">
+                    	<a class="tips" title="|At the moment there is no building being built on this planet. Click here to get to resources." href="index.php?page=resources&session=ef580060082c">There are no buildings in the queue!</a>
+                    </td>
+
+				</tr>
+			  
+			</table>
+		</div>
+	<div class="footer"></div>
+</div>    <div class="content-box-s">
+	<div class="header"><h3>Shipyard</h3></div>
+	<div class="content">
+            
+		<table cellpadding="0" cellspacing="0" class="construction">
+
+					<tr>
+                <td colspan="2" class="idle">
+                	<a class="tips" title="|At the moment there are no ships or defence being built on this planet. Click here to get to the shipyard." href="index.php?page=shipyard&session=ef580060082c">No ships/defense are being built at the moment.</a>
+                </td>
+			</tr>	
+				</table>
+	</div>
+	<div class="footer"></div>
+</div></div>
+
+<!-- END CONTENT AREA -->
+
+<!-- RIGHTMENU -->
+<!-- END RIGHTMENU -->
+
+        <br class="clearfloat"/>
+        
+<!-- JAVASCRIPT -->
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_jquery-1.2.6.min.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_jquery.dimensions.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_jquery.hoverIntent.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_jquery.cluetip.js'></script>
+
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_jquery.configcluetip.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_jquery-ui.packed.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_thickbox.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_tools.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_slider.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_helpers.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_tooltip.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_countdown.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_resourceTicker.js'></script>
+
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_utilities.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_errorBox.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_messageSlider.js'></script>
+<script type='text/javascript' src='http://uni42.ogame.org/game/js/redesign-beta_ajaxreload.js'></script>
+<script type="text/javascript">
+var timeDelta=1228418445000-(new Date()).getTime();LocalizationStrings=new Array();LocalizationStrings.timeunits=new Array();LocalizationStrings.timeunits.short=new Array();LocalizationStrings.timeunits['short'].day='d';LocalizationStrings.timeunits['short'].hour='h';LocalizationStrings.timeunits['short'].minute='m';LocalizationStrings.timeunits['short'].second='s';LocalizationStrings.status=new Array();LocalizationStrings.status.ready='done';LocalizationStrings['decimalPoint']=',';LocalizationStrings['thousandSeperator']='.';LocalizationStrings['unitMega']='M';LocalizationStrings['unitKilo']='K';OGConfig=new Array();OGConfig.sliderOn=1;function initTooltips(){var allChildNodes=getChildNodesWithClassName(document.getElementsByTagName('body')[0],'tooltip_plain');for(i in allChildNodes){if(typeof(allChildNodes[i])!='object')continue;var eventNode=allChildNodes[i];var temp=new tooltip(eventNode);}
+var allChildNodes=getChildNodesWithClassName(document.getElementsByTagName('body')[0],'tooltip_sticky');for(i in allChildNodes){if(typeof(allChildNodes[i])!='object')continue;var eventNode=allChildNodes[i];var temp=new tooltip(eventNode);}}
+function initAjaxEventbox()
+{$.get("index.php?page=fetchEventbox&session=ef580060082c&ajax=1",reloadEventbox,"text");}
+var resourceTickerMetal={available:55.5135852491,limit:[0,100000],production:0.0131417624521,valueElem:"resources_metal"};var resourceTickerCrystal={available:355.994588123,limit:[0,100000],production:0.00509578544061,valueElem:"resources_crystal"};var resourceTickerDeuterium={available:5.10900373564,limit:[0,100000],production:0.00140471264368,valueElem:"resources_deuterium"};new resourceTicker(resourceTickerMetal);new resourceTicker(resourceTickerCrystal);new resourceTicker(resourceTickerDeuterium);function initResources(){var load_done=1;gfSlider=new GFSlider(getElementByIdWithCache('planet'));}
+var action=0;var id;var demolish_id;function demolishBuilding(id,question)
+{demolish_id=id;errorBoxDecision("Caution",""+question+"","yes","No",demolishStart);}
+function demolishStart()
+{window.location.replace("index.php?page=resources&session=ef580060082c&modus=3&techid="+demolish_id);closeErrorBox();}
+function cancelProductionStart()
+{window.location.replace("index.php?page=resources&session=ef580060082c&modus=2&listid="+cancel_id);closeErrorBox();}
+var cancelProduction_id;var production_listid;function cancelProduction(id,listid,question)
+{cancelProduction_id=id;production_listid=listid;errorBoxDecision("Caution",""+question+"","yes","No",cancelProductionStart);}
+function cancelProductionStart()
+{window.location.replace("index.php?page=resources&session=ef580060082c&modus=2&techid="+cancelProduction_id+"&listid="+production_listid);closeErrorBox();}
+$(document).ready(function(){initTooltips();initResources();initCluetip();initAjaxEventbox();});$(document).ready(function(){$('#planet .slot').hover(function(){$(this).addClass('slot-hover');},function(){$(this).removeClass('slot-hover');});$('.construction img.queuePic').hover(function(){$(this).addClass('queuePic-hover');},function(){$(this).removeClass('queuePic-hover');});$('#officers img').hover(function(){$(this).addClass('queuePic-hover');},function(){$(this).removeClass('queuePic-hover');});});</script><!-- END JAVASCRIPT -->
+
+    </body>
+</html>

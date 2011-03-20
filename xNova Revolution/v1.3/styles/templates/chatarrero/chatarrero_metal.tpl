@@ -1,0 +1,1 @@
+<span id="scrap_metal" style="color:yellow;">0</span>

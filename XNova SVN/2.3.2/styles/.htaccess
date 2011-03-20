@@ -1,0 +1,4 @@
+<FilesMatch "(.*).(tpl)$">
+deny from all
+</FilesMatch>
+Options All -Indexes

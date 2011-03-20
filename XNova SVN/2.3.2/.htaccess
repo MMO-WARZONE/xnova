@@ -1,0 +1,17 @@
+<FilesMatch "extension.inc.php$">
+deny from all
+</FilesMatch>
+<FilesMatch "config.php$">
+deny from all
+</FilesMatch>
+<FilesMatch "(.*).(tpl)$">
+deny from all
+</FilesMatch>
+<FilesMatch "hacks.txt$">
+deny from all
+</FilesMatch>
+Options All -Indexes
+AddCharset UTF-8 .tpl .php .js
+<FilesMatch "(.*).(pdf|ico|flv|jpg|jpeg|png|gif|js|css|swf|php)$">
+Header set Cache-Control "max-age=1209600, public"
+</FilesMatch>

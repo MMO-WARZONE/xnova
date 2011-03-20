@@ -1,0 +1,1 @@
+<span id="scrap_cristal" style="color:yellow;">0</span>

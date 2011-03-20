@@ -1,0 +1,3 @@
+http://your.site.com/scripts/createbanner.php?id={US_ID}
+
+example: http://your.site.com/scripts/createbanner.php?id=1

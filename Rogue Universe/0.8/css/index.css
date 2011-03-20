@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+body
+	{
+		background:#f5f5f5;
+		font:normal 11px/normal tahoma;
+		color:#666;
+		text-align:center;
+		padding:50px;
+	}
+#wrapper
+	{
+		padding:10px;
+		background:white;
+	}
+a
+	{
+		text-decoration:none;
+		color:#666;
+		border-bottom:dotted 1px #666;
+	}
+a:hover
+	{
+		color:red;
+		border-bottom:solid 1px red;
+	}
+#footer
+	{
+		padding:10px;
+		margin:10px auto;
+	}
+

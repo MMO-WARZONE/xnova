@@ -1,0 +1,1045 @@
+/* OGAME-Skin: WaterSpace-v-3.0 */              
+                                                                                          
+/* format.css Version 2.0 */ 
+
+/* OGame Version 0.74a dopasowany */ 
+                        
+
+                                                            
+                                                                                        
+                                
+                                    
+/* Copyrights: */ 
+/* Originalna Wersja: ciderpiorun@gamil.com */ 
+                                     
+                                             
+., #, td, th, textarea, body, table
+{
+  font-family	: Tahoma,sans-serif;
+  font-size	    : 11px;
+}
+
+img
+{
+  border               : 0px;
+}
+
+
+
+table table
+{
+  border               : 0px;
+}
+
+table table td
+{
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  text-align           : center;
+}
+
+body
+{
+  color                        :#f7f7f7;
+  margin-top                   :1px;
+  margin-left                  :1px;
+  background                   :#11181E url('img/2.jpg')
+  no-repeat                    :fixed left top;
+  scrollbar-arrow-color        :#E6EBFB;
+  scrollbar-base-color         :#344566; 
+  scrollbar-track-color		   :#344566; 
+  scrollbar-face-color         :#344566; 
+  scrollbar-highlight-color    :#344566; 
+  scrollbar-3dlight-color      :#465673; 
+  scrollbar-darkshadow-color   :#344566; 
+  scrollbar-shadow-color       :#465673; 
+  font-size                    :11px; 
+  font-family                  :Tahoma,sans-serif; 
+  text-align                   :center; 
+  background-image             :url('img/2.jpg'); 
+  background-repeat            :no-repeat; 
+  background-attachment        :fixed
+}
+
+body.style
+{
+  color                : #0000FF;
+  margin-top           : 1px;
+  margin-left          : 1px;
+  background-color     : #11181E;
+  background-image     : url('img/1.jpg');
+  background-position  :  left top;
+  background-repeat    : no-repeat;
+  font-family          : Tahoma, sans-serif;
+  font-size            : 11px; 
+  text-align           : center
+}
+
+OPCJE
+{
+  color                : #3399FF;      
+}
+
+body form table th table input
+{
+  width: 60px;
+}
+
+th, td.a, td.b, td.c, td.f, input, select,
+td.g, td.h, td.i, td.j, td.k, td.l, td.m,
+td.n, td.o, td.q, td.r, td.v, .style td,
+textarea, p td
+{
+  background-color     : #f7f7f7;
+  background-image     : url('img/h-uebersicht.jpg');
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  text-align           : center;
+  filter               : alpha(opacity=90)
+}
+
+th, td.a, td.b, td.c, td.f, input, select, td.g,
+td.h, td.i, td.j, td.k, td.m, td.o, td.q, td.r,
+td.v, td.s, .style td, p td
+{
+  background-color     : #000000;
+  background-image     : url('img/h-uebersicht.jpg');
+  text-align           : center;
+  filter               : alpha(opacity=90)
+}
+
+th
+{
+  text-align           : center;
+  padding-left         : 3px;
+  padding-right        : 3px;
+  background-color     : #f7f7f7;
+  color                : #f7f7f7;
+  background-image     : url('img/h-uebersicht.jpg');
+  filter               : alpha(opacity=90)
+}
+
+td.a
+{
+  height               : 39px;
+  text-align           : center;
+}
+
+td.b
+{
+  padding              : 3px;
+  text-align           : center;  
+}
+
+td.c
+{
+  color                : #f7f7f7;
+  padding-left         : 3px;
+  background-image     : url('images/Leiste.jpg');
+  background-position  : center 50%;
+  text-align           : center
+}
+
+td.f, input, select
+{
+  color                : #00FFFF;
+  background-image     : url('images/Leiste2.jpg');
+  border-bottom-color  : #7F7F7F;
+  border-right-color   : #676767;
+  border-left-color    : #747474;
+  text-align           : center;
+  font-weight          : bold; border-top-c:#858585
+}
+
+textarea
+{
+  width                : 100%;
+  color                : #FF0000;
+  font-weight          : bold;
+  background-image     : url('images/Leiste3.jpg');
+  border-bottom-color  : #7F7F7F;
+  border-right-color   : #676767;
+  border-left-color    : #747474;
+  text-align           : center; border-top-c:#858585
+}
+
+
+td.k input
+{
+  background-image     : url('images/Leiste2.jpg');
+  text-align           : center
+}
+
+td.g
+{
+  font-weight          : bold;
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.h
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.i
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.j
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.k
+{
+  text-align           : center;
+  vertical-align       : middle;
+  color                : #f7f7f7;
+  background-image     : url('img/hintergrund.jpg');
+  border               : 0px outset #606060;
+  background-color     : #344566
+}
+
+td.l
+{
+  text-align           : center;
+  vertical-align       : middle;
+  color                : #f7f7f7;
+  padding              : 3px;
+  background-image     : url('img/links.jpg');
+  border               : 0px outset #606060;
+  background-color     : #344566
+}
+
+td.m
+{
+  font-weight          : bold;
+  text-align           : center;
+  vertical-align       : middle;
+  width                : 86px;
+  color                : #f7f7f7;
+}
+
+td.n
+{
+  font-weight          : bold;
+  vertical-align       : middle;
+  width                : 89px;
+  text-align           : center;
+  color                : #f7f7f7;
+}
+
+td.o
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.q
+{
+  font-weight          : bold;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  text-align           : center;
+  vertical-align       : middle;
+  color                : #f7f7f7;
+}
+
+td.r
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.v
+{
+  font-weight          : bold;
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.s
+{
+  color                : #f7f7f7;
+  vertical-align       : middle;
+  text-align           : center;
+}
+
+table.s th
+{
+  border               : 0px;
+}
+
+
+table.s th img
+{
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  width                : 88px;
+  height               : 88px;
+}
+
+div.z
+{
+  font-weight          : bold;
+  color                : #f7f7f7;
+}
+
+a
+{
+  color                : #f7f7f7;
+  text-decoration      : none;
+  font-weight          : bold;
+}
+
+a.s
+{
+  color                : #606060;
+}
+
+a.t
+{
+  color                : #606060;
+}
+
+a:hover
+{
+  color                : #0000FF;
+}
+
+.style td
+{
+  color                : #f7f7f7;
+  border-top           : 0px; 
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  filter               : alpha(opacity=90);
+  -moz-opacity         : 0.9;
+}
+
+.style td:hover
+{
+  background-image     : url('img/animenue.gif');
+  background-position  : center;
+  background-repeat    : no-repeat
+}
+
+.style table
+ {
+ filter                : alpha(opacity=90);
+ -moz-opacity          : 0.9;
+ }
+
+.style div a
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:link
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:visited
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:hover
+{
+  height               : 100%;
+  width                : 100%;
+  text-decoration      : none;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  color                : #0000FF;
+  background-image     : url('img/animenue.gif');
+  background-position  : center;
+  background-repeat    : no-repeat
+}
+
+.style
+{
+  margin-top           : 15px;
+  background-image     : url('img/blank.gif');
+  border               : 0px solid #3F3F3F;
+}
+
+h1
+{
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  border-bottom        : 0px none #344566; solid;
+  width                : 98%;
+  text-align           : center
+}
+
+/* Statki podgladzie - kompatyblne z v0.74a */
+body center table tr.flight th span.flight a[title]:after { 
+content                 :" ("attr(title)")";
+color                   : orange;
+}
+
+/* Statki w podgladzie falangi */
+body center table tr th font a[title]:after {
+content                 :" ("attr(title)")";
+color                   :orange;
+}
+
+/* Pokazywanie wielkosci pola zniszczen */
+a[title~="Trümmerfeld:"]:after {
+content                 :" ("attr(title)")";
+color                   :#FFFFFF;
+}
+
+/*Usuwa reklame komandora*/
+table[width="519"] td[align="center"]
+{
+display: none;
+}
+/*Usuwa reklame*/
+table[width="728"] td[align="center"] {
+display:none;
+}
+
+/* wywalenie reklam google */
+iframe
+{
+display: none;
+}
+
+/*Usuwa reklamê komandora*/
+div[id=combox_container]
+{
+display: none; 
+} 
+
+/* Wielkosc monna */
+a[title~="Mond:"]       :after {
+content                 :" ("attr(title)")";
+color                   :#FFFF00;
+}
+
+/* Predkosc statkow w podgladzie flot */
+a[title~="Geschwindigkeit:"]:after {
+content                 :" ("attr(title)")"; 
+color                   :#00FF00;
+}
+															/* Lot Floty do kons */													
+/* Stacjonuj */
+tr.flight span.owndeploy {
+  color                : #9F9F9F;
+}
+tr.flight span.owndeploy a {
+  color                : #BFBFBF;
+}
+/* Transportuj */
+tr.flight span.owntransport {
+  color                : #00DF00;
+}
+tr.flight span.owntransport a {
+  color                : #BFBFBF;
+}
+/* Wlasny Atak */
+tr.flight span.ownattack {
+  color                : #0080FF;
+}
+tr.flight span.ownattack a {
+  color                : #BFBFBF;
+}
+/* Szpieguj */
+tr.flight th span.ownespionage {
+  color                : #ffa000;
+}
+tr.flight span.ownespionage a {
+  color                : #BFBFBF;
+}
+/* Zbieraj */
+tr.flight span.ownharvest {
+  color                : #00DF00;
+}
+tr.flight span.ownharvest a {
+  color                : #BFBFBF;
+}
+/* Kolonizuj */
+tr.flight span.owncolony {
+  color                : #00DF00;
+}
+tr.flight span.owncolony a {
+  color                : #BFBFBF;
+}
+/* Atak ACS */
+tr span.ownfederation {
+  color                : #00A0FF;
+}
+tr span.ownfederation a {
+  color                : #BFBFBF;
+}
+tr.flight span.ownattack {
+  color                : #0080FF;
+}
+tr.flight span.ownattack a {
+  color                : #BFBFBF;
+}
+/* Atak Rakietami */
+tr span.ownmissile {
+  color                : #0080FF;
+}
+tr span.ownmissile a {
+  color                : #BFBFBF;
+}
+/* Zniszcz Moona */
+tr span.owndestroy {
+  color                : #00C0FF;
+}
+tr span.owndestroy a {
+  color                : #BFBFBF;
+}
+/* Zatrzymaj */
+tr.flight span.ownhold {
+  color                : #FCFCFE;
+}
+tr.flight span.ownhold a {
+  color                : #BFBFBF;
+}
+/* Atak Wroga */
+tr.flight span.attack {
+  color                : #DF0000;
+}
+tr.flight span.attack a {
+  color                : #BFBFBF;
+}
+/* Wrog Szpieguje */
+tr.flight span.espionage {
+  color                : #BF0000;
+}
+tr.flight span.espionage a {
+  color                : #BFBFBF;
+}
+/* Wrogi Atak Rakietami */
+tr span.missile {
+  color                : #FF0000;
+}
+tr span.missile a {
+  color                : #BFBFBF;
+}
+/* Wrogi Atak Na Zniszcz Moona */
+tr span.destroy {
+  color                : #FFDF00;
+}
+tr span.destroy a {
+  color                : #BFBFBF;
+}
+/* Wrogi Atak ACS */
+tr span.federation {
+  color                : #DF0000;
+}
+tr span.federation a {
+  color                : #BFBFBF;
+}
+															/* Lot powrotny */
+/* Poweot Z Stacjonuj */
+tr.return span.owndeploy {
+  color                : #7F7F7F;
+}
+tr.return span.owndeploy a {
+  color                : #BFBFBF;
+}
+/* Powrot Z Transportuj */
+tr.return span.owntransport {
+  color                : #009F00;
+}
+tr.return span.owntransport a {
+  color                : #BFBFBF;
+}
+/* Powrot Z Ataku */
+tr.return span.ownattack {
+  color                : #0060FF;
+}
+tr.return span.ownattack a {
+  color                : #BFBFBF;
+}
+/* Poweot Z Szpiegowania */
+tr.return span.ownespionage {
+  color                : #FF6500;
+}
+tr.return span.ownespionage a {
+  color                : #BFBFBF;
+}
+/* Poweot Z Zbieraj */
+tr.return span.ownharvest {
+  color                : #009F00;
+}
+tr.return span.ownharvest a {
+  color                : #BFBFBF;
+}
+/* Powrot Z Kolonizuj */
+tr.return span.owncolony {
+  color                : #009F00;
+}
+tr.return span.owncolony a {
+  color                : #BFBFBF;
+}
+/* Powrot Z Zniszcz Moona */
+tr.return span.owndestroy {
+  color                : #0060FF;
+}
+tr.return span.owndestroy a {
+  color                : #BFBFBF;
+}
+/* Poweut Z Ataku ACS */
+tr.return span.ownfederation {
+  color                : #0060FF;
+}
+tr.return span.ownfederation a {
+  color                : #BFBFBF;
+}
+/* Powrot Z Stacjonuj */
+tr.return span.ownhold {
+  color                : #5F5F5F;
+}
+tr.return span.ownhold a {
+  color                : #BFBFBF;
+}
+/* Stacjonuj */
+tr.holding span.ownhold {
+  color                : #5F5F5F;
+}
+tr.holding span.ownhold a {
+  color                : #BFBFBF;
+}
+/* Kb */
+.ownattack {
+  color                : red;
+}
+
+-----
+
+.allymember
+{
+  color: lime;
+}
+
+/*Noob (slaby gracz)*/
+.noob
+{
+  color                : #a0ffa0;
+}
+
+/*Silny gracz*/
+.strong
+{
+  color		           : #ffa0a0;
+}
+
+/*U-Mod*/
+.vacation
+{
+  color		           : #6666ff;
+} 
+
+/*Nieaktywny*/
+.inactive
+{
+  color                : #FF9F00;
+}
+
+/*Umarly Acc*/
+.longinactive
+{
+  color                : #999999;
+}
+
+/*Zablokowany Acc*/
+.banned
+{
+  text-decoration      : line-through;
+}
+
+/*Kolor ilosci surowcow, to na samej gorze*/
+tr > td + td > i > b > font 
+{
+font-style:normal;color:#C0C0C0;
+}
+tr > td + td + td > i > b > font 
+{
+font-style:normal;color:#66CCFF;
+}
+tr > td + td + td + td > i > b > font 
+{
+font-style:normal;color:#00CC00;
+}
+tr > td + td + td + td + td > i > b > font 
+{
+font-style:normal;color:#FFFF00;
+}
+ 
+table[width="100%"] tr + tr + tr > td + td[width="85"]
+{
+color:#C0C0C0;
+}
+table[width="100%"] tr + tr + tr > td + td + td[width="85"]
+{
+color:#66CCFF;
+}
+table[width="100%"] tr + tr + tr > td + td + td + td[width="85"]
+{
+color:#00CC00;
+}
+table[width="100%"] tr + tr + tr > td + td + td + td + td[width="85"]
+{
+color:#FFFF00;
+}
+
+/*Wyglad napisow: metal, krysztal, deuterw*/
+i > b > font
+{
+font-style: normal;
+color: #99ccff;
+}
+body table table td
+{
+height:1.7em;
+}
+
+/*Metal, kolor czcionki w wymaganiach budynkow, badan, floty*/
+td.l a + br + br + b
+{
+font-size: 11px;
+color: #C0C0C0;
+}
+
+/*Krysztal, kolor czcionki w wymaganiach budynkow, badan, floty*/
+td.l a + br + br + b + b
+{
+font-size: 11px;
+color: #66CCFF;
+}
+
+/*Deuter, kolor czcionki w wymaganiach budynkow, badan, floty*/
+td.l a + br + br + b + b + b
+{
+font-size: 11px;
+color: #00CC00;
+}
+
+/*Energia*/
+td.l a + br + br + b + b + b + b
+{
+font-size: 11px;
+color: #FFFF00;
+}
+
+/*Kolory predkosci, np 10%, 20%, 30% itd*/
+
+select[name="speed"] option[value="10"]
+{
+color:#00FF00
+}
+select[name="speed"] option[value="9"]
+{
+color:#33FF00
+}
+select[name="speed"] option[value="8"]
+{
+color:#66FF00
+}
+select[name="speed"] option[value="7"]
+{
+color:#99FF00
+}
+select[name="speed"] option[value="6"]
+{
+color:#CCFF00
+}
+select[name="speed"] option[value="5"]
+{zz
+color:#FFFF00
+}
+select[name="speed"] option[value="4"]
+{
+color:#FFCC00
+}
+select[name="speed"] option[value="3"]
+{
+color:#FF9900
+}
+select[name="speed"] option[value="2"]
+{
+color:#FF6600
+}
+select[name="speed"] option[value="1"]
+{
+color:#FF3300
+}
+select[name="speed"] option[value="0"]
+{
+color:#FF0000
+}
+
+/*Kolory numerow stron w rankingu*/
+select[name="start"] option[value="1"]
+{
+color:#00FF00
+}
+select[name="start"] option[value="101"]
+{
+color:#00FF33
+}
+select[name="start"] option[value="201"]
+{
+color:#33FF33
+}
+select[name="start"] option[value="301"]
+{
+color:#66FF33
+}
+select[name="start"] option[value="401"]
+{
+color:#99FF33
+}
+select[name="start"] option[value="501"]
+{
+color:#99FF00
+}
+select[name="start"] option[value="601"]
+{
+color:#CCFF00
+}
+select[name="start"] option[value="701"]
+{
+color:#FFFF00
+}
+select[name="start"] option[value="801"]
+{
+color:#FFEA00
+}
+select[name="start"] option[value="901"]
+{
+color:#FFCC00
+}
+select[name="start"] option[value="1001"]
+{
+color:#FF9900
+}
+select[name="start"] option[value="1101"]
+{
+color:#FF8300
+}
+select[name="start"] option[value="1201"]
+{
+color:#FF6600
+}
+select[name="start"] option[value="1301"]
+{
+color:#FF3300
+}
+select[name="start"] option[value="1401"]
+{
+color:#FF0000
+}
+
+/*Kolory procent wydobycia*/
+select[name="last1"] option[value="100"]
+{
+color:#00FF00
+}
+select[name="last1"] option[value="90"]
+{
+color:#33FF00
+}
+select[name="last1"] option[value="80"]
+{
+color:#66FF00
+}
+select[name="last1"] option[value="70"]
+{
+color:#99FF00
+}
+select[name="last1"] option[value="60"]
+{
+color:#CCFF00
+}
+select[name="last1"] option[value="50"]
+{
+color:#FFFF00
+}
+select[name="last1"] option[value="40"]
+{
+color:#FFCC00
+}
+select[name="last1"] option[value="30"]
+{
+color:#FF9900
+}
+select[name="last1"] option[value="20"]
+{
+color:#FF6600
+}
+select[name="last1"] option[value="10"]
+{
+color:#FF3300
+}
+select[name="last1"] option[value="0"]
+{
+color:#FF0000
+}
+
+select[name="last2"] option[value="100"]
+{
+color:#0000FF
+}
+select[name="last2"] option[value="90"]
+{
+color:#33FF00
+}
+select[name="last2"] option[value="80"]
+{
+color:#66FF00
+}
+select[name="last2"] option[value="70"]
+{
+color:#99FF00
+}
+select[name="last2"] option[value="60"]
+{
+color:#CCFF00
+}
+select[name="last2"] option[value="50"]
+{
+color:#FFFF00
+}
+select[name="last2"] option[value="40"]
+{
+color:#FFCC00
+}
+select[name="last2"] option[value="30"]
+{
+color:#FF9900
+}
+select[name="last2"] option[value="20"]
+{
+color:#FF6600
+}
+select[name="last2"] option[value="10"]
+{
+color:#FF3300
+}
+select[name="last2"] option[value="0"]
+{
+color:#FF0000
+}
+
+select[name="last3"] option[value="100"]
+{
+color:#00FF00
+}
+select[name="last3"] option[value="90"]
+{
+color:#33FF00
+}
+select[name="last3"] option[value="80"]
+{
+color:#66FF00
+}
+select[name="last3"] option[value="70"]
+{
+color:#99FF00
+}
+select[name="last3"] option[value="60"]
+{
+color:#CCFF00
+}
+select[name="last3"] option[value="50"]
+{
+color:#FFFF00
+}
+select[name="last3"] option[value="40"]
+{
+color:#FFCC00
+}
+select[name="last3"] option[value="30"]
+{
+color:#FF9900
+}
+select[name="last3"] option[value="20"]
+{
+color:#FF6600
+}
+select[name="last3"] option[value="10"]
+{
+color:#FF3300
+}
+select[name="last3"] option[value="0"]
+{
+color:#FF0000
+}
+
+select[name="last4"] option[value="100"]
+{
+color:#00FF00
+}
+select[name="last4"] option[value="90"]
+{
+color:#33FF00
+}
+select[name="last4"] option[value="80"]
+{
+color:#66FF00
+}
+select[name="last4"] option[value="70"]
+{
+color:#99FF00
+}
+select[name="last4"] option[value="60"]
+{
+color:#CCFF00
+}
+select[name="last4"] option[value="50"]
+{
+color:#FFFF00
+}
+select[name="last4"] option[value="40"]
+{
+color:#FFCC00
+}
+select[name="last4"] option[value="30"]
+{
+color:#FF9900
+}
+select[name="last4"] option[value="20"]
+{
+color:#FF6600
+}
+select[name="last4"] option[value="10"]
+{
+color:#FF3300
+}
+select[name="last4"] option[value="0"]
+{
+color:#FF0000
+}

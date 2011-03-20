@@ -1,0 +1,66 @@
+#tabs {
+  line-height: normal;
+  white-space: nowrap;
+/*  background: transparent url('../img/icons/tabs/bg.gif') repeat-x bottom;*/
+}
+#tabs ul {
+  margin: 0 0 -1px;
+  padding: 0 0 0 10px;
+  list-style: none;
+}
+#tabs a {
+  display: block;
+  padding: 5px 9px 4px 6px;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #000;
+  width: .1em;
+  background: url('../img/icons/tabs/right.gif') no-repeat right top;
+}
+#tabs > ul a {
+  width: auto;
+}
+#tabs a:hover,
+#tabs a:visited,
+#tabs a:active {
+  text-decoration: none;
+  color: #000;
+}
+#tabs li {
+  display: -moz-inline-box;
+  display: inline-block;
+  vertical-align: bottom;
+  border-bottom: 1px solid #8b919f;
+  margin: 0 0 0 -3px;
+  padding: 0 0 0 2px;
+  background: url('../img/icons/tabs/left.gif') no-repeat left top;
+}
+#tabs #current {
+  background-image: url('../img/icons/tabs/left_on.gif');
+}
+#tabs #current a {
+  background-image: url('../img/icons/tabs/right_on.gif');
+}
+#tabs .last a {
+  background-image: url('../img/icons/tabs/right_last.gif');
+}
+#tabs li.first {
+  background-image: url('../img/icons/tabs/left_first.gif');
+  margin: 0;
+}
+#tabs .first#current {
+  margin-left: 0;
+}
+#tabs li:hover {
+  background-position: 0 -150px;
+  cursor: pointer;
+}
+#tabs li:hover a {
+  background-position: 100% -150px;
+}
+#tabs li.first:hover {
+  background-position: top left;
+}
+#tabs a:hover {
+  background-position: 100% -150px;
+}

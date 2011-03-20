@@ -1,0 +1,529 @@
+/*
+__   __ _   _
+\ \ / /| \ | |
+ \ V / |  \| | _____   ____ _
+ /   \ | . ` |/ _ \ \ / / _` |
+/ /^\ \| |\  | (_) \ V / (_| |
+\/   \/\_| \_/\___/ \_/ \__,_|
+------------------------------
+© 2008 - XNova Project - http://project.xnova.es
+
+*/
+
+
+<!--
+body, #content, #content td{
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #1F273C;
+	padding: 0;
+	margin: 0;
+}
+
+
+.signin b {
+color: #FC9A04;
+}
+
+
+#headerRow {
+	background-image:url('../oimg/images/dragontakana.gif');
+	height: 53px;
+	text-align: right;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	font-family: Courier, Arial;
+	font-size: 13px;
+	color: #00EE00;
+	font-weight: bold;
+	vertical-align: bottom;
+}
+
+#sidemenu {
+	border-bottom:1px solid #999999;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #999999;
+	border-top:1px solid #ffffff;
+	background-image:url('../oimg/images/buttonbg.gif');
+	padding: 3px;
+	text-align: center;
+	width: 150px;
+	font-family:Trebuchet MS, Tahoma;
+	font-size:12px;
+	font-variant:small-caps;
+	font-weight: bold;
+	vertical-align: top
+}
+
+#sidemenu a.button:link,#sidemenu a.button:visited, #topmenu a.button:link,#topmenu a.button:visited, #sidemenu a.donatebutton:link, #sidemenu a.donatebutton:visited{
+	background:#efefef;
+	border-bottom:1px solid #999999;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #999999;
+	border-top:1px solid #ffffff;
+	color:#1F273C;
+	display:block;
+	margin:6px 0px;
+	padding:1px 5px;
+	text-decoration:none;
+	line-height: 18px;
+}
+#sidemenu a.donatebutton:link, #sidemenu a.donatebutton:visited {
+	background: #FFCC00;
+	color: #FF0000;
+	font-weight: bold;
+}
+
+#sidemenu a.button:hover, #topmenu a.button:hover, #sidemenu a.donatebutton:hover {
+	background:#1F273C;
+	border-bottom:1px solid #420000;
+	border-left:1px solid #1F273C;
+	border-right:1px solid #420000;
+	border-top:1px solid #1F273C;
+	color:#A2C6E5;
+	display:block;
+	margin:6px 0px;
+	padding:1px 5px;
+	text-decoration:none;
+	cursor: hand;
+	cursor: pointer;
+	line-height: 18px;
+}
+
+#sidemenu a.donatebutton:hover {
+	background: #FFCCFF;
+	color: #FF0000;
+	font-weight: bold;
+}
+
+#sidemenu a.selected:link, #sidemenu a.selected:visited, #topmenu a.selected:link, #topmenu a.selected:visited{
+	background:#ffffff;
+	border-bottom:1px solid #ffffff;
+	border-left:1px solid #999999;
+	border-right:1px solid #ffffff;
+	border-top:1px solid #999999;
+	color:#009900;
+	line-height: 18px;
+	display:block;
+	margin:6px 0px;
+	padding:1px 5px;
+	text-decoration:none;
+}
+
+#content {
+	background:#ffffff;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#rightColumn {
+	font-family: Tahoma;
+	width: 150px;
+	background:#ffffff;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 3px;
+	vertical-align: top;
+	text-align: center;
+	border-left:1px dotted #999999;
+	font-size: 11px;
+}
+
+#time {
+	color: #666666;
+	font-size: 9px;
+}
+
+#content h1 {
+	font-family: Tahoma;
+	font-size: 15px;
+	color: #990000;
+	font-weight: bold;
+}
+
+#content h2 {
+	font-family: Tahoma;
+	font-size: 13px;
+	color: #009900;
+	font-weight: bold;
+	text-indent: 10px;
+	margin-bottom: 3px;
+}
+
+#content h3 {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #000099;
+	font-weight: bold;
+	text-indent: 10px;
+	margin-bottom: 3px;
+}
+
+#content h4 {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #009900;
+	font-style: italic;
+	text-indent: 10px;
+	margin-bottom: 3px;
+}
+
+#content ul {
+	margin-top: 0px;
+}
+
+#content li {
+	margin-bottom: 4px;
+}
+
+.indent {
+	margin-left: 10px;
+	margin-top: 0px;
+	display: block;
+}
+
+.note {
+	font-size: 10px;
+}
+
+.note b {
+	color: #990000;
+}
+
+#content a:link, #content a:visited {
+	color: #6066BB;
+	text-decoration: none;
+}
+
+#content a:hover {
+	color: #990000;
+	text-decoration: underline;
+}
+
+#footer {
+	color: #333333;
+	font-size: 9px;
+	text-align: center;
+	width: 200px;
+	padding-top: 3px;
+	padding-bottom: 10px;
+}
+
+#version {
+	color: #777777;
+	font-size: 9px;
+}
+
+#version b {
+	color: #000099;
+}
+
+#message {
+	color: #B0C0DE;
+	font-size: 11px;
+	font-family: Tahoma;
+}
+
+.thumbnail {
+	color: #009900;
+}
+
+#alert {
+	border-bottom:1px solid #999999;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #999999;
+	border-top:1px solid #ffffff;
+	border: 1px ridge white;
+	padding: 5px;
+	visibility: hidden;
+	position: absolute;
+	width: 300px; height: 150px; top: 10%; left: 35%;
+	overflow: none;
+	background-image:url('../oimg/images/buttonbg.gif');
+	text-align: center;
+}
+
+#alert table{
+	font-family:Tahoma;
+	font-size: 11px;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #000000;
+}
+
+#alert th{
+	font-family:Tahoma;
+	font-size: 11px;
+	background-image: url('../oimg/images/alerticon.gif');
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	background-color: #B0C0DE;
+	text-align: center;
+	color: #009900;
+	height: 19px;
+}
+
+#alert td {
+	font-family:Tahoma;
+	font-size: 11px;
+	text-align: center;
+	color: #000000;
+}
+
+#alert .button {
+	background:#efefef;
+	border-bottom:1px solid #999999;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #999999;
+	border-top:1px solid #ffffff;
+	color:#1F273C;
+	margin:6px 0px;
+	padding:1px 5px;
+	width: 80px;
+	font-family: tahoma;
+	font-size: 11px;
+	text-decoration:none;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#bugs table {
+	border-bottom:1px solid #999999;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #999999;
+	border-top:1px solid #ffffff;
+	border: 1px ridge white;
+	background-image:url('../oimg/images/buttonbg.gif');
+}
+
+#bugs table th {
+	color: #990000;
+	text-align: left;
+	width: 80px;
+}
+
+#bugs table th, #bugs table td {
+	font-family: tahoma;
+	font-size: 11px;
+	vertical-align: top;
+}
+
+#bugs input, #bugs textarea, #bugs select {
+	width: 300px;
+	border-bottom:1px solid #ffffff;
+	border-left:1px solid #999999;
+	border-right:1px solid #ffffff;
+	border-top:1px solid #999999;
+	font-family: Verdana, Tahoma;
+	font-size: 10px;
+}
+
+#bugs .header {
+	background-color: #B0C0DE;
+	color: #009900;
+}
+
+#topmenu {
+	border-bottom:1px solid #999999;
+	border-left:1px solid #d8d8d8;
+	border-right:1px solid #999999;
+	border-top:1px solid #d8d8d8;
+	background-image:url('../oimg/images/buttonbg.gif');
+	width: 100%;
+}
+
+#topmenu td {
+	text-align: center;
+	font-family:Trebuchet MS, Tahoma;
+	font-size:12px;
+	font-variant:small-caps;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+#topmenu a {
+	width: 100px;
+}
+
+#calc td, #tool td {
+	font-size: 10px;
+	font-family: Verdana;
+	color: #B0C0DE;
+}
+
+#calc td, #tool td {
+	font-size: 10px;
+	font-family: Verdana;
+	color: #B0C0DE;
+	padding-top: 3px;
+}
+
+#tool {
+    background-color: #121C28;
+	height: 535px;
+}
+
+#calc textarea, #tool textarea, #calc .inp, .inp, #colorTextArea {
+	background-color: #1F273C;
+	color: #7B90B8;
+	font-size: 10px;
+	font-family: Tahoma;
+	font-weight: bold;
+	border: 1px ridge white;
+	padding-left: 3px;
+}
+
+#calc a:link, #calc a:visited, #tool a:link, #tool a:visited {
+	font-size: 11px;
+	font-family: Tahoma;
+	font-weight: bold;
+	color: #33FFFF;
+	text-decoration: none;
+}
+
+#calc td {
+	padding-left: 5px;
+}
+
+#calc a:hover, #tool a:hover {
+	color: #FF9900;
+}
+
+#calc .button, #tool .button, #bugs .button, #colortt .button{
+	background:#efefef;
+	border-bottom:1px solid #999999;
+	border-left:1px solid #ffffff;
+	border-right:1px solid #999999;
+	border-top:1px solid #ffffff;
+	color:#1F273C;
+	margin:6px 0px;
+	padding:1px 5px;
+	width: 80px;
+	font-family: tahoma;
+	font-size: 11px;
+	text-decoration:none;
+	cursor: hand;
+	cursor: pointer;
+}
+
+#calc td.prod, #calc td.price {
+	font-weight: bold;
+	text-align: right;
+}
+
+#calc td.prod {
+	color: #FFCC00;
+}
+
+#calc td.price {
+	color: #00CCFF;
+}
+
+#calc td.head {
+	color: #FFFFCC;
+	font-weight:bold;
+	border-bottom: 1px solid #FFFFCC;
+	padding-top: 15px;
+}
+
+#calc {
+	width: 330px;
+	background-color: #1F273C;
+	border: 1px outset gray;
+}
+
+#calcimage {
+	background-color: #1F273C;
+	border: none;
+	padding: 5px;
+}
+
+#useless {
+	z-index: 1;
+	border: none;
+	position: absolute;
+	left: 270px;
+	top: 270px;
+	font-family: Vedana, Arial;
+	color: red;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.log li {
+	padding-bottom: 20px;
+}
+
+.log li ul li{
+	padding-top: 2px;
+	padding-bottom: 0px;
+}
+
+#guest table {
+	width: 160px;
+}
+
+#guest table td{
+	text-align: center;
+}
+
+#paypal {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+#adsense {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #1F273C;
+	border-bottom:1px solid #999999;
+	border-left:1px solid #444444;
+	border-right:1px solid #999999;
+	border-top:1px solid #444444;
+}
+
+#translate textarea {
+	font-family: Tahoma;
+	font-size: 12px;
+	color: #0066CC;
+}
+
+#translate input, #translate select {
+	font-family: Tahoma;
+	font-size: 13px;
+	font-weight: bold;
+	color: #CC6600;
+}
+
+.check_box {
+    vertical-align: middle;
+}
+
+#translate li {
+    list-style-type: none;
+    margin-top: 20px;
+    color: #009900;
+    font-weight: bold;
+}
+
+#colortt {
+	font-size: 10px;
+	font-family: Verdana;
+	color: #B0C0DE;
+}
+
+.signin {
+height: 200px; 
+width: 300px; 
+background-color: #E8EEFA;
+border: 1px solid #E8EEFA;
+text-align: center;
+padding: 20px;
+font-size: 14px;
+}
+
+a.bluelink, a.bluelink:hover, a.bluelink:visited {
+    color: #0000FF;
+}
+-->

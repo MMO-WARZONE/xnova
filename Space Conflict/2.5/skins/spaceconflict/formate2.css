@@ -1,0 +1,645 @@
+/*                               _________________________________________________________________________
+                                 |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+                                 |>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>|
+                                 |>>><|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯                                       
+                                 |>>><|               SPACE CONFLICT               
+                                 |>>><|                                         
+                                 |>>><|                     V 2.2                 
+                                 |>>><|                                
+                                 |>>><|             Skin for "OGame"
+                                 |>>><|                                        
+                                 |>>><|                                              
+                                 |>>><|    Enjoy!                   
+                                 |>>><|                                           
+                                 |>>><|_______________Contact: admin.spaceconflict@googlemail.com______________
+                                 |>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>|
+                                 |<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<|
+                                  ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+                                               
+*/
+
+., #, td, th, textarea, body, table
+{
+  font-family	: Tahoma,sans-serif;
+  font-size	: 11px;
+}
+
+img
+{
+  border               : 0px;
+}
+
+
+
+table table
+{
+  border               : 0px;
+}
+
+table table td
+{
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  text-align           : center;
+}
+
+body
+{
+  color                : #E6EBFB;
+  margin-top           : 1px;
+  margin-left          : 1px;
+  background           : #344055;
+  background-image     : url(img/stars2.jpg);
+  background-attachment: fixed;
+  background-repeat    : repeat;
+  background-position  : top;
+  scrollbar-arrow-color: #E6EBFB;
+  scrollbar-base-color: #344566;
+  scrollbar-track-color: #344566;
+  scrollbar-face-color: #344566;
+  scrollbar-highlight-color: #344566;
+  scrollbar-3dlight-color: #465673;
+  scrollbar-darkshadow-color: #344566;
+  scrollbar-shadow-color: #465673;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+body form table th table input
+{
+  width: 60px;
+}
+
+th
+{
+  text-align           : center;
+  padding-left         : 3px;
+  padding-right        : 3px;
+  background-color     : #344566;
+  color                : #f7f7f7;
+  background-image     : url('img/h-uebersicht.jpg');
+  filter               : alpha(opacity=90)
+}
+
+td.a
+{
+  height               : 39px;
+  text-align           : center;
+}
+
+td.b
+{
+  padding              : 3px;
+  text-align           : center;  
+}
+
+td.c
+{
+  color                : #f7f7f7;
+  padding-left         : 3px;
+  background-image     : url('images/Leiste.jpg');
+  background-position  : center 50%;
+  text-align           : center;
+}
+
+td.f, input, select
+{
+  color                : #f7f7f7;
+  background-image     : url('images/Leiste2.jpg');
+  border-bottom-color  : #7F7F7F;
+  border-right-color   : #676767;
+  border-left-color    : #747474;
+  border-top-color     : #858585;
+  text-align           : center;
+  font-weight          : bold;
+}
+
+textarea
+{
+  width                : 100%;
+  color                : #FFFFFF;
+  font-weight          : bold;
+  background-image     : url('images/Leiste3.jpg');
+  border-bottom-color  : #7F7F7F;
+  border-right-color   : #676767;
+  border-left-color    : #747474;
+  border-top-color     : #858585;
+  text-align           : center;
+}
+
+
+td.k input
+{
+  background-image     : url('images/Leiste2.jpg');
+  text-align           : center;
+}
+
+td.g
+{
+  font-weight          : bold;
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.h
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.i
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.j
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.k
+{
+  text-align           : center;
+  vertical-align       : middle;
+  color                : #f7f7f7;
+  background-image     : url('img/hintergrund.jpg');
+  border               : 0px outset #606060;
+  background-color     : #344566;
+}
+
+td.l
+{
+  text-align           : center;
+  vertical-align       : middle;
+  color                : #f7f7f7;
+  padding              : 3px;
+  background-image     : url('img/links.jpg');
+  border               : 0px outset #606060;
+  background-color     : #344566;
+}
+
+td.m
+{
+  font-weight          : bold;
+  text-align           : center;
+  vertical-align       : middle;
+  width                : 86px;
+  color                : #f7f7f7;
+}
+
+td.n
+{
+  font-weight          : bold;
+  vertical-align       : middle;
+  width                : 89px;
+  text-align           : center;
+  color                : #f7f7f7;
+}
+
+td.o
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.q
+{
+  font-weight          : bold;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  text-align           : center;
+  vertical-align       : middle;
+  color                : #f7f7f7;
+}
+
+td.r
+{
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.v
+{
+  font-weight          : bold;
+  text-align           : center;
+  color                : #f7f7f7;
+  vertical-align       : middle;
+}
+
+td.s
+{
+  color                : #f7f7f7;
+  vertical-align       : middle;
+  text-align           : center;
+}
+
+table.s th
+{
+  border               : 0px;
+}
+
+
+table.s th img
+{
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  width                : 88px;
+  height               : 88px;
+}
+
+div.z
+{
+  font-weight          : bold;
+  color                : #f7f7f7;
+}
+
+a
+{
+  color                : #f7f7f7;
+  text-decoration      : none;
+  font-weight          : bold;
+}
+
+a.s
+{
+  color                : #606060;
+}
+
+a.t
+{
+  color                : #606060;
+}
+
+a:hover
+{
+  color                : #0000FF;
+}
+
+.style td
+{
+  color                : #f7f7f7;
+  border-top           : 0px; 
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  filter               : alpha(opacity=90);
+  -moz-opacity         : 0.9;
+}
+
+.style td:hover
+{
+  background-image     : url('img/animenue.gif');
+  background-position  : center;
+  background-repeat    : no-repeat;
+}
+
+.style table
+ {
+ filter                : alpha(opacity=90);
+ -moz-opacity          : 0.9;
+ }
+
+.style div a
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:link
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:visited
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:hover
+{
+  height               : 100%;
+  width                : 100%;
+  text-decoration      : none;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  color                : #0000FF;
+  background-image     : url('img/animenue.gif');
+  background-position  : center;
+  background-repeat    : no-repeat;
+}
+
+.style
+{
+  margin-top           : 15px;
+  background-image     : url('img/blank.gif');
+  border               : 0px #3F3F3F solid;
+}
+
+h1
+{
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+  border-bottom        : 0px none #344566; solid;
+  width                : 98%;
+  text-align           : center
+}
+
+/* Schiffe der Flotten in der Übersicht anzeigen - kompatibel mit v0.73 */
+body center table tr.flight th span.flight a[title]:after { 
+content                 :" ("attr(title)")";
+color                   : orange;
+}
+
+/* Schiffe der Flotten in Phalanxscanns anzeigen */
+body center table tr th font a[title]:after {
+content                 :" ("attr(title)")";
+color                   :orange;
+}
+
+/*Grösse der Trümmerfelder anzeigen */
+a[title~="Trümmerfeld:"]:after {
+content                 :" ("attr(title)")";
+color                   :#FFFFFF;
+}
+
+/* normale Werbung ausblenden */
+iframe {
+display:none;
+}
+table[width="99%"] td[align="right"] {
+display:none;
+}
+
+/* Commanderwerbung ausblenden */
+p[style="border: 5px solid rgb(128, 160, 192); padding: 8px;"] {
+display:none;
+}
+/* Vote for OGame ausblenden */
+body.style table tbody tr td center a {
+display:none;
+}
+
+
+
+
+/* Grösse von Monden anzeigen */
+a[title~="Mond:"]       :after {
+content                 :" ("attr(title)")";
+color                   :#FFFF00;
+}
+
+/* Geschwindigkeiten der Schiffe beim Flottenversenden anzeigen */
+a[title~="Geschwindigkeit:"]:after {
+content                 :" ("attr(title)")"; 
+color                   :#00FF00;
+}
+
+/* Standarized Color by de4deye.com */
+															/* Hinflug */													
+/* Stationieren Hinflug */
+tr.flight span.owndeploy {
+  color                : #9F9F9F;
+}
+tr.flight span.owndeploy a {
+  color                : #BFBFBF;
+}
+/* Transport Hinflug */
+tr.flight span.owntransport {
+  color                : #00DF00;
+}
+tr.flight span.owntransport a {
+  color                : #BFBFBF;
+}
+/* Eigener Angriff Hinflug */
+tr.flight span.ownattack {
+  color                : #0080FF;
+}
+tr.flight span.ownattack a {
+  color                : #BFBFBF;
+}
+/* Eigene Spionage Hinflug */
+tr.flight th span.ownespionage {
+  color                : #ffa000;
+}
+tr.flight span.ownespionage a {
+  color                : #BFBFBF;
+}
+/* Recyclen Hinflug */
+tr.flight span.ownharvest {
+  color                : #00DF00;
+}
+tr.flight span.ownharvest a {
+  color                : #BFBFBF;
+}
+/* Kolonisieren Hinflug */
+tr.flight span.owncolony {
+  color                : #00DF00;
+}
+tr.flight span.owncolony a {
+  color                : #BFBFBF;
+}
+/* Verbandsangriff Hinflug */
+tr span.ownfederation {
+  color                : #00A0FF;
+}
+tr span.ownfederation a {
+  color                : #BFBFBF;
+}
+tr.flight span.ownattack {
+  color                : #0080FF;
+}
+tr.flight span.ownattack a {
+  color                : #BFBFBF;
+}
+/* Interplanetarraketen Angriff */
+tr span.ownmissile {
+  color                : #0080FF;
+}
+tr span.ownmissile a {
+  color                : #BFBFBF;
+}
+/* Mondzerstörung Hinflug */
+tr span.owndestroy {
+  color                : #00C0FF;
+}
+tr span.owndestroy a {
+  color                : #BFBFBF;
+}
+/* Eigenes Halten Hinflug */
+tr.flight span.ownhold {
+  color                : #FCFCFE;
+}
+tr.flight span.ownhold a {
+  color                : #BFBFBF;
+}
+/* Feindlicher Angriff Hinflug */
+tr.flight span.attack {
+  color                : #DF0000;
+}
+tr.flight span.attack a {
+  color                : #BFBFBF;
+}
+/* Feindliche Spionage Hinflug */
+tr.flight span.espionage {
+  color                : #BF0000;
+}
+tr.flight span.espionage a {
+  color                : #BFBFBF;
+}
+/* Feindlicher Interplanetarraketen Angriff */
+tr span.missile {
+  color                : #FF0000;
+}
+tr span.missile a {
+  color                : #BFBFBF;
+}
+/* Feindliche Mondzerstörung */
+tr span.destroy {
+  color                : #FFDF00;
+}
+tr span.destroy a {
+  color                : #BFBFBF;
+}
+/* Feindlicher Verbandsangriff */
+tr span.federation {
+  color                : #DF0000;
+}
+tr span.federation a {
+  color                : #BFBFBF;
+}
+															/* Rückflug */
+/* Stationieren Rückflug */
+tr.return span.owndeploy {
+  color                : #7F7F7F;
+}
+tr.return span.owndeploy a {
+  color                : #BFBFBF;
+}
+/* Transport Rückflug */
+tr.return span.owntransport {
+  color                : #009F00;
+}
+tr.return span.owntransport a {
+  color                : #BFBFBF;
+}
+/* Eigener Angriff Rückflug */
+tr.return span.ownattack {
+  color                : #0060FF;
+}
+tr.return span.ownattack a {
+  color                : #BFBFBF;
+}
+/* Eigene Spionage Rückflug */
+tr.return span.ownespionage {
+  color                : #FF6500;
+}
+tr.return span.ownespionage a {
+  color                : #BFBFBF;
+}
+/* Recyclen Rückflug */
+tr.return span.ownharvest {
+  color                : #009F00;
+}
+tr.return span.ownharvest a {
+  color                : #BFBFBF;
+}
+/* Kolonisieren Rückflug */
+tr.return span.owncolony {
+  color                : #009F00;
+}
+tr.return span.owncolony a {
+  color                : #BFBFBF;
+}
+/* Zerstören Rückflug */
+tr.return span.owndestroy {
+  color                : #0060FF;
+}
+tr.return span.owndestroy a {
+  color                : #BFBFBF;
+}
+/* Verbandsangriff Rückflug */
+tr.return span.ownfederation {
+  color                : #0060FF;
+}
+tr.return span.ownfederation a {
+  color                : #BFBFBF;
+}
+/* Halten Rückflug */
+tr.return span.ownhold {
+  color                : #5F5F5F;
+}
+tr.return span.ownhold a {
+  color                : #BFBFBF;
+}
+/* Halten */
+tr.holding span.ownhold {
+  color                : #5F5F5F;
+}
+tr.holding span.ownhold a {
+  color                : #BFBFBF;
+}
+/* Kb */
+.ownattack {
+  color                : red;
+}
+
+-----
+
+.allymember
+{
+  color: lime;
+}
+
+/*Anfänger*/
+.noob
+{
+  color                : #a0ffa0;
+}
+
+/*Starke Spieler*/
+.strong
+{
+  color		           : #ffa0a0;
+}
+
+/*U-Mod*/
+.vacation
+{
+  color		           : #6666ff;
+} 
+
+/*Inaktiv*/
+.inactive
+{
+  color                : #FF9F00;
+}
+
+/*Toter Acc*/
+.longinactive
+{
+  color                : #999999;
+}
+
+/*Gesperrter Acc*/
+.banned
+{
+  text-decoration      : line-through;
+}

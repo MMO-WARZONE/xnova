@@ -1,0 +1,62 @@
+/* --- Do NOT remove this copyright! --- /*
+
+	NRacers2 ClanTemplate Developed for ClanTemplates.com - Cascading Style Sheet
+	------------------------------------------------------------------------------------------------
+	Designed by:	Maurits den Held - www.subleme.net
+	Coded by:	Lee Tomblin - http: //www.strictcoding.net
+
+	Table of Contents:
+		import navigation - see nav.css for the actual css
+*/
+
+/* navigation
+----------------------------------------------- */
+
+.nav_left
+{
+	width: 3px;
+	height: 45px;
+	background: url(imgs/nav_left.gif) no-repeat;
+	float: left;
+}
+.nav_holder
+{
+	width: 958px;
+	height: 45px;
+	background: url(imgs/nav_bg.gif) repeat-x;
+	float: left;
+}
+.nav_right
+{
+	width: 3px;
+	height: 45px;
+	background: url(imgs/nav_right.gif) no-repeat;
+	float: right;
+	margin: 0 0 4px 0;
+}
+#navigation
+{
+	font-size: 13px;
+	font-weight: bold;
+	text-transform: uppercase;
+	list-style: none;
+	margin: 0; padding: 0;
+}
+#navigation li
+{
+	float: left;
+}
+#navigation li a
+{
+	color: #fff;
+	line-height: 45px;
+	padding: 0 20px 0 20px;
+	display: block;
+	text-align: center;
+}
+	#navigation li a:hover
+	{
+		background: url(imgs/nav_bg.gif) repeat-x 0 -45px;
+		color: #fff;
+		text-decoration: none;
+	}

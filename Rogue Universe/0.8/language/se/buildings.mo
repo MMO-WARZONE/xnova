@@ -1,0 +1,39 @@
+<?php
+
+$lang['Fleet']            = "Flottilj";
+$lang['Defense']          = "Försvar";
+$lang['Research']         = "Forskningslabb";
+$lang['level']            = "Nivå";
+$lang['dispo']            = "Tillgängligt";
+$lang['Requirements']     = "Krav: ";
+$lang['Requires']         = "Krav ";
+$lang['Rest_ress']        = "Kvar ";
+$lang['Rechercher']       = "Forska";
+$lang['ConstructionTime'] = "Byggnadstid ";
+$lang['Construire']       = " Skicka ";
+$lang['BuildFirstLevel']  = "bygg";
+$lang['BuildNextLevel']   = "uppgradera<br> nivå ";
+$lang['completed']        = "Fullständig";
+$lang['in_working']       = "Pågående Arbete";
+$lang['work_todo']        = "Arbete att utföra";
+$lang['total_left_time']  = "Återstående tid";
+$lang['only_one']         = "Sköldkupol kan bara byggas en gång.";
+$lang['Build_lab']        = "Byggnads Fel";
+$lang['NoMoreSpace']      = "Det finns inget utrymme kvar för nya byggnader";
+$lang['InBuildQueue']     = "Lägg till kö";
+$lang['bld_usedcells']    = "Byggnader";
+$lang['bld_theyare']      = "Totalt";
+$lang['bld_cellfree']     = "platser kvar";
+$lang['DelFromQueue']     = "radera";
+$lang['DelFirstQueue']    = "avbryt";
+$lang['cancel']           = "avbryt";
+$lang['continue']         = "fortsätt";
+$lang['ready']            = "färdig";
+$lang['destroy']          = "Riv";
+$lang['on']               = "på";
+$lang['attention']        = "Du har rapporterats, dina förehavanden kommer att granskas och du kommer att bannlysas från servern!";
+$lang['no_laboratory']    = "Du måste bygga ett Forsknings laboratorie på planeten först!";
+$lang['need_hangar']      = "Du måste bygga ett Skeppsvarv på planeten först!";
+$lang['labo_on_update']   = "Du kan inte forska medans Forsknings laboratoriet uppgraderas!";
+$lang['Total_techs'] = "Totalt antal forskningsobjekt";
+?>

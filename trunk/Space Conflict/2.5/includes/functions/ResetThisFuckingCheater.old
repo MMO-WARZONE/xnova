@@ -1,0 +1,58 @@
+<?php
+
+/******************************************
+**            Oasis Rage 2.0             **
+**             by darkOasis              **
+**                                       **
+**  special thanks to the developers of  **
+**    XNova, Ugamela and RageOnline      **
+**                                       **
+** ResetThisFuckingCheater.php           **
+******************************************/
+
+function ResetThisFuckingCheater ( $UserID ) {
+	$TheUser        = doquery ("SELECT * FROM {{table}} WHERE `id` = '". $UserID ."';", 'users', true);
+	$UserPlanet     = doquery ("SELECT `name` FROM {{table}} WHERE `id` = '". $TheUser['id_planet']."';", 'planets', true);
+	DeleteSelectedUser ( $UserID );
+	if ($UserPlanet['name'] != "") {
+		$QryInsertUser  = "INSERT INTO {{table}} SET ";
+		$QryInsertUser .= "`id` = '".            $TheUser['id']            ."', ";
+		$QryInsertUser .= "`username` = '".      $TheUser['username']      ."', ";
+		$QryInsertUser .= "`email` = '".         $TheUser['email']         ."', ";
+		$QryInsertUser .= "`email_2` = '".       $TheUser['email_2']       ."', ";
+		$QryInsertUser .= "`sex` = '".           $TheUser['sex']           ."', ";
+		$QryInsertUser .= "`id_planet` = '0', ";
+		$QryInsertUser .= "`authlevel` = '".     $TheUser['authlevel']     ."', ";
+		$QryInsertUser .= "`dpath` = '".         $TheUser['dpath']         ."', ";
+		$QryInsertUser .= "`galaxy` = '".        $TheUser['galaxy']        ."', ";
+		$QryInsertUser .= "`system` = '".        $TheUser['system']        ."', ";
+		$QryInsertUser .= "`planet` = '".        $TheUser['planet']        ."', ";
+		$QryInsertUser .= "`register_time` = '". $TheUser['register_time'] ."', ";
+		$QryInsertUser .= "`password` = '".      $TheUser['password']      ."';";
+		doquery( $QryInsertUser, 'users');
+
+		$NewUser        = doquery("SELECT `id` FROM {{table}} WHERE `username` = '". $TheUser['username'] ."' LIMIT 1;", 'users', true);
+
+		CreateOnePlanetRecord ($TheUser['galaxy'], $TheUser['system'], $TheUser['planet'], $NewUser['id'], $UserPlanet['name'], true);
+		$PlanetID       = doquery("SELECT `id` FROM {{table}} WHERE `id_owner` = '". $NewUser['id'] ."' LIMIT 1;", 'planets', true);
+
+		$QryUpdateUser  = "UPDATE {{table}} SET ";
+		$QryUpdateUser .= "`id_planet` = '".      $PlanetID['id'] ."', ";
+		$QryUpdateUser .= "`current_planet` = '". $PlanetID['id'] ."' ";
+		$QryUpdateUser .= "WHERE ";
+		$QryUpdateUser .= "`id` = '".             $NewUser['id']  ."';";
+		doquery( $QryUpdateUser, 'users');
+	}
+
+	return;
+}
+
+/******************************************************************************************
+**                                    Revision Notes                                     **
+**  @ Official OasisRage 2.0 release - May 2009 - darkOasis                              **
+**  @ (please note any changes you make to the source code)                              **
+**  @                                                                                    **
+**                                                                                       **
+******************************************************************************************/ 
+
+?>

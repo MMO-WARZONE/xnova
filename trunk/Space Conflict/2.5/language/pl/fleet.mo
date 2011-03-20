@@ -1,0 +1,120 @@
+<?
+$lang['fl_title'] = "Floty";
+$lang['fl_expttl'] = "Ekspedycje";
+$lang['fl_id'] = "Nr";
+$lang['fl_mission'] = "Misja";
+$lang['fl_count'] = "Liczba";
+$lang['fl_from'] = "Z kąd";
+$lang['fl_start_t'] = "Godzina startu";
+$lang['fl_dest'] = "Dokąd";
+$lang['fl_dest_t'] = "Godzina powrotu";
+$lang['fl_back_t'] = "Godzina powrotu floty";
+$lang['fl_back_in'] = "Pozostały czas";
+$lang['fl_order'] = "Rozkaz";
+$lang['fl_get_to'] = "(A)";
+$lang['fl_get_to_ttl'] = "Leć";
+$lang['fl_back_to'] = "(R)";
+$lang['fl_back_to_ttl'] = "Zawróć";
+$lang['fl_associate'] = "Złącz";
+$lang['fl_noslotfree'] = "Wszystkoe sloty zajęte!";
+$lang['fl_notback'] = "Mało flot !";
+$lang['fl_onlyyours'] = "Już możesz przywołać flotę !";
+$lang['fl_isback'] = "Flota powróciła !";
+$lang['fl_sback'] = "Powrót";
+$lang['fl_error'] = "Error";
+$lang['fl_new_miss'] = "Nowa misja: Wybierz flotę do misji";
+$lang['fl_fleet_typ'] = "Nazwa statku";
+$lang['fl_fleet_disp'] = "Liczba";
+$lang['fl_noplanetrow'] = "Problem został rozwiązany !";
+$lang['fl_fleetspeed'] = "Prędkość : ";
+$lang['fl_selmax'] = "max";
+$lang['fl_sur'] = "z";
+$lang['fl_noships'] = "Brak statków";
+$lang['fl_continue'] = "Kontunuuj";
+$lang['fl_unselectall'] = "Żadnych statków";
+$lang['fl_selectall'] = "Wszystkie statki";
+
+// floten1.php
+$lang['fl_floten1_ttl'] = "Wyślij flotę";
+$lang['fl_noenought'] = "Nie wystarczająca ilość statków.";
+$lang['fl_speed'] = "Prędkość";
+$lang['fl_planet'] = "Planeta";
+$lang['fl_ruins'] = "Szczątki";
+$lang['fl_moon'] = "Księżyc";
+$lang['fl_dist'] = "Odległość";
+$lang['fl_fltime'] = "Czas trwania (odcinek)";
+$lang['fl_time_go'] = "Godzina dotarcia flory";
+$lang['fl_time_back'] = "Godzina powrotu floty";
+$lang['fl_deute_need'] = "Zużycie Deuteru";
+$lang['fl_speed_max'] = "Max. prędkość";
+$lang['fl_max_load'] = "Ładowność";
+$lang['fl_shortcut'] = "Cel";
+$lang['fl_shortlnk'] = "(Edytuj)";
+$lang['fl_shrtcup1'] = "(P)";
+$lang['fl_shrtcup2'] = "(D)";
+$lang['fl_shrtcup3'] = "(L)";
+$lang['fl_noshortc'] = "Nie masz własnych celów";
+$lang['fl_myplanets'] = "Kolonie";
+$lang['fl_nocolonies'] = "Nie ma Koloni.";
+$lang['fl_grattack'] = "Związki wojenne";
+
+// floten2.php
+$lang['fl_ressources'] = "Surowce";
+$lang['fl_allressources'] = "Wszystkie surowce";
+$lang['fl_space_left'] = "Reszta";
+
+// floten3.php
+$lang['fl_fleet_err'] = "Błąd floty !";
+$lang['fl_fleet_err_pl'] = "Błąd niszczenia planety !";
+$lang['fl_ownpl_err'] = "Niemożliwa akcja !";
+$lang['fl_unknow_target'] = "Niemożliwa akcja !";
+$lang['fl_used_target'] = "Niemożliwa akcja !";
+$lang['fl_bad_mission'] = "Błędna misja !";
+$lang['fl_vacation_ttl'] = "Aktywowany urlop";
+$lang['fl_vacation_pla'] = "Gracz ma włączony urlop !";
+$lang['fl_noob_title'] = "Ochrona gracz";
+$lang['fl_noob_mess_n'] = "Gracz jest za słaby !";
+$lang['fl_noenoughtgoods'] = "Za mało surowców do transportu!";
+$lang['fl_bad_planet01'] = "Błąd ataku na planetę !";
+$lang['fl_bad_planet02'] = "Błąd ataku na planetę !";
+$lang['fl_dont_stay_here'] = "Nie możesz zostawić tutaj floty !";
+$lang['fl_no_allydeposit'] = "Brak składu sojuszu !";
+$lang['fl_no_self_attack'] = "Niemożliwy cel do zaatakowania !";
+$lang['fl_no_self_spy'] = "Niemożliwy cel do szpiegowania !";
+$lang['fl_only_stay_at_home'] = "Nie możesz zostawić floty koło bazy !";
+$lang['fl_cheat_speed'] = "Próba hakowania !";
+$lang['fl_cheat_origine'] = "Próba hakowania planety !";
+$lang['fl_limit_planet'] = "<li>Zła Planeta !</li>";
+$lang['fl_limit_system'] = "<li>Zły System !</li>";
+$lang['fl_limit_galaxy'] = "<li>Zła Galaktyka !</li>";
+$lang['fl_no_planet_type'] = "Złe miejsce !";
+$lang['fl_no_fleetarray'] = "Zła tabela floty !";
+$lang['fl_noressources'] = "Nie masz surowców. Brak deuteru : ";
+$lang['fl_nostoragespa'] = "Nie masz wystarczającej przestrzenia. Brakuje.";
+$lang['fl_fleet_send'] = "Flota wysłana";
+$lang['fl_expe_warning'] = "Uwaga. Ekspedycje są ryzykownymi misjami !";
+$lang['fl_expe_staytime'] = "Czas postoju";
+$lang['fl_expe_hours'] = "&nbsp;godzin(a)";
+$lang['fl_expe_notech'] = "Nie masz technologi ekspedycji !";
+$lang['fl_expe_max'] = "Nie możesz wysłać więcej flot na ekspedycję !";
+$lang['fl_adm_attak'] = "Nie można atakować Admina!";
+$lang['fl_warning'] = "Uwaga";
+
+$lang['res']['fleet'] = array(
+//Naves
+202 => "Mały transporter",
+203 => "Duży transporter",
+204 => "Myśliwiec",
+205 => "Myśliwiec bojowy",
+206 => "Krążownik",
+207 => "Okręt wojenny",
+208 => "Statek kolonizacyjny",
+209 => "Recykler",
+210 => "Sonda szpiegowska",
+211 => "Bombowiec",
+212 => "Satelita słoneczna",
+213 => "Niszczyciel",
+214 => "Gwiazda śmierci",
+215 => "Pancernik",
+);
+?>

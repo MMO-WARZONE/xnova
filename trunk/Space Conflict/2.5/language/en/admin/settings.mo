@@ -1,0 +1,51 @@
+<?php
+
+$lang['adm_opt_title']         = "Server configuration";
+$lang['adm_opt_game_settings'] = "Game settings";
+$lang['adm_opt_game_name']     = "Game Name";
+$lang['adm_opt_game_gspeed']   = "Game speed<br>(normal = 2500)";
+$lang['adm_opt_game_fspeed']   = "Fleet Speed<br>(normal = 2500)";
+$lang['adm_opt_game_pspeed']   = "Production speed<br>(normal = 1)";
+$lang['adm_opt_fleet_debris']  = "Fleet Debris<br>(normal = 30)";
+$lang['adm_opt_defs_debris']   = "Defense Debris<br>(normal = 30)";
+$lang['adm_opt_game_forum']    = "Board address";
+$lang['adm_opt_game_copyrigh'] = "Copyright";
+$lang['adm_opt_game_online']   = "On-line Status";
+$lang['adm_opt_game_offreaso'] = "Reason for offline";
+$lang['adm_opt_plan_settings'] = "Planet Settings";
+$lang['adm_opt_plan_initial']  = "Initial fields";
+$lang['adm_opt_plan_base_inc'] = "Basic income ";
+$lang['adm_opt_game_debugmod'] = "Debug Mode";
+$lang['adm_opt_game_oth_info'] = "Other info";
+$lang['adm_opt_game_oth_bann'] = "Banned Players Framwork";
+$lang['adm_opt_game_oth_news'] = "News Framework";
+$lang['adm_opt_game_oth_chat'] = "External Chat";
+$lang['adm_opt_game_oth_adds'] = "Google Adsense";
+$lang['adm_opt_game_oth_lstc'] = "Last Planet Coordinates";
+$lang['adm_opt_game_oth_gala'] = "Galaxy";
+$lang['adm_opt_game_oth_syst'] = "System";
+$lang['adm_opt_game_oth_plan'] = "Position";
+$lang['adm_opt_btn_save']      = "Save";
+$lang['adm_opt_warning1']      = "GD library of your Apache server must be enabled!";
+$lang['adm_opt_menu_link_enable']      = "Activate Custom MenuLinks?<br> (1 = yes, 0 = no)";  
+$lang['adm_opt_menu_link_text']      = "Name of link <br>(if activated;)"; 
+$lang['adm_opt_menu_link_url']      = "Url of link <br>(if activated;)"; 
+$lang['adm_opt_control_pages']      = "Check the pages displayed on the menu"; 
+$lang['enable_the_anounces']      = "Show Ads ?<br> (yes = 1, No = 0)"; 
+$lang['enable_the_marchand']      = "Show Merchant ?<br> (yes = 1, No = 0)"; 
+$lang['enable_the_notes']      = "Show Notes ?<br> (yes = 1, No = 0)"; 
+$lang['enable_the_donate']      = "Show Donate ?<br> (yes = 1, No = 0)"; 
+$lang['enable_the_source']      = "Show Source Code ?<br> (yes = 1, No = 0)"; 
+$lang['multi_bot_settings']      = "Multi-Bot Settings"; 
+$lang['bot_name_multi']      = "Name of Bot <br>(sera affich&eacute; dans le pilori)"; 
+$lang['bot_adress_multi']      = "Bot Address <br>(sera affich&eacute;e dans le pilori)"; 
+$lang['bot_ban_duration']      = "Duration of the ban by bot<br>(in days)"; 
+$lang['bot_active']      = "Activating bot <br> (1 = active, 0 = off) <br> By default, the bot is off."; 
+$lang['stat_settings_desc']      = "Statistics Settings";
+$lang['stat_desc']      = "1 Point = ";
+$lang['stat_units']      = "Resources spent";
+$lang['banner']      = "Banner";
+$lang['source_banner']      = "Source of <u>PNG</u> the Banner";
+$lang['banner_currently_installed']      = "Banner currently installed";
+
+?>

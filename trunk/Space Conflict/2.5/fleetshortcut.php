@@ -1,0 +1,142 @@
+<?php
+
+/******************************************
+**            Oasis Rage 2.0             **
+**             by darkOasis              **
+**                                       **
+**  special thanks to the developers of  **
+**    XNova, Ugamela and RageOnline      **
+**                                       **
+** fleetshortcut.php                     **
+******************************************/
+
+define('INSIDE'  , true);
+define('INSTALL' , false);
+
+$xnova_root_path = './';
+include($xnova_root_path . 'extension.inc');
+include($xnova_root_path . 'common.'.$phpEx);
+
+
+$mode = $_GET['mode'];
+$a = $_GET['a'];
+
+if(isset($_GET['mode'])){
+	if($_POST){
+		if($_POST["n"] == ""){$_POST["n"] = "Unbenannt";}
+
+		$r = strip_tags($_POST[n]).",".intval($_POST[g]).",".intval($_POST[s]).",".intval($_POST[p]).",".intval($_POST[t])."\r\n";
+		$user['fleet_shortcut'] .= $r;
+		doquery("UPDATE {{table}} SET fleet_shortcut='{$user[fleet_shortcut]}' WHERE id={$user[id]}","users");
+		message("The shortcut has been recorded; !","Recorded","fleetshortcut.php");
+	}
+	$page = "<form method=POST><table border=0 cellpadding=0 cellspacing=1 width=519>
+	<tr height=20>
+	<td colspan=2 class=c>Name [Galaxy/Solar System/Planet]</td>
+	</tr><tr height=\"20\"><th>
+	<input type=text name=n value=\"$g\" size=32 maxlength=32 title=\"Name\">
+	<input type=text name=g value=\"$s\" size=3 maxlength=1 title=\"Galaxy\">
+	<input type=text name=s value=\"$p\" size=3 maxlength=3 title=\"Solar System\">
+	<input type=text name=p value=\"$t\" size=3 maxlength=3 title=\"Planet\">
+	 <select name=t>";
+	$page .= '<option value="1"'.(($c[4]==1)?" SELECTED":"").">Planet</option>";
+	$page .= '<option value="2"'.(($c[4]==2)?" SELECTED":"").">Debris</option>";
+	$page .= '<option value="3"'.(($c[4]==3)?" SELECTED":"").">Moon</option>";
+	$page .= "</select>
+	</th></tr><tr>
+	<th><input type=\"reset\" value=\"Reset\"> <input type=\"submit\" value=\"Submit\">";
+
+	$page .= "</th></tr>";
+	$page .= '<tr><td colspan=2 class=c><a href=fleetshortcut.php>Delete</a></td></tr></tr></table></form>';
+}
+elseif(isset($_GET['a'])){
+	if($_POST){
+		$scarray = explode("\r\n",$user['fleet_shortcut']);
+		if($_POST["delete"]){
+			unset($scarray[$a]);
+			$user['fleet_shortcut'] =  implode("\r\n",$scarray);
+			doquery("UPDATE {{table}} SET fleet_shortcut='{$user[fleet_shortcut]}' WHERE id={$user[id]}","users");
+			message("Shortcut has been deleted","Deleted","fleetshortcut.php");
+		}
+		else{
+			$r = explode(",",$scarray[$a]);
+			$r[0] = strip_tags($_POST['n']);
+			$r[1] = intval($_POST['g']);
+			$r[2] = intval($_POST['s']);
+			$r[3] = intval($_POST['p']);
+			$r[4] = intval($_POST['t']);
+			$scarray[$a] = implode(",",$r);
+			$user['fleet_shortcut'] =  implode("\r\n",$scarray);
+			doquery("UPDATE {{table}} SET fleet_shortcut='{$user[fleet_shortcut]}' WHERE id={$user[id]}","users");
+			message("The shortcut has been edited !.","Edited","fleetshortcut.php");
+		}
+	}
+	if($user['fleet_shortcut']){
+
+		$scarray = explode("\r\n",$user['fleet_shortcut']);
+		$c = explode(',',$scarray[$a]);
+
+		$page = "<form method=POST><table border=0 cellpadding=0 cellspacing=1 width=519>
+	<tr height=20>
+	<td colspan=2 class=c>Editer: {$c[0]} [{$c[1]}:{$c[2]}:{$c[3]}]</td>
+	</tr>";
+		$page .= "<tr height=\"20\"><th>
+		<input type=hidden name=a value=$a>
+		<input type=text name=n value=\"{$c[0]}\" size=32 maxlength=32>
+		<input type=text name=g value=\"{$c[1]}\" size=3 maxlength=1>
+		<input type=text name=s value=\"{$c[2]}\" size=3 maxlength=3>
+		<input type=text name=p value=\"{$c[3]}\" size=3 maxlength=3>
+		 <select name=t>";
+		$page .= '<option value="1"'.(($c[4]==1)?" SELECTED":"").">Planet</option>";
+		$page .= '<option value="2"'.(($c[4]==2)?" SELECTED":"").">Debris</option>";
+		$page .= '<option value="3"'.(($c[4]==3)?" SELECTED":"").">Moon</option>";
+		$page .= "</select>
+		</th></tr><tr>
+		<th><input type=reset value=\"Reset\"> <input type=submit value=\"Submit\"> <input type=submit name=delete value=\"Delete\">";
+		$page .= "</th></tr>";
+
+	}else{$page .= message("The shortcut has been recorder; !","Recorded","fleetshortcut.php");}
+
+	$page .= '<tr><td colspan=2 class=c><a href=fleetshortcut.php>Reset</a></td></tr></tr></table></form>';
+
+}
+else{
+
+	$page = '<table border="0" cellpadding="0" cellspacing="1" width="519">
+	<tr height="20">
+	<td colspan="2" class="c">Shortcuts(<a href="?mode=add">Add</a>)</td>
+	</tr>';
+
+	if($user['fleet_shortcut']){
+		$scarray = explode("\r\n",$user['fleet_shortcut']);
+		$i=$e=0;
+		foreach($scarray as $a => $b){
+			if($b!=""){
+			$c = explode(',',$b);
+			if($i==0){$page .= "<tr height=\"20\">";}
+			$page .= "<th><a href=\"?a=".$e++."\">";
+			$page .= "{$c[0]} {$c[1]}:{$c[2]}:{$c[3]}";
+			if($c[4]==2){$page .= " (E)";}elseif($c[4]==3){$page .= " (L)";}
+			$page .= "</a></th>";
+			if($i==1){$page .= "</tr>";}
+			if($i==1){$i=0;}else{$i=1;}
+			}
+
+		}
+		if($i==1){$page .= "<th></th></tr>";}
+
+	}else{$page .= "<th colspan=\"2\">No Shortcuts</th>";}
+
+	$page .= '<tr><td colspan=2 class=c><a href=fleet.php>Reset</a></td></tr></tr></table>';
+}
+display($page,"Shortcutmanager");
+
+/******************************************************************************************
+**                                    Revision Notes                                     **
+**  @ Official OasisRage 2.0 release - May 2009 - darkOasis                              **
+**  @ (please note any changes you make to the source code)                              **
+**  @                                                                                    **
+**                                                                                       **
+******************************************************************************************/
+
+?>

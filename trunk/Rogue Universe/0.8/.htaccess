@@ -1,0 +1,15 @@
+Options +includesNOEXEC
+
+SetEnvIfNoCase User-Agent "^EmailSiphon" bad_bot
+SetEnvIfNoCase User-Agent "^EmailWolf" bad_bot
+SetEnvIfNoCase User-Agent "^ExtractorPro" bad_bot
+SetEnvIfNoCase User-Agent "^CherryPicker" bad_bot
+SetEnvIfNoCase User-Agent "^NICErsPRO" bad_bot
+SetEnvIfNoCase User-Agent "^Teleport" bad_bot
+SetEnvIfNoCase User-Agent "^EmailCollector" bad_bot
+
+<Limit GET POST>
+Order Allow,Deny
+Allow from all
+Deny from env=bad_bot
+</Limit>

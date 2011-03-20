@@ -1,0 +1,4 @@
+<FilesMatch ".mo$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

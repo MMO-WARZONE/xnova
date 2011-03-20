@@ -1,0 +1,37 @@
+body{font-family:Arial;color:#E6EBFB;margin-top:1px;margin-left:1px;background-color:#040e1e;background-attachment:fixed;background-repeat:no-repeat;font-size:11px;}
+nobr{font-size:12px !important;}
+img,.img{border:0;-moz-border-radius:10px;-border-radius:10px;}
+.anything{background:none;}
+th{font-size:11px !important;text-align:center;padding-left:3px;padding-right:3px;-moz-border-radius:10px;-border-radius:10px;background-color:#344566;}
+td{font-size:11px !important;background-color:#344566;border-top:0 solid #415680;font-family:Tahoma,sans-serif;vertical-align:middle;padding:1px;}
+td.c{font-weight:700;color:#E6EBFB;}
+input[type=text],select,textarea,option{color:#E6EBFB;background-color:#344566;-moz-border-radius:10px;-border-radius:10px;padding-left:7px;padding-right:7px;}
+textarea{width:90%;}
+input[type=bottom]{-moz-border-radius:10px;-border-radius:10px;padding-left:7px;padding-right:7px;}
+a{color:#E6EBFB;text-decoration:none;font-weight:700;}
+a:hover{color:#CDD7F8;text-decoration:underline;}
+#content{position:absolute;left:13%;top:20%;overflow:auto;width:70%;bottom:0;}
+#header_top{position:absolute;left:13%;top:0;height:18%;-scrollbars:none;overflow:visible;width:70%;}
+td.header,th.header,tr.header,table.header{border:0;background-color:transparent;}
+#head{width:80%;position:absolute;left:200px;}
+#menu{background-repeat:no-repeat;background-color:transparent;background-position:top;position:fixed;left:0;top:1%;bottom:1%;}
+#new_mp{z-index:3;position:absolute;left:30%;top:50%;}
+#publicidad{position:fixed;top:0;width:16%;right:0;bottom:0;}
+tbody.lightbox{position:absolute;top:50%;left:50%;z-index:20;width:600px;height:300px;border:1px solid #fff;background-color:#040e1e;text-align:left;-moz-border-radius:10px;-border-radius:10px;margin:-200px 0 0 -300px;padding:10px 7px;}
+.noob{color:#a0ffa0;}
+.strong{color:#ffa0a0;}
+.vacation{color:#87CEEB;}
+.inactive{color:#CCC;}
+.longinactive{color:#999;}
+.banned{text-decoration:line-through;}
+*.ownfederation{color:#3C0;}
+*.federation{color:#C00;}
+*.hold,.ownhold{color:#80a0C0;}
+.flight .transport a,.flight .hold a,.flight .harvest a,.flight .federation a,.flight .espionage a,.flight .destroy a,.flight .deploy a,.flight .colony a,.flight .owndeploy a,.flight .ownattack a,.flight .owncolony a,.flight .owndestroy a,.flight .ownhold a,.flight .ownharvest a,.flight .ownfederation a,.flight .ownespionage a,.flight .ownmissile a,.flight .owntransport a,.flight .attack a{color:#E6EBFB;}
+.return .phalanx_fleet{color:#3BB9FF;}
+.errormessage a{text-decoration:underline;}
+.notice{color:#FF0;}
+.combatreport,.error,.missile,.espionage,.attack{color:red;}
+.espionagereport,.timeremaining,.warning,.ownmissile,.ownespionage{color:orange;}
+.Stil1,.success,.ownharvest,.ownattack,.owncolony,.owndeploy,.flight .phalanx_fleet,.phalanx_fleet,.transport,.harvest,.deploy,.colony,.allymember,.owntransport{color:lime;}
+*.owndestroy,*.destroy{color:#FFD700;}

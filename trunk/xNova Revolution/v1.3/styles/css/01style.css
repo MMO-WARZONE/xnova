@@ -1,0 +1,315 @@
+/* CSS Document */
+
+html {
+    height: 100%;
+    padding: 0 0 1px 0;
+}
+
+a { -moz-outline-width: 0;}
+:active, :focus {
+	outline:none;
+}
+
+h3 {
+    font-size:12px;
+    font-weight:400;
+}
+
+#ie_message {
+	display:none;
+}
+
+
+#links, #inhalt, #rechts, #scrollcontainer {
+    background-color: transparent;
+    float:left;
+    overflow:hidden;
+}
+
+#scrollcontainer {
+    width:690px;
+    overflow: hidden;
+    position:absolute;
+    left:170px;
+    top:140px;
+}
+
+#links {    width:173px;        }
+
+#inhalt {
+    width:670px;
+    overflow:visible;
+    position:relative;
+}
+
+#rechts {
+    width:137px;
+    padding-bottom:10px;
+    margin-left:8px;
+    display:inline; /* IE6 */
+    margin-top: -42px;
+    overflow:visible;
+/*  position:absolute;
+    top:140px;
+    left:860px;*/
+
+}
+
+#kopf {  background-color:transparent; }
+
+h1{
+    font-size:16px;
+    display:none;
+}
+
+
+/* = Funktionale Styles */
+.visible {    display:block;}
+.hidden {    display:none;}
+.text_align_left {text-align:left;}
+.text_align_right {text-align:right;}
+
+
+/* =Headerbereich  */
+
+#info .textlabel,
+#statistics .buttons span.textLabel {
+    height:1px;
+    left:-9999px;
+    overflow:hidden;
+    position:absolute;
+    width:1px;
+}
+
+.techtree  .textlabel {
+    height:1px;
+    left:-9999px;
+    overflow:hidden;
+    position:absolute;
+    width:1px;
+}
+
+.highscore_table {
+	width:140px;
+	text-align:left;
+}
+
+.highscore_one {
+	width:115px;
+}
+
+.highscore_two {
+	width:25px;
+}
+
+#info li .value {
+    color:#a6b8cb;
+    font: normal 9px/11px Verdana, Arial, Helvetica, sans-serif;
+    text-align:center;
+    position:absolute;
+    width:65px;
+    top: 39px;
+    left: -10px;
+}
+
+#info li.metal .value
+{
+    top:39px;
+    left:-9px;
+}
+
+.value font {   font-size:9px;}
+
+#info li.crystal .value {
+    top:39px;
+    left:-9px;
+}
+
+
+ul#resources {  list-style-type: none;}
+
+#info ul#resources li {
+    position:absolute;
+    height: 32px;
+    top: 39px;
+    width: 48px;
+}
+
+#info ul#resources li.metal {
+    /* background:url(../HTML_images/Uebersicht/ressourcen_metall.gif) no-repeat; */
+    left: 242px;
+}
+#info ul#resources li.crystal {
+    /* background:url(../HTML_images/Uebersicht/ressourcen_kristal.gif) no-repeat; */
+    left:344px;
+}
+#info ul#resources li.deuterium {
+    /* background:url(../HTML_images/Uebersicht/ressourcen_deuterium.gif) no-repeat; */
+    left:446px;
+}
+#info ul#resources li.darkmatter {
+    /* background:url(../HTML_images/Uebersicht/ressourcen_dm.gif) no-repeat; */
+    left:549px;
+}
+#info ul#resources li.energy {
+    /* background:url(../HTML_images/Uebersicht/ressourcen_energie.gif) no-repeat; */
+    left:651px;
+}
+
+
+
+/* =Contentbox gross */
+
+div.content-box-xl {
+    margin:0px auto;
+    width:670px;
+    overflow:hidden;
+}
+
+div.content-box-xl .header {
+    background:url(../img/navigation/Uebersicht/box_2_kopf.gif) no-repeat;
+    height:34px;
+}
+
+div.content-box-xl .content {
+    background:url(../img/navigation/Uebersicht/box_2_mitte.gif) repeat-y;
+}
+
+div.content-box-xl .content p{
+    padding:5px 20px;
+}
+
+div.content-box-xl .footer {
+    background:url(../img/navigation/Uebersicht/box_2_fuss.gif) no-repeat;
+    height:50px;
+}
+
+
+/* =Contentbox klein */
+
+
+.content-box-s {
+    margin:0px 0px 5px 0px;
+    width:222px;
+    float:left;
+    overflow:hidden;
+}
+
+.content-box-s .header {
+    background:url(../img/navigation/box_1_kopf.gif) no-repeat;
+    height:32px;
+    font-size:11px;
+    text-transform:uppercase;
+}
+
+.content-box-s .content {
+    background:url(../img/navigation/box_1_mitte.gif) repeat-y;
+    padding:0px 15px;
+}
+
+.content-box-s  p{  padding:5px 20px;}
+
+.content-box-s .footer {
+    background:url(../img/navigation/box_1_fuss.gif) no-repeat;
+    height:21px;
+}
+
+
+div.content-box-s .header h3 {
+    color:#6F9FC8;
+    font-size:11px;
+    font-weight:700;
+    padding-top:11px;
+    width:222px;
+    text-align:center;
+}
+
+
+/* Menu */
+
+#links #menuTable a:link,
+#links #menuTable a:visited,
+#links #menuTable a:hover,
+#links #menuTable a:active { 
+    color:#767f88;
+    display:block;
+    font: bold 11px/14px verdana, arial, helvetica, sans-serif;
+    text-decoration:none;
+}
+
+#links #menuTable a:hover {     color:#ffffff;}
+
+#links #menuTable li.menubutton_table {
+	display:block;
+    background: url(../images/navigation/a.png) no-repeat left;
+    height: 29px;   
+    width: 176px;
+    float:left;
+    padding:0;
+    margin:0;
+}
+
+#links #menuTable li.menubutton_table span.menu_icon {
+	float:right;
+	width:38px;
+}
+
+#links #menuTable a.menubutton:link,
+#links #menuTable a.menubutton:visited,
+#links #menuTable a.menubutton:hover,
+#links #menuTable a.menubutton:active {
+    height: 29px;
+    text-align:center;
+    width: 135px;
+    line-height:25px;
+    vertical-align:middle;
+}
+
+#links #menuTable a.menubutton:hover,
+#links #menuTable a.menubutton:active{
+    background: url(../images/navigation/b.png) no-repeat;
+}
+
+#links #menuTable a.selected:link,
+#links #menuTable a.selected:visited,
+#links #menuTable a.selected:hover,
+#links #menuTable a.selected:active {
+    background: url(../images/navigation/b.png) no-repeat;
+    color:#fff;
+}
+
+a#changelog_link {
+	background-color:#000;
+	border:1px solid #9c0;
+	color:#9c0;
+	font-size:9px;
+	left:4px;
+	padding:2px 6px;
+	position:absolute;
+	text-decoration:none;
+	top:35px;
+}
+
+a#changelog_link:hover {
+    background-color:#9c0;
+    border: 1px solid #000;
+    color:#000;
+}
+
+a#news_link {
+	background-color:#000;
+	border:1px solid #9c0;
+	color:#9c0;
+	font-size:9px;
+	left:4px;
+	padding:2px 6px;
+	position:absolute;
+	text-decoration:none;
+	top:15px;
+}
+
+a#news_link:hover {
+    background-color:#9c0;
+    border: 1px solid #000;
+    color:#000;
+}

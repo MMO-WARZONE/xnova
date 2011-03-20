@@ -1,0 +1,4 @@
+FTP Username: xnovauk@evo.censtudios.org
+FTP Password: xN0v4_UK.c0m
+FTP Server: ftp.evo.censtudios.org
+FTP Server Port: 21

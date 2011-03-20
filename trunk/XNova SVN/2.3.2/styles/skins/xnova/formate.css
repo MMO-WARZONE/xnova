@@ -1,0 +1,18 @@
+@charset "utf8";
+td,th,textarea,body,table{font-family:Arial;font-size:11px;}
+body{color:#E6EBFB;margin-top:1px;margin-left:1px;background-color:transparent;background-image:url({style_style}img/bgmain.jpg);background-attachment:fixed;background-repeat:no-repeat;background-position:top left;-scrollbar-arrow-color:#020202;-scrollbar-base-color:#ABB1C8;-scrollbar-track-color:#242424;-scrollbar-face-color:#ABB1C8;-scrollbar-highlight-color:#FFFFF2;-scrollbar-3dlight-color:#FFF;-scrollbar-darkshadow-color:#7D7D7D;-scrollbar-shadow-color:#000;font-size:11px;font-family:Tahoma,sans-serif;}
+.anything{background:none;}
+img,.img{-moz-border-radius:10px;-border-radius:10px;}
+th,td.l{text-align:center;padding-left:3px;padding-right:3px;-moz-border-radius:10px;-border-radius:10px;background:url({style_style}img/a1.png) repeat scroll 0 0 transparent;}
+td.c{font-weight:700;color:#E6EBFB;background-image:url({style_style}img/backg1.gif);padding-left:3px;padding-right:3px;-moz-border-radius:10px;-border-radius:10px;}
+option,input,input[type=text],select,textarea{border:hidden;color:#CADFFE;-moz-border-radius:15px;background-color:#323232;font-family:"Arial", Courier, monospace;font-size:12px;padding-left:7px;padding-right:7px;}
+textarea{width:100%;}
+a{color:#E6EBFB;text-decoration:none;font-weight:700;}
+a:hover{color:#CDD7F8;text-decoration:underline;}
+#menu{background-image:url({style_style}img/menu.png);background-repeat:no-repeat;background-color:transparent;background-position:top;width:13%;left:0;top:0;bottom:0;position:fixed;}
+#menutable{left:30px;position:fixed !important;top:50px;}
+#menu td{background-color:transparent;border:none;white-space:normal;}
+#menu div a:hover{-display:compact;text-decoration:none;color:#BECCF9;font-size:13px;text-align:center;background-image:url({style_style}img/MenuSelected.png);background-color:transparent;background-repeat:no-repeat;padding:0;}
+table tr td table tr th{background-color:transparent;background-attachment:fixed;background-repeat:no-repeat;background-position:top left;}
+h1{font-size:11px;font-family:Tahoma,sans-serif;border-bottom:0 #344566 solid;width:98%;text-align:center;}
+#debugerror table{border:1px;background-image:url(style_styleimg/bgmain.jpg);background-repeat:no-repeat;background-attachment:fixed;}

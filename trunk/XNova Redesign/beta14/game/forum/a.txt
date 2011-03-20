@@ -1,0 +1,10 @@
+Things that still need to be done=
+If you have any suggestions mail me on warsaalk@gmail.com
+
+Forum Systems:
+-Online guests, online users (finished)
+-Unread message system (finished)
+-Links within forum (finished)
+-Layout of messages
+-Page number in subject page (finshed, hope that will work)
+-topic page system

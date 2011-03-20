@@ -1,0 +1,822 @@
+body {
+    background-color:#000000;
+    background-image: url(../images/tlo.jpg);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a {
+   color:#666666;
+   text-decoration: none;
+}
+a:hover {
+    color:#ffffff;
+}
+
+#copyright {
+    position: absolute;
+    top: 110px;
+    left: -100px;
+    font-size: 10px;
+    color:#666666;
+    text-align: left;
+    width: 370px;
+}
+
+.link {
+    cursor: pointer;
+}
+.link:hover {
+    color:#ffffff;
+}
+
+#siteFooter {
+background:url("img/bg1.png") repeat-x scroll 0 0 transparent;
+color:#848484;
+font:10px/19px Verdana,Arial,Helvetica,sans-serif;
+height:19px;
+position:relative;
+text-align:center;
+z-index:2;
+}
+
+#title {
+    position: absolute;
+    left: 25px;
+    top: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0a1c25;
+    text-align: left;
+}
+
+#text2 {
+    position: absolute;
+    left: 0px;
+    top: 110px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color:#b1daf2;
+    text-align: left;
+    width: 400px;
+
+}
+
+#login_text_1 {
+    position: absolute;
+    top: 11px;
+    left: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color:#666666;
+    text-align: left;
+    width: 440px;
+}
+
+#login_text_2 {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 9px;
+    color:#666666;
+    text-align: left;
+    width: 440px;
+}
+
+#infotext {
+    position: absolute;
+    top: 210px;
+    width:400px;
+}
+
+#statustext {
+    position: absolute;
+    top: 260px;
+    width:400px;
+}
+
+table {
+    text-align: right;
+    color:#cccccc;
+    font-size: 10px;
+}
+
+td .eingabe {
+    width: 120px;
+    text-align:left;
+}
+
+.bigbutton {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color:#497ec7;
+    cursor: pointer;
+}
+
+.bigbutton:hover {
+    color:#ffffff;
+}
+
+.warning {
+    color:#ff7876;
+}
+
+.table_lable {
+
+}
+
+.table_input {
+    text-align:left;
+    padding-left:3px;
+}
+
+.allymember {
+  color: lime;
+}
+
+.noob {
+  color: #a0ffa0;
+}
+
+.strong {
+  color: #ffa0a0;
+}
+
+.vacation {
+  color: skyblue;
+}
+
+.inactive {
+  color: CCCCCC;
+}
+
+.longinactive {
+  color: 999999;
+}
+
+.banned {
+  text-decoration: line-through;
+}
+
+.flight {
+}
+
+.return {
+}
+
+.holding {
+}
+
+*.ownattack {
+  color: lime;
+}
+
+.flight .ownattack a:hover {
+  color: #E6EBFB;
+}
+
+.flight .ownattack a {
+  color: #lime;
+}
+
+
+*.owncolony {
+  color: lime;
+}
+
+.flight .owncolony a {
+  color: #E6EBFB;
+}
+
+*.owndeploy {
+  color: lime;
+}
+
+
+.flight .owndeploy a {
+  color: #lime;
+}
+
+.flight .owndeploy a:hover {
+  color: #E6EBFB;
+}
+
+
+*.owndestroy {
+  color: gold;
+}
+
+.flight .owndestroy a {
+  color: #gold;
+}
+
+.flight .owndestroy a:hover {
+  color: #E6EBFB;
+}
+
+*.ownespionage {
+  color: orange;
+}
+
+
+.flight .ownespionage a {
+  color: #orange;
+}
+
+.flight .ownespionage a:hover {
+  color: #E6EBFB;
+}
+
+
+*.ownfederation {
+  color: #33CC00;
+}
+
+
+.flight .ownfederation a {
+  color: #33CC00;
+}
+
+.flight .ownfederation a:hover {
+  color: #E6EBFB;
+}
+
+
+*.ownharvest {
+  color: lime;
+}
+
+
+.flight .ownharvest a {
+  color: #lime;
+}
+
+.flight .ownharvest a:hover {
+  color: #E6EBFB;
+}
+
+
+*.ownhold {
+  color: #80a0C0;
+}
+
+
+.flight .ownhold a {
+  color: #80a0C0;
+}
+
+.flight .ownhold a:hover {
+  color: #E6EBFB;
+}
+
+
+*.ownmissile {
+  color: orange;
+}
+
+
+.flight .ownmissile a {
+  color: orange;
+}
+
+.flight .ownmissile a:hover {
+  color: #E6EBFB;
+}
+
+
+*.owntransport {
+  color: lime;
+}
+
+*.owndeploy {
+  color: lime;
+}
+
+.flight .owndeplay a {
+  color: lime;
+}
+
+.flight .owndeplay a:hover {
+  color: #E6EBFB;
+}
+
+.flight .owntransport a {
+  color: lime;
+}
+
+.flight .owntransport a:hover {
+  color: #E6EBFB;
+}
+
+.return .owntransport a {
+  color: lime;
+}
+
+.return .owntransport a:hover {
+  color: #E6EBFB;
+}
+
+
+
+*.attack {
+  color: red;
+}
+
+.flight .attack a:hover {
+  color: #E6EBFB;
+}
+
+.flight .attack a {
+  color: red;
+}
+
+
+*.colony {
+  color: lime;
+}
+
+
+.flight .colony a {
+  color: lime;
+}
+
+.flight .colony a:hover {
+  color: #E6EBFB;
+}
+
+
+*.deploy {
+  color: lime;
+}
+
+
+.flight .deploy a {
+  color: lime;
+}
+
+.flight .deploy a:hover {
+  color: #E6EBFB;
+}
+
+
+*.destroy {
+  color: gold;
+}
+
+.flight .destroy a {
+  color: gold;
+}
+
+.flight .destroy a:hover {
+  color: #E6EBFB;
+}
+
+*.espionage {
+  color: red;
+}
+
+.flight .espionage a {
+  color: #red;
+}
+
+.flight .espionage a:hover {
+  color: #E6EBFB;
+}
+
+*.federation {
+  color: #CC0000;
+}
+
+.flight .federation a {
+  color: #CC0000;
+}
+
+.flight .federation a:hover {
+  color: #E6EBFB;
+}
+
+*.harvest {
+  color: lime;
+}
+
+.flight .harvest a {
+  color: lime;
+}
+
+.flight .harvest a:hover {
+  color: #E6EBFB;
+}
+
+*.hold {
+  color: #80a0C0;
+}
+
+.flight .hold a {
+  color: #80a0C0;
+}
+
+.flight .hold a:hover {
+  color: #E6EBFB;
+}
+
+*.missile {
+  color: red;
+}
+
+
+*.transport {
+  color: lime;
+}
+
+.flight .transport a {
+  color: lime;
+}
+
+.flight .transport a:hover {
+  color: #E6EBFB;
+}
+
+.success {
+  color: lime;
+}
+
+.errormessage a {
+	text-decoration: underline;
+}
+
+.error {
+  color: red;
+}
+
+.warning {
+  color: orange;
+}
+
+.notice {
+  color: yellow;
+}
+
+.combatreport {
+  color: red;
+}
+
+.espionagereport {
+  color: orange;
+}
+
+.timeremaining {
+}
+
+.noresources {
+  color: red;
+}
+	/* TOOLBAR */
+	#rmstbar
+	{
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:20px;
+		z-index:99;
+		border:0px;
+		display:block;
+		border-bottom:1px solid #111;
+		background-color:#000000;
+		background-image:url('img/bg1.png');
+		background-repeat:repeat-x;
+		font-size:10px;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		padding:0px;
+		margin:0px;
+	}
+	#rmstbar ins
+	{
+		text-decoration:none;
+	}
+	#rmstbar #container
+	{
+		width:100%;
+		min-width:990px;
+	}
+	#rmstbar a,
+	#rmstbar a:link,
+	#rmstbar a:visited,
+	#rmstbar a:active,
+	#rmstbar a:hover
+	{
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:10px;
+		color: #CCC;
+	}
+	#rmstbar form
+	{
+		margin:0px;
+		padding:0px;
+	}
+	#rmstbar #container #specialtext #rmslogo
+	{
+		float:left;
+		width:210px;
+		min-width:210px;
+		text-align:left;
+		font-size:10px;
+		padding-left:10px;
+	}
+	#rmstbar #container #specialtext #rmslogo a,
+	#rmstbar #container #specialtext #rmslogo a:link,
+	#rmstbar #container #specialtext #rmslogo a:visited,
+	#rmstbar #container #specialtext #rmslogo a:active,
+	#rmstbar #container #specialtext #rmslogo a:hover
+	{
+		color:#FFFFFF;
+		font-size:10px;
+		text-decoration:none;
+	}
+	#rmstbar #container #specialtext #rmslogo a span
+	{
+		font-size:10px;
+		color:#FF0000;
+	}
+
+
+	/* SPECIAL TEXT FORMATION */
+	#rmstbar #container #specialtext
+	{
+		width:100%;
+		text-align:center;
+		font-size:10px;
+		color:#FFFFFF;
+		padding:4px 0px 0px 0px;
+	}
+	#rmstbar #container #specialtext a,
+	#rmstbar #container #specialtext a:link,
+	#rmstbar #container #specialtext a:visited,
+	#rmstbar #container #specialtext a:active
+	{
+		color:#BBBBBB;
+		text-decoration:none;
+	}
+	#rmstbar #container #specialtext a:hover
+	{
+		color:#FFFFFF;
+		text-decoration:none;
+	}
+
+
+	/* TOOLBAR GAMESELECTOR */
+	#rmstbar #container #gameselector
+	{
+		float:right;
+		text-align:right;
+		width:210px;
+		min-width:210px;
+		font-size:10px;
+		padding:0px 10px 0px 0px;
+		z-Index:100;
+	}
+	#rmstbar #container #specialtext #gameselector a.closer,
+	#rmstbar #container #specialtext #gameselector a.closer:link,
+	#rmstbar #container #specialtext #gameselector a.closer:active,
+	#rmstbar #container #specialtext #gameselector a.closer:visited,
+	#rmstbar #container #specialtext #gameselector a.closer:hover
+	{
+		float:right;
+		margin:0px 0px 0px 0px;
+		border:1px solid #555;
+		color:#BBBBBB;
+		font-size:10px;
+		padding:0px 2px 0px 2px;
+		text-decoration:none;
+	}
+	#rmstbar .clr
+	{
+		clear:both;
+		font-size:0px;
+		line-height:0px;
+	}
+
+
+	/* TOOLBAR DROPDOWN */
+	#rmstbar #container #specialtext #gameselector .menu
+	{
+		width:175px;
+		height:30px;
+		font-size:10px;
+		position:relative;
+		right:10px;
+		z-index:100;
+		top:-2px;
+		text-align:left;
+	}
+	/* remove all the bullets, borders and padding from the default list styling */
+	#rmstbar #container #specialtext #gameselector .menu ul
+	{
+		padding:0;
+		margin:0;
+		list-style-type:none;
+	}
+	#rmstbar #container #specialtext #gameselector .menu ul ul
+	{
+		width:175px;
+		border-bottom:1px solid #555;
+		position:relative;
+		top:0;
+		left:0;
+		z-index:100;
+	}
+	/* float the list to make it horizontal and a relative positon so that you can control the dropdown menu positon */
+	#rmstbar #container #specialtext #gameselector .menu li
+	{
+		float:left;
+		width:175px;
+		position:relative;
+		z-index:100;
+	}
+	/* style the links for the top level */
+	#rmstbar #container #specialtext #gameselector .menu a,
+	#rmstbar #container #specialtext #gameselector .menu a:visited
+	{
+		display:block;
+		text-align:left;
+		font-size:10px;
+		text-decoration:none;
+		color:#BBB;
+		width:171px;
+		height:16px;
+		padding-left:4px;
+		line-height:16px;
+		background-image:url('drop.jpg');
+	}
+	* + html #rmstbar #container #specialtext #gameselector .menu a:hover
+	{
+		height:15px;
+		line-height:15px;
+	}
+	/* a hack so that IE5.5 faulty box model is corrected */
+	* html #rmstbar #container #specialtext #gameselector .menu a,
+	* html #rmstbar #container #specialtext #gameselector .menu a:visited
+	{
+		width:175px;
+		/* QUIRKS MODE */
+		/* w\idth:175px; */
+		/* VALID MODE */
+		w\idth:173px;
+	}
+
+	/* hide the sub levels and give them a positon absolute so that they take up no room */
+	#rmstbar #container #specialtext #gameselector .menu ul ul
+	{
+		visibility:hidden;
+		position:absolute;
+		height:0;
+		top:12px;
+		left:0px;
+		width:175px;
+	}
+	* + html #rmstbar #container #specialtext #gameselector .menu ul ul
+	{
+		top:3px;
+		z-index:100;
+	}
+	* html #rmstbar #container #specialtext #gameselector .menu ul ul
+	{
+		top: 15px;
+		left: 0px;
+	}
+	/* IE 6 to OPERA Switch */
+	html > body #rmstbar #container #specialtext #gameselector .menu ul ul
+	{
+		p\osition:relative;
+		d\isplay:none;
+		top: 12px;
+	}
+	/* style the table so that it takes no ppart in the layout - required for IE to work */
+	#rmstbar #container #specialtext #gameselector .menu table
+	{
+		position:absolute;
+		top:0;
+		left:0;
+		border-collapse:collapse;
+	}
+
+	/* style the second level links */
+	#rmstbar #container #specialtext #gameselector .menu ul ul a,
+	#rmstbar #container #specialtext #gameselector .menu ul ul a:visited
+	{
+		text-align:left;
+		background:#000000;
+		color:#BBB;
+		height:auto;
+		line-height:12px;
+		padding:3px;
+		width:167px;
+		border:1px solid #555;
+		border-width:0 1px 0 1px;
+	}
+
+	#rmstbar #container #specialtext #gameselector .menu ul ul li.last,
+	#rmstbar #container #specialtext #gameselector .menu ul ul li.last:visited
+	{
+		text-align:left;
+		background:#000000;
+		color:#BBB;
+		height:auto;
+		line-height:12px;
+		padding:0;
+		width:171px;
+		w\idth:173px;
+		border:1px solid #555;
+		border-width:0 1px 1px 1px;
+		b\order-width:0 1px 1px 1px;
+	}
+	#rmstbar #container #specialtext #gameselector .menu ul ul li.last a,
+	#rmstbar #container #specialtext #gameselector .menu ul ul li.last:visited a:visited
+	{
+		border: 0px;
+		width: 173px;
+		w\idth: 166px;
+	}
+
+	/* yet another hack for IE5.5 */
+	* html #rmstbar #container #specialtext #gameselector .menu ul ul a,
+	* html #rmstbar #container #specialtext #gameselector .menu ul ul a:visited
+	{
+		width:175px;
+		/* QUIRKS MODE */
+		/* w\idth:175px; */
+		/* VALID MODE */
+		w\idth:167px;
+	}
+	/* style the top level hover */
+	#rmstbar #container #specialtext #gameselector .menu ul a:hover
+	{
+		color:#FFF;
+		background:#222 url('drop.jpg') no-repeat top left;
+	}
+	#rmstbar #container #specialtext #gameselector .menu ul ul a:hover
+	{
+		color:#FFF;
+		background:#222;
+	}
+	#rmstbar #container #specialtext #gameselector .menu :hover > a,
+	#rmstbar #container #specialtext #gameselector .menu ul ul :hover > a
+	{
+		color:#FFF;
+		background:#222;
+	}
+	/* make the second level visible when hover on first level list OR link */
+	#rmstbar #container #specialtext #gameselector .menu ul li:hover ul,
+	#rmstbar #container #specialtext #gameselector .menu ul a:hover ul
+	{
+		visibility:visible;
+	}
+	/* IE 6 to OPERA Switch */
+	html > body #rmstbar #container #specialtext #gameselector .menu ul li:hover ul,
+	html > body #rmstbar #container #specialtext #gameselector .menu ul a:hover ul
+	{
+		d\isplay:block;
+	}
+input
+{
+  width: 60px;
+}
+
+input
+{
+  border               : 1px #000000 solid;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+input
+{
+  border               : 1px #545454 solid;
+  font-size            : 11px;
+  font-weight          : normal;
+  font-family          : Tahoma,sans-serif;
+}
+input{
+-moz-border-radius: 15px;
+background-color : #eaf9ff;
+border : 1px solid #000000;
+font-family : "Arial", Courier, monospace;
+font-size : 12px;
+padding-left : 7px;
+padding-right : 7px;
+}
+
+input{
+border-radius: 15px;
+background-color : #eaf9ff;
+border : 1px solid #000000;
+font-family : "Arial", Courier, monospace;
+font-size : 12px;
+padding-left : 7px;
+padding-right : 7px;
+}

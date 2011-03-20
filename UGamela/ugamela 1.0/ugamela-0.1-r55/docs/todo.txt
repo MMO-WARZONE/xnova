@@ -1,0 +1,34 @@
+
+	TO DO!!! D:<
+	~~~~~~~~~~~~~~~~
+	List of things to do!
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+alliance.php {
+
+	- 'Mano derecha' No esta implementado.
+	- Revisar los derechos en los ranks
+
+
+}
+fleet.php {
+
+	- crear funcion agregar flota y quitar flota
+	- arreglar las variables $lang
+	- aplicar sistema parse
+
+
+}
+
+functions.php {
+
+	- Las queries en linea:684, hay veces que las variables estan vacias.
+	  Hay que hacer que sean valores numericos.
+
+
+}
+Admin {
+
+	- crear panel de contro de admin...
+
+}

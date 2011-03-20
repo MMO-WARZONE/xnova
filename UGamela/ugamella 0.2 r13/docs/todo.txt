@@ -1,0 +1,43 @@
+
+	TO DO!!! D:<
+	~~~~~~~~~~~~~~~~
+	List of things to do!
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+alliance.php {
+
+	- 'Mano derecha' No esta implementado.
+	- Revisar los derechos en los ranks
+	- Arreglar los query para agregar el nombre de la alianza a la columna
+	  ally_name.
+
+
+}
+
+fleet.php {
+
+	- crear funcion agregar flota y quitar flota
+	- arreglar las variables $lang
+	- aplicar sistema parse
+
+
+}
+
+functions.php {
+
+	- Las queries en linea:684, hay veces que las variables estan vacias.
+	  Hay que hacer que sean valores numericos.
+
+
+}
+Admin {
+
+	- Crear panel de control de admin...
+	- Crear secciones de busqueda de usuarios.
+	- Crear formulario para modificar datos de usuarios.
+	- Crear formulario para modificar datos de planetas.
+	- Crear formulario para modificar datos de galaxia.
+	- Crear formulario para modificar datos de alianzas.
+	- Crear formulario para modificar datos del foro.
+
+}

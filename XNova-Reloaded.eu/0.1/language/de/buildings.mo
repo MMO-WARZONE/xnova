@@ -1,0 +1,47 @@
+<?php
+
+$lang['Fleet']							= "Flotte";
+$lang['Defense']						= "Verteidigung";
+$lang['Research']						= "Forschungslabor";
+$lang['ResearchTimeWithoutTechs']		= 'Urspr&uuml;ngliche Forschungszeit: ';
+$lang['ResearchTime']					= "Gesammt Forschungszeit";
+$lang['level']							= 'Stufe';
+$lang['dispo']							= 'Vorhanden';
+$lang['Requirements']					= 'Anforderungen: ';
+$lang['Requires']						= 'Ben&ouml;tigt';
+$lang['Rest_ress']						= 'Restliche Rohstoffe ';
+$lang['Rechercher']						= "Forschung";
+$lang['BuildingTime']					= 'Bauzeit';
+$lang['ConstructionTime']				= 'Gesammt Bauzeit: ';
+$lang['ConstructionTimeWithoutTechs']	= 'Urspr&uuml;ngliche Bauzeit: ';
+$lang['TechnicalData']					= 'Technische Daten';
+$lang['TechBonus']						= 'Technologiebonus';
+$lang['Construire']						= ' Bauen ';
+$lang['BuildFirstLevel']				= 'Bauen';
+$lang['BuildNextLevel']					= 'Ausbau auf ';
+$lang['completed']						= 'Fertig;';
+$lang['in_working']						= 'In Betrieb';
+$lang['work_todo']						= 'In Arbeit';
+$lang['total_left_time']				= 'Zeit';
+$lang['only_one']						= "Du kannst nur ein Schild besitzen.";
+$lang['Build_lab']						= 'Geb&auml;ude Fehler';
+$lang['NoMoreSpace']					= 'Planet Voll!';
+$lang['InBuildQueue']					= "In Bauliste Hinzuf&uuml;gen";
+$lang['bld_usedcells']					= "Felder";
+$lang['bld_theyare'] 					= "Noch";
+$lang['bld_cellfree']					= "Freie Felder zum Baun";
+$lang['DelFromQueue']					= 'Entfernen';
+$lang['DelFirstQueue']					= 'Abbrechen';
+$lang['cancel']							= 'Abbrechen';
+$lang['continue']						= 'Weiter';
+$lang['ready']							= 'Fertig';
+$lang['destroy']						= "Abrechen";
+$lang['on']								= "Auf";
+$lang['attention']						= 'Bug schutz Aktion Abgebrochen!';
+$lang['no_laboratory']					= "Du musst zuerst ein Forschungslabor auf diesem Planeten bauen!";
+$lang['need_hangar']					= "Du musst zuerst eine Schiffswerft auf diesem Planeten bauen!";
+$lang['labo_on_update']					= "Es ist nicht m&ouml;glich zu forschen, wenn ein Forschungslabor ausgebaut wird!";
+$lang['NeededRess']						= "Fehlende Rohstoffe";
+$lang['Research_Time']					= "Forschungszeit";
+$lang['builtable']						= "M&ouml;glich:";
+?>

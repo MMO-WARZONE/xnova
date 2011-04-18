@@ -1,0 +1,37 @@
+/*
+Theme Name: OpenGame
+Theme URI: https://ugamela.com/
+Description: OpenGame theme for bbPress.
+Version: 0.01
+Author: Perberos
+Author URI: http://perberos.com.ar
+License: http://opensource.org/licenses/gpl-license.php GNU Public License
+*/
+
+#footer {
+	font-size: 9px;
+}
+
+#header {
+	position: absolute;
+	right: 8px;
+	top: 4px;
+}
+
+#title {
+	margin-left: 8px;
+	font-size: 32px;
+}
+
+#description {
+	margin-left: 8px;
+}
+
+.hand {
+	cursor: pointer;
+}
+
+.bbcrumb {
+	text-align: left;
+	margin-left: 16px;
+}

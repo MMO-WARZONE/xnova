@@ -1,0 +1,1 @@
+<div align="right"><font size="+2">{topnav_aa}</font><br><font size="+1"><a href="overview.php" target="{mf}">{topnav_ab}</a> - <a href="errors.php" target="{mf}">{topnav_ad}</a> - <a href="http://spacebeginner.de/forum/index.php" target="_new">{topnav_ac}</a></font></div>

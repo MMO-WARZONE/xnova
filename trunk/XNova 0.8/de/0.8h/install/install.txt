@@ -1,0 +1,7 @@
+	$QryTableSaveKB  =  "CREATE TABLE `{{table}}` (";
+	$QryTableSaveKB .= "`ID` INT( 11 ) UNSIGNED NOT NULL AUTO_INCREMENT , ";
+	$QryTableSaveKB .= "`u_id` CHAR( 255 ) NOT NULL , ";
+	$QryTableSaveKB .= "`titel` MEDIUMTEXT NOT NULL , ";
+	$QryTableSaveKB .= "`code` LONGTEXT NOT NULL , ";
+	$QryTableSaveKB .= "PRIMARY KEY  (`ID`) ";
+	$QryTableSaveKB .= ") ENGINE = MYISAM CHARACTER SET latin1 COLLATE latin1_bin;";

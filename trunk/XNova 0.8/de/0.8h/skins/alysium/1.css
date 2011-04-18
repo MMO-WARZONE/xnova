@@ -1,0 +1,328 @@
+
+., #, td, th, textarea, body, table
+{
+  font-family	: Tahoma,sans-serif;
+  font-size	: 10px;
+}
+
+img
+{
+  border               : 0px;
+}
+
+p table
+{
+  border               : 0px;
+}
+
+p td
+{
+  text-align           : center;
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+}
+
+table table
+{
+  border               : 0px;
+}
+
+table table td
+{
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+}
+
+body
+{
+  color                : #f7f7f7;
+  margin-top           : 1px;
+  margin-left          : 1px;
+  background           : #444444;
+  scrollbar-arrow-color: #F7F7F7;
+  scrollbar-base-color: #444444;
+  scrollbar-track-color: #444444;
+  scrollbar-face-color: #444444;
+  scrollbar-highlight-color: #444444;
+  scrollbar-3dlight-color: #777777;
+  scrollbar-darkshadow-color: #444444;
+  scrollbar-shadow-color: #777777;
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+  background-color     : #040e1e;
+  background-image     : url(img/background2.jpg);
+  background-attachment: fixed;
+  background-repeat    : no-repeat;
+  background-position  : top left;
+}
+
+body.style{
+  background-image     : url(img/background1.jpg);
+  margin               : 0px;
+  padding               : 0px;
+}
+
+body.style table {
+  margin               : 0px;
+  padding               : 0px;
+}
+
+body form table th table input
+{
+  width: 60px;
+}
+
+th, td.a, td.b, td.c, td.f, input, select,
+td.g, td.h, td.i, td.j, td.k, td.l, td.m,
+td.n, td.o, td.q, td.r, td.v, .style td,
+textarea, p td, table.s th img
+{
+  border               : 1px #777777 solid;
+  font-size            : 11px;
+  font-family          : Tahoma,sans-serif;
+}
+
+th, td.a, td.b, td.c, td.f, input, select, td.g,
+td.h, td.i, td.j, td.k, td.m, td.o, td.q, td.r,
+td.v, td.s, .style td, p td
+{
+  background-color     : #000000;
+  filter               : alpha(opacity=80);
+  -moz-opacity         : 0.8;
+  -khtml-opacity       : 0.8;
+  opacity              : 0.8;
+}
+
+th
+{
+  text-align           : center;
+  padding-left         : 3px;
+  padding-right        : 3px;
+}
+
+td.a
+{
+  height               : 39px;
+  text-align           : center;
+}
+
+td.b
+{
+  padding              : 3px;
+}
+
+td.c
+{
+  font-weight          : bold;
+  color                : #f7f7f7;
+  padding-left         : 3px;
+  background-image     : url(img/bg1.gif);
+}
+
+td.f, input, select, textarea
+{
+  color                : #f7f7f7;
+  background-color     : #444444;
+}
+
+textarea
+{
+  width                : 100%;
+}
+
+td.k input
+{
+  text-align           : left;
+}
+
+td.g
+{
+  font-weight          : bold;
+  text-align           : right;
+  color                : #f7f7f7;
+}
+
+td.h
+{
+  text-align           : center;
+  color                : #f7f7f7;
+}
+
+td.i
+{
+  text-align           : center;
+  color                : #f7f7f7;
+}
+
+td.j
+{
+  text-align           : center;
+  color                : #f7f7f7;
+}
+
+td.k, td.k input
+{
+  text-align           : center;
+  color                : #f7f7f7;
+}
+
+td.l
+{
+  background-color     : #444444;
+  color                : #f7f7f7;
+  vertical-align       : top;
+  padding              : 3px;
+  background-image     : url(img/bg1.gif);
+}
+
+td.m
+{
+  font-weight          : bold;
+  text-align           : right;
+  width                : 86px;
+  color                : #f7f7f7;
+}
+
+td.n
+{
+  font-weight          : bold;
+  text-align           : right;
+  width                : 89px;
+  text-align           : center;
+  color                : #f7f7f7;
+}
+
+td.o
+{
+  text-align           : center;
+  color                : #f7f7f7;
+}
+
+td.q
+{
+  font-weight          : bold;
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+  text-align           : center;
+  vertical-align       : middle;
+  color                : #f7f7f7;
+}
+
+td.r
+{
+  text-align           : right;
+  color                : #f7f7f7;
+}
+
+td.v
+{
+  font-weight          : bold;
+  text-align           : right;
+  color                : #f7f7f7;
+}
+
+td.s
+{
+  color                : #f7f7f7;
+}
+
+table.s th
+{
+  border               : 0px;
+}
+
+table.s th img
+{
+  width                : 89px;
+  height               : 89px;
+}
+
+div.z
+{
+  font-weight          : bold;
+  color                : #f7f7f7;
+}
+
+a
+{
+  color                : #f7f7f7;
+  text-decoration      : none;
+  font-weight          : bold;
+}
+
+a.s
+{
+  color                : #f7f7f7;
+}
+
+a.t
+{
+  color                : #f7f7f7;
+}
+
+a:hover
+{
+  color                : #999999;
+  text-decoration      : underline;
+}
+
+.style td
+{
+  color                : #333333;
+  color                : #FFFF80;
+  border-top           : 0px; 
+  font-size            : 9px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:link
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:visited
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+}
+
+.style div a:hover
+{
+  background-color     : #555555;
+  height               : 100%;
+  width                : 100%;
+  text-decoration      : none;
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+  color                : #f7f7f7;
+}
+
+.style
+{
+  margin-top           : 15px;
+}
+
+h1
+{
+  font-size            : 10px;
+  font-family          : Tahoma,sans-serif;
+  border-bottom        : 1px #444444 solid;
+  width                : 98%;
+  text-align           : right;
+}

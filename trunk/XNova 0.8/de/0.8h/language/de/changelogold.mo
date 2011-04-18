@@ -1,0 +1,128 @@
+<?php
+$lang['Version']     = 'Version';
+$lang['Description'] = 'Beschreibung';
+$lang['changelog']   = array(
+
+
+'0.8g' => 'XNova-Germany Start version
+- MOD: Sig Banner auf 1.1 upgedatet
+- MOD: Noobschutz jetzt auch ohne Noobschutzfaktor m&ouml;glich
+- FIX: User aus admin bereich l&ouml;schen (jetzt auch die planeten von dem user)
+- FIX: Macht bei Allianz abgeben
+- FIX: Bei Raketen angriffen bekommt jetzt auch der angreifer eine mail
+- FIX: wenn der spieler zu stark ist, dann schreibt er jetzt spieler zu stark
+- FIX: Buddyanfrage
+- FIX: Geb&auml;udecheat jetzt nich mehr m&ouml;glich
+- FIX: Energietechnikbonus wir jetzt immer positiv angezeigt 
+- DIV: kein \' mehr beim planeten name mehr m&ouml;glich (aus sicherheits gr&uuml;nden)
+- DIV: Diverse anpassungen im Spiel
+- MOD: Frames.php leitet auf index.php weiter, wenn nicht eingelogt
+- FIX: Buddylist wird jetzt alles richtig angezeigt
+- FIX: spieler sperren
+- FIX: Ally R&auml;nge k&ouml;nnen jetzt auch spieler kicken/R&auml;nge zuweisen wenn erlaubt
+- DIV: Diverse anpassungen im Spiel
+- MOD: Schreibezeit anzeige im Chat
+- MOD: login.php und index.php verschmolzen
+- MOD: Position der Start Planeten jetzt in der constant.php einstellbar
+- MOD: Sperrzeit nach dem Urlaubsmodus jetzt in der constant.php einstellbar
+- MOD: Impressum &uuml;ber Adminmen&uuml; &auml;nderbar
+- MOD: Sig Banner 1.0.1 
+- FIX: Minus Deuterium 
+- FIX: Ranglistendifferenz
+- FIX: Research Hack
+- DIV: Diverse anpassungen im Spiel
+- DIV: Ogame aus allen Script datein rausgenommen
+- DIV: Urlaubsmodus repariert
+- MOD: Pranger bearbeitet
+- MOD: SpeedUp Server
+- MOD: Energietechnik Bonus by Steggi
+- MOD: Inaktive k&ouml;nnen angegriffen werden
+- MOD: Link uns seite
+- MOD: Versions &uuml;berpr&uuml;fer
+- FIX: Intergalaktischen Forschungsnetzwerk
+- FIX: PlanetResourceUpdate.php
+- FIX: Automatisches Entbannen
+- FIX: Rohstoffanzeigen 
+- FIX: Raketen Fix
+- FIX: Schildkuppel Fix von &dagger;Vincent&dagger;
+- FIX: Geb&auml;udecheat
+- FIX: Flotten zur&uuml;ckschicken
+- FIX: Passwort &auml;ndern
+- DIV: Diverse anpassungen im Spiel
+- MOD: Nachrichten, die &auml;lter als 14 Tage sind werden gel&ouml;scht
+- MOD: inaktive spieler werden nach 92 Tagen(3 Monate)gel&ouml;scht (auch admins)
+- MOD: Schnellere Galaxie
+- MOD: Nachrichten Melden
+- MOD: Allianzen &auml;ndern &uuml;ber admin men&uuml;
+- MOD: English Hinzugef&uuml;gt
+- MOD: SuperGameOperator hinzugef&uuml;gt
+- FIX: Opera KB
+- FIX: Angreifern <-> Verteidiger
+- FIX: Spiel geschlossen
+- FIX: Ally R&auml;nge
+- FIX: Kolo aufgeben
+- FIX: Forschungsnetzwerk
+- FIX: Differenzen bei den Statistiken
+- DIV: Sicherheit erh&ouml;ht
+- DIV: Diverse anpassungen im Spiel
+- DIV: Urlaubsmodus verbessert
+- MOD: Urlaubs Modus &uuml;berarbeitet
+- MOD: AGB, Impressum, Regeln
+- FIX: Forschungs Cheat
+- DIV: Diverse anpassungen im Spiel
+- MOD: PN hinzugef&uuml;gt bei Kontakt
+- MOD: Nicht angemeldete Spieler k&ouml;nnen auf keine seite mehr zugreifen
+- MOD: Offizierspunkte &uuml;ber adminbereich &auml;ndern
+- MOD: Offiziersbonus wird angezeigt
+- MOD: Flottensperre
+- MOD: Neue Geschwindigkeit zum Saven (1)
+- MOD: Neue Schiffe/Verteidigungen
+- MOD: Minus Ress werden Automatisch wieder ins plus gesetzt
+- MOD: Online/Offline Status aus Galaxie genommen
+- FIX: Spionage
+- FIX: j in d ge&auml;ndert
+- FIX: Forschungs Cheats (wer versucht zu cheaten wird gebannt)
+- FIX: Rohstoffe auf Planeten aktualisieren auch wenn Spieler Offline ist
+- FIX: Rohsotffmultiplikator behoben
+- FIX: Internet Explorer
+- FIX: Glaxien ansicht
+- FIX: Phalanx 
+- FIX: Raketen angriff
+- FIX: Mond zerst&ouml;ren
+- FIX: Pasword Vergessen
+- FIX: U Mod
+- DIV: Diverse anpassungen im Spiel
+- MOD: Neue Allianz-BBCodes 
+- MOD: Umodus in Userliste anzeigen
+- MOD: Hilfe Seite Im Game (FAQ)
+- FIX: Opera Fix
+- FIX: Flottencheat
+- FIX: Spieler suchen Koordinaten.
+- FIX: Flottenpunkte f&uuml;r fliegende Flotten
+- MOD: Captcha funktion 
+- MOD: Drei eingebaute Skins
+- MOD: Neue Login Seite
+- MOD: Sprachfixe + Offiziere auf Deutsch
+- MOD: Auto Referrer nach Flottenstart
+- MOD: Admin SGO und Go Farbig in Galaxie
+- MOD: MATS-MODUL v.2.0 (Schiffe,Geb&auml;ude,Verteidigungen,Forschungen,Rohstoffe &auml;ndern)
+- MOD: Serverinformation
+- FIX: Game Offline
+- FIX: Verteidigungspunkte in Overview
+- FIX: Geb&auml;ude Cheat 1,1 behoben
+- FIX: Spionage mit 0 Sonden
+- FIX: Rohstoff r&uuml;ckgabe bei abbruch der Forschung
+- FIX: Kleine und Grosse Schildkuppel k&ouml;nnen gebaut werden
+- FIX: Erweiterte einstellungen in Adminbereich
+- DIV: Diverse anpassungen in game
+- MOD: Speicher Anzeige in der Topnavi
+- MOD: Avater in der Galaxie ansicht
+- MOD: Avater in der Overview ansicht
+- FIX: Produktionsstufe in Resources eingef&uuml;gt
+- MOD: Neues Installations men&uuml;
+- MOD: Skin angepast beim Installations
+- DIV: Spachanpassungen in Deutsch
+- DIV: Start version von XNova.fr',
+);
+
+?>

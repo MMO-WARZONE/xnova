@@ -1,0 +1,45 @@
+/*##################*/
+/*Resbar*/
+div#res
+{
+font-weight : bold;
+border : 0px none;
+position : fixed;
+top : 0px;
+right : 0px;
+background-image : url('none');
+}
+
+/*Tabelle der Resbar*/
+#res table
+{
+background-color : transparent;
+border : 0px none;
+width : 110px;
+height : 150px;
+background-image : url('img/resbar.gif');
+}
+
+/*Tabellenspalten der Resbar*/
+div#res table tr td.g
+{
+font-weight : bold;
+background-color : transparent;
+padding-right : 5px;
+border : 0px none;
+width : 110px;
+vertical-align : top;
+background-image : url('none');
+}
+
+/*Ressourcenname*/
+div#res table tr td.g div#restyp{width: 84px; padding-top: 17px; color: #BD2014;}
+
+/*Ressourcenanzahl*/
+div#res table tr td.g div#reszahl
+{
+font-weight : bold;
+width : 84px;
+padding-top : 3px;
+width : 88px;
+color : #DDDDDD;

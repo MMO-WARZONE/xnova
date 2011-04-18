@@ -1,0 +1,2 @@
+<a onmouseover="this.T_WIDTH=120;return escape('User kicken');" href="?action=internalAlliance&amp;mode=admin&amp;edit=members&amp;kick={id}" onclick="javascript:return confirm('Bist du sicher, dass du den User kicken willst?');"><img src="{dpath}pic/abort.gif" border="0" alt="kick" ></a>&nbsp;<a onmouseover="this.T_WIDTH=100;return escape('Rang zuweisen');" href="?action=internalAlliance&amp;mode=admin&amp;edit=members&amp;rank={id}"><img src="{dpath}pic/key.gif" border="0" alt="Rang zuweisen"></a>
+<script src="scripts/wz_tooltip.js" type="text/javascript"></script>

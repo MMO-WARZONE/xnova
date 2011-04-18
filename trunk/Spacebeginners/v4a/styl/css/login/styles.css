@@ -1,0 +1,64 @@
+/** Spce Beginners Styles.css **/
+
+body {
+    margin-top           : 0px;
+    margin-left          : 0px;
+    background-color     : #040e1e;
+    background-image     : url(../../image/hintergrund/hintergrund_login.gif);
+    background-attachment: fixed;
+    background-position  : top left;
+    background-width     : 100%;
+    background-hight     : 100%;
+    font-size            : 10px;
+    font-family          : Tahoma,sans-serif;
+}
+
+td.c {
+    font-weight          : bold;
+    padding-left         : 3px;
+    background-image     : url(../../image/login/zwischenbild.png);
+    filter               : alpha(opacity=70);
+      -moz-opacity       : 1.0;
+      -khtml-opacity     : 1.0;
+    opacity              : 1.0;
+}
+
+table {
+    text-align		 : right;
+    color		 : #CCCCCC;
+    font-size		 : 10px;
+}
+
+
+a {
+    color		 : #666666;
+    text-decoration	 : none;
+}
+    
+a:hover {
+    color		 : #ffffff;
+}
+
+input, select, textarea{
+    color                : #FFFFFF;
+    background-color     : #1c1c1c;
+    filter               : alpha(opacity=70);
+      -moz-opacity       : 1.0;
+      -khtml-opacity     : 1.0;
+    opacity              : 1.0;
+    border               : 1px #545454 solid;
+    font-size            : 10px;
+    font-family          : Tahoma, sans-serif;
+}
+
+
+#login_input a {
+    color		 : #cccccc;
+    text-decoration	 : none;
+}
+    
+#login_input a:hover {
+    color		 : #ffffff;
+}
+
+

@@ -1,0 +1,80 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none;
+	background-color: #DBD7D1;
+}
+table {
+	font-size: 10px;
+	margin: 1px;
+	padding: 1px;
+}
+td {
+	color: #536482;
+	margin: 3px;
+	padding: 3px;
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #0000FF;
+}
+th {
+}
+th:hover {
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #368AD2;
+	text-decoration: none;
+	line-height: normal;
+	cursor: pointer;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #BC2A4D;
+	text-decoration: underline;
+	line-height: normal;
+	cursor: pointer;
+}
+
+th.d {
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-bottom-style: solid;
+	border-top-color: #0066FF;
+	border-right-color: #0066FF;
+	border-bottom-color: #0066FF;
+	border-left-color: #0066FF;
+	margin: 3px;
+	padding: 3px;
+}
+
+input {
+	background-color: #E9E9E2;
+	border: 1px double #AFAEAA;
+}
+
+input:focus, textarea:focus {
+	background-color: #E9E9E2;
+	border: 1px solid #BC2A4D;
+	color: #BC2A4D;
+}

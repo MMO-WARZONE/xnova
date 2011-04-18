@@ -1,0 +1,1 @@
+<span id="schrotti_appol" style="color:yellow;">0</span>

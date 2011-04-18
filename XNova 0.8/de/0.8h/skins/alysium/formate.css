@@ -1,0 +1,860 @@
+/* CSS Document*/
+
+/*
+|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
+|  Alysium-Skin  |
+|  ------------  |
+|   by Apostel   |
+|      2006      |
+|________________|
+*/
+, #, td, th, textarea, body, table
+{
+  font-family	: Verdana,sans-serif;
+  font-size	: 11px;
+}
+
+img
+{
+  border               : 0px;
+}
+
+p table
+{
+  border               : 0px;
+}
+
+p td
+{
+  text-align           : center;
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+}
+
+table table
+{
+  border               : 0px;
+}
+
+table table td
+{
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+}
+
+body
+{
+  color                : #c4c4c4;
+  margin-top           : 1px;
+  margin-left          : 1px;
+  background           : #11181E;
+  background-image     : url(img/background.jpg);
+  background-attachment: fixed;
+  background-repeat    : no-repeat;
+  background-position  : top;
+  scrollbar-arrow-color: #11181e;
+  scrollbar-base-color: #262e39;
+  scrollbar-track-color: #262e39;
+  scrollbar-face-color: #253046;
+  scrollbar-highlight-color: #212c41;
+  scrollbar-3dlight-color: #192026;
+  scrollbar-darkshadow-color: #2a364f;
+  scrollbar-shadow-color: #212b40;
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+}
+
+body form table th table input
+{
+  width: 60px;
+}
+
+th, td.a, td.b, td.c, td.f, input, select,
+td.g, td.h, td.i, td.j, td.k, td.l, td.m,
+td.n, td.o, td.q, td.r, td.v, .style td,
+textarea, p td, table.s th img
+{
+  border               : 1px #192026 solid;
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+}
+
+th, td.a, td.b, td.c, td.f, input, select, td.g,
+td.h, td.i, td.j, td.k, td.m, td.o, td.q, td.r,
+td.v, td.s, .style td, p td
+{
+  background-color     : #262e39;
+}
+
+th
+{
+  text-align           : center;
+  padding-left         : 3px;
+  padding-right        : 3px;
+}
+
+td.a
+{
+  height               : 39px;
+  text-align           : center;
+}
+
+td.b
+{
+  padding              : 3px;
+}
+
+td.c
+{
+  font-weight          : bold;
+  color                : #c4c4c4;
+  padding-left         : 3px;
+  background-image     : url(img/bg1.gif);
+}
+
+td.f, input, select, textarea
+{
+  color                : #c4c4c4;
+  background-color     : #11181e;
+}
+
+textarea
+{
+  width                : 100%;
+}
+
+td.k input
+{
+  text-align           : left;
+}
+
+td.g
+{
+  font-weight          : bold;
+  text-align           : right;
+  color                : #c4c4c4;
+}
+
+td.h
+{
+  text-align           : center;
+  color                : #c4c4c4;
+}
+
+td.i
+{
+  text-align           : center;
+  color                : #c4c4c4;
+}
+
+td.j
+{
+  text-align           : center;
+  color                : #c4c4c4;
+}
+
+td.k, td.k input
+{
+  text-align           : center;
+  color                : #c4c4c4;
+}
+
+td.l
+{
+  background-color     : #262E39;
+  color                : #c4c4c4;
+  vertical-align       : top;
+  padding              : 3px;
+}
+
+td.m
+{
+  font-weight          : bold;
+  text-align           : right;
+  width                : 86px;
+  color                : #c4c4c4;
+}
+
+td.n
+{
+  font-weight          : bold;
+  text-align           : right;
+  width                : 89px;
+  text-align           : center;
+  color                : #c4c4c4;
+}
+
+td.o
+{
+  text-align           : center;
+  color                : #c4c4c4;
+}
+
+td.q
+{
+  font-weight          : bold;
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+  text-align           : center;
+  vertical-align       : middle;
+  color                : #c4c4c4;
+}
+
+td.r
+{
+  text-align           : right;
+  color                : #c4c4c4;
+}
+
+td.v
+{
+  font-weight          : bold;
+  text-align           : right;
+  color                : #000000;
+}
+
+td.s
+{
+  color                : #c4c4c4;
+}
+
+table.s th
+{
+  border               : 0px;
+}
+
+table.s th img
+{
+  width                : 89px;
+  height               : 89px;
+}
+
+div.z
+{
+  font-weight          : bold;
+  color                : #c4c4c4;
+}
+
+a
+{
+  color                : #ffffff;
+  text-decoration      : none;
+  font-weight          : bold;
+}
+
+a.s
+{
+  color                : #000000;
+}
+
+a.t
+{
+  color                : #c4c4c4;
+}
+
+a:hover
+{
+  color                : #8c0003;
+  text-decoration      : none;
+}
+
+.style td
+{
+  color                : #c4c4c4;
+  border-top           : 0px; 
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+}
+
+.style div a
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #f2f2f2;
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+}
+
+.style div a:link
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #c4c4c4;
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+}
+
+.style div a:visited
+{
+  height               : 100%;
+  width                : 100%;
+  color                : #c4c4c4;
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+}
+
+.style div a:hover
+{
+  background-color     : #192026;
+  height               : 100%;
+  width                : 100%;
+  text-decoration      : none;
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+  color                : #ffffff;
+}
+
+.style
+{
+  margin-top           : 15px;
+}
+
+h1
+{
+  font-size            : 11px;
+  font-family          : Verdana,sans-serif;
+  border-bottom        : 0px #262E39; solid;
+  width                : 50%;
+  text-align           : right;
+}
+
+.flight .owntransport a {color: #E6EBFB;}
+.flight .ownattack a {color: #E6EBFB;}
+.flight .owncolony a {color: #E6EBFB;}
+.flight .owndeploy a {color: #E6EBFB;}
+.flight .owndestroy a {color: #E6EBFB;}
+.flight .ownespionage a {color: #E6EBFB;}
+.flight .ownfederation a {color: #E6EBFB;}
+.flight .ownharvest a {color: #E6EBFB;}
+.flight .ownhold a {color: #E6EBFB;}
+.flight .ownmissile a {color: #E6EBFB;}
+.flight .owntransport a {color: #E6EBFB;}
+.flight .owndeploy a {color: #E6EBFB;}
+
+/* Standard Schriftart und -Größe */
+.,
+#,
+td,
+th,
+textarea,
+body,
+table,
+table table td,
+body center table tr td
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px; }
+
+/* Seiteninhalt allgemein */
+body
+{ color						: #cceeff;
+  background-color			: #000000;
+  background-image			: url(img/background.png);
+  background-attachment		: fixed;
+  background-position		: right;
+  background-repeat			: no-repeat;
+  text-align				: center;
+  font-weight				: normal;
+  margin-top				: 7px;
+  margin-left				: 0px; }
+
+/* Darstellung Texte und leere Zellen */
+table,
+table tr th,
+td,
+th,
+p
+{ font-weight				: normal;
+  empty-cells				: show; }
+
+/*td a img {
+width	:150 !important;
+height:150 !important;                                            <---------------- seeeehr Wichtig!!!
+} */
+
+/* Ressourcen-Anzeige einfärben */
+
+/*Metall*/
+tr > td + td > i > b > font
+{ font-style				: normal;
+  color						: #5588dd; }
+
+/* Kristall */
+tr > td + td + td > i > b > font
+{ font-style				: normal;
+  color						: #dd5566; }
+
+/* Deuterium */
+tr > td + td + td + td > i > b > font
+{ font-style				: normal;
+  color						: #99dd55; }
+
+/* Energie */
+tr > td + td + td + td + td > i > b > font
+{ font-style				: normal;
+  color						: #eeee22; }
+
+i > b > font:before
+{ content					: "- "; }
+i > b > font:after
+{ content					: " -"; }
+
+/* Kostenanzeige */
+td.l a + br + br + b { color: #5588dd;}
+td.l a + br + br + b + b { color: #dd5566;}
+td.l a + br + br + b + b + b { color: #99dd55;}
+td.l a + br + br + b + b + b + b { color: #eeee22;}
+
+/* Metall */
+/*a + br + br + b:before
+{ content					: "["; }
+a + br + br + b:after
+{ content					: " Einheiten"; }*/
+
+/* Kristall */
+/*td.l a + br + br + b + b:before
+{ content					: "["; }
+td.l a + br + br + b + b:after
+{ content					: " Einheiten"; }*/
+
+/* Deuterium */
+/*td.l a + br + br + b + b + b:before
+{ content					: "["; }
+td.l a + br + br + b + b + b:after
+{ content					: " Einheiten"; }*/
+
+/* Energie */
+/*td.l a + br + br + b + b + b + b:before
+{ content					: "["; }
+td.l a + br + br + b + b + b + b:after
+{ content					: " Einheiten"; }*/
+
+/* Anflugsgeschwindigkeiten */
+select[name="speed"] option[value="10"]{color:#00FF00}
+select[name="speed"] option[value="9"]{color:#33FF00}
+select[name="speed"] option[value="8"]{color:#66FF00}
+select[name="speed"] option[value="7"]{color:#99FF00}
+select[name="speed"] option[value="6"]{color:#CCFF00}
+select[name="speed"] option[value="5"]{color:#FFFF00}
+select[name="speed"] option[value="4"]{color:#FFCC00}
+select[name="speed"] option[value="3"]{color:#FF9900}
+select[name="speed"] option[value="2"]{color:#FF6600}
+select[name="speed"] option[value="1"]{color:#FF3300}
+select[name="speed"] option[value="0"]{color:#FF0000}
+
+/* Statistiken
+body center table tr table tr th font
+{ color						: #0099FF; } */
+
+/* Bilder und Werbeunterbrechung */
+img,
+p table,
+table table
+{ border					: 0px; }
+
+/* Ressourcen-Namen */
+body form table tr th table tr th
+{ text-align				: left;
+  border					: 0px; }
+
+/* Ressourcen-Eingabefeld */
+body form table th table input
+{ width						: 60px; }
+
+/* Max.-Links */
+body form table tr th table tr th a,
+body form table tr th table tr th a:visited,
+body form table tr th table tr th a:link
+{ border					: 0px;
+  text-align				: left;
+  color						: #33ccff;
+  padding-left				: 15px;
+  text-decoration			: none; }
+body form table tr th table tr th a:hover,
+body form table tr th table tr th a:active
+{ border					: 0px;
+  text-align				: left;
+  color						: #cceeff;
+  padding-left				: 15px;
+  text-decoration			: none; }
+	
+/* body center center table tr table tr td > font {
+color: #99eeff !important;
+} */
+
+/* Angaben für Td, Input, Select und Textarea */
+td.s,
+th.s
+{ background-image			: url(img/blank.gif);
+  border					: 0px; }  
+
+th, td.a, td.b, td.c, td.f, select,
+td.g, td.h, td.i, td.j, td.k, td.l,
+td.m, td.n, td.o, td.q, td.r, td.v,
+textarea, p td, body table td p
+{ border					: 1px #212121 solid;
+  font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px;
+  background-image			: url(img/page_bg.gif);
+  padding					: 2px; }
+td.l
+{ background-image			: url(img/title_bg.gif);
+  background-repeat			: repeat-x; }
+table.s
+{ border					: 1px #212121 solid;
+  font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px; }
+body center table tr th.s table.s tr th
+{ text-align				: top;
+  float						: top; }
+input
+{ margin					: 2px;
+  border					: 1px;
+  font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px;
+  text-align				: center;
+  padding-right				: 2px; }
+td.c input
+{ margin					: 0px; }
+td.a, td.b, td.c, td.f, input,
+select, td.g, td.h, td.i, td.j,
+td.k, td.m, td.o, td.q, td.r,
+td.v, td.s, p td, select:hover,
+input:hover
+{ background-color			: #222222;
+  color						: #bbddff; }
+select:focus, input:focus
+{ background-color			: #222222;
+  color						: #bbddff; }
+
+/* Navigation */
+body.style
+{ background-image			: url(img/navi_bg.jpg);
+  background-color			: #000000;
+  background-repeat			: no-repeat;
+  background-position		: left top;
+  margin-top				: 25px;
+  overflow					: hidden; }											/* <---- noch bearbeiten */
+.style center tr td img
+{ height					: 19px; }
+.style table tr td div
+{ text-align				: left; }											/* <---- noch bearbeiten */
+.style img
+{ width						: 190px;
+  height					: auto;
+  background-image			: url(img/trennstrich.gif);
+  background-position		: left bottom; }
+.style table
+{ width						: 190px;
+  -moz-opacity				: 0.9; }
+.style center p
+{ color						: #cccccc;
+  font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px; }
+.style center p a
+{ color:#cceeff; }
+.style center p a:hover
+{ color:#66ccff; }
+.style td
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px; }
+.style div
+{ line-height				: 19px;
+  vertical-align			: middle; }
+.style div a
+{ height					: 100%;
+  width						: 100%;
+  padding-left				: 20px;
+  color						: #cceeff; }
+.style div a:hover
+{ color:#66CCFF;
+  background-image			: url(img/activelink_bg.gif);
+  background-position		: left;
+  background-repeat			: no-repeat; }
+
+/* Fixierte Planetenauswahl/Rohstoffanzeige
+body center center table tr td center table {
+	position: fixed;
+	z-index: 2;
+	left: 0px;
+	top: 0px;
+	padding: 5px 0px 8px;
+}
+
+body center center table tr td table {
+	position: fixed;
+	z-index: 1;
+	left: 0px;
+	top: 0px;
+	background-color: #000000;
+	padding: 5px 0px 8px;
+}
+
+#combox {
+	top: 25px;
+}
+
+body center table {
+	position: relative;
+	top: 25px;
+} */
+
+
+
+/* Anzeige der Vote-Bilder */
+.style table tr td center a img
+{ visibility				: visible !important;
+  width						: 88px;
+  height					: 31px;
+  border					: 0px; }
+.style table tr td center a font img
+{ visibility				: visible;
+  border-bottom-style		: hidden !important;
+  border-width				: 0px !important; }
+
+/* Commander-Werbung */
+.style center table tr td center a font
+{ color						: #66ccff;
+  font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px;
+  font-weight				: normal;
+  empty-cells				: show; }
+.style center table tr td center
+{ padding-top				: 5px;
+  padding-left				: 20px;
+  text-align				: left; }
+
+/* Tabellen-Überschriften */
+{ text-align				: center;
+  background-image			: url(img/title_bg.gif);
+  background-repeat			: repeat-x;
+  padding-left				: 3px;
+  padding-right				: 3px; }
+
+/* Titelleisten */
+td.c
+{ font-weight				: normal;
+  color						: #006699;
+  padding-left				: 3px;
+  line-height				: 18px;
+  height					: 22px;
+  background-image			: url(img/title_bg.gif); }
+
+/* Eigabefelder, Auswahlboxen, Buttons */
+td.f, input, select, textarea
+{ color						: #cccccc;
+  background-color			: #393939; }
+
+/* Textfelder */
+textarea
+{ width						: 100%; }
+
+/* Rohstoffmenü */
+body form table tr td.k, body form table tr th
+{ text-align				: center;
+  margin					: 0px;
+  padding					: 0px;
+  background-image			: url(img/page_bg.gif);
+  background-repeat			: repeat-x;
+  background-color			: #000000; }
+/* Berechnen-Button */
+td.k input
+{ text-align				: center;
+  margin					: 5px;
+  padding					: 0px;
+  color						: #cccccc;
+  background-color			: #393939;
+  height					: 15px;
+  border					: 1px #212121 solid; }
+
+/* Schiffswerft: rechter Block */
+body form table tr td table tr td.k
+{ vertical-align			: top;
+  margin					: 0px;
+  padding					: 0px;
+  background-image			: url(img/page_bg.gif);
+  background-repeat			: repeat-x; }
+
+/* Baumenü-Boxen */
+td.l
+{ background-color			: #000000;
+  color						: #cceeff;
+  vertical-align			: top;
+  padding					: 2px;
+  background-image			: url(img/page_bg.gif);
+  background-repeat			: repeat-x;
+  line-height				: 14px; }
+
+/* Kolonie-Planeten-Bilder */
+table.s th img
+{ height					: 88px;
+  width						: 88px;
+  padding					: 2px; }
+table.s th img:hover
+{ height					: 84px;
+  width						: 84px;
+  padding					: 4px; }
+
+/* Bauschleife: "Aktuelle Produktion" */
+div.z
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px;
+  font-weight				: normal;
+  color						: #cceeff; }
+
+/* Links Allgemein */
+a, a.s, a.t
+{ color						: #66ccff;
+  font-weight				: normal;
+  text-decoration			: none; }
+
+a:hover
+{ color						: #99ff66;
+  text-decoration			: underline; }
+
+/* "Ausbau auf"-Anzeige */
+body table tr td table tr td.l
+{ line-height				: 15px;
+  background-color			: #000000; }
+
+/* Gebäude/Forschungen abbrechen */
+body table tr td table tr td.k
+{ vertical-align			: top;
+  background-image			: url(img/page_bg.gif);
+  background-repeat			: repeat-x;
+  padding-top				: 2px;
+  line-height				: 14px; }
+body table tr td table tr td.k div.z
+{ padding-top				: 2px;
+  line-height				: 14px;
+  text-align				: center; }
+
+/* Texte, die sich direkt im Body befinden */
+body,
+body table tr td table tr td,
+body table tr th table tr td
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px;
+  vertical-align			: top; }
+
+
+/* Schiffanzahl direkt in der Übersicht und Phalanxscanns */
+body center table tr.flight th span.flight a[title]:after
+{ content					: " ("attr(title)")";
+  color						: #99ddff; }
+body center table tr th font a[title]:after
+{ content					: " ("attr(title)")";
+  color						: orange; }
+
+/*Größe der Trümmerfelder anzeigen */
+a[title~="Trümmerfeld:"]:after
+{ content					: " ("attr(title)")";
+  color						: #FFFFFF; }
+
+/* Mondgröße anzeigen */
+a[title~="Mond"]:after
+{ content					: " ("attr(title)")";
+  color						: #FFFF00; }
+
+/* Geschwindigkeit der Schiffe anzeigen */
+a[title~="Geschwindigkeit:"]:after
+{ content					: " ("attr(title)")";
+  color						: #00FF00;}
+
+/*Commander Werbung an Style anpassen */
+table tr td p a img
+{ visibility				: visible;
+  height					: 0px;
+  width						: 0px; }
+body center table tr td p font b
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px;
+  color						: #CEFF68; }
+body center table tr td p a font u
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px; }
+body center table tr td p
+{ border					: 1px solid #212121 !important;
+  text-align				: left; }
+body center table tr td p
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px; } 
+		
+body center table tr td p a font u
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px;
+  color						: #CEFF68; } 		
+
+/* "Nachricht gesendet" */
+h1
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px; }
+
+/* KB */
+body center table tr td
+{ font-family				: Verdana, Tahoma, Helvetica, sans-serif;
+  font-size					: 10px; }
+
+/* Übersichtsanzeige */
+.allymember { color: lime; } 
+
+.noob { color: #a0ffa0; } 
+
+.strong { color: #ffa0a0; } 
+
+.vacation { color: #0066FF; } 
+
+.inactive { color: #cccccc; } 
+
+.longinactive { color: 999999; } 
+
+.banned { text-decoration: line-through; } 
+
+.ownattack { color: #66CC33; } 
+
+.owncolony { color: #c1c1c1; } 
+
+.owndeploy { color: #666666; } 
+
+.owndestroy { color: #FFFF99; } 
+
+.ownespionage { color: #FFCC66; } 
+
+.ownfederation { color: #CC6666; } 
+
+.ownharvest { color: #CEFF68; } 
+
+.ownhold { color: #80a0C0; } 
+
+.ownmissile { color: #FFCC66; } 
+
+.owntransport { color: #a0ffa0; } 
+
+.attack { color: red; } 
+
+.colony { color: lime; } 
+
+.deploy { color: lime; } 
+
+.destroy { color: gold; }
+
+.espionage { color: #FF6600; } 
+
+.federation { color: red; } 
+
+.harvest { color: lime; } 
+
+.hold { color: #3399CC; } 
+
+.missile { color: #FF6600; } 
+
+.transport { color: lime; } 
+
+.success { color: lime; } 
+
+.error { color: red; } 
+
+.warning { color: orange; } 
+
+.notice { color: yellow; } 
+
+.return { color: #444444; }

@@ -1,0 +1,11 @@
+<?
+
+$info = array(
+
+'title' => "Cañón iónico",
+'description' => "Los cañones iónicos disparan rayos de iones altamente energéticos contra su objetivo, desestabilizando los escudos y destruyendo los componentes electrónicos."
+
+);
+
+// Created by Gameforge GmbH . All rights reversed (C) 2006
+?>

@@ -1,0 +1,11 @@
+<?
+
+$info = array(
+
+'title' => "Cañón Gauss",
+'description' => "Usando una inmensa aceleración electromagnética, los cañones gauss aceleran proyectiles pesados."
+
+);
+
+// Created by Gameforge GmbH . All rights reversed (C) 2006
+?>

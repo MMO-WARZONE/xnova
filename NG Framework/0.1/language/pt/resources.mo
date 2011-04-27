@@ -1,0 +1,18 @@
+<?php
+$lang['Production_of_resources_in_the_planet'] = 'Produção de matéria prima no planeta "%s"';
+$lang['Production_level'] = 'Nível de produção';
+$lang['Basic_income'] = 'Rendimento base';
+$lang['quantity'] = 'Quantidade';
+$lang['level'] = 'Nível';
+$lang['Stores_capacity'] = 'Capacidade dos depósitos';
+$lang['Widespread_production'] = 'Produção distribuida';
+$lang['Daily'] = 'Diariamente';
+$lang['Weekly'] = 'Semanalmente';
+$lang['Monthly'] = 'Mensalmente';
+$lang['Storage_state'] = 'Estado dos depósitos';
+$lang['Calcule'] = 'Calcular';
+$lang['o/o'] = '%';
+$lang['k'] = 'k';
+$lang['Vacation_mode'] = 'Estás em modo de férias, serás redireccionado para a vista geral';
+$lang['Error'] = 'Erro';
+?>

@@ -1,0 +1,876 @@
+/**
+ _  \_/ |\ | /¯¯\ \  / /\    |¯¯) |_¯ \  / /¯¯\ |  |   |´¯|¯` | /¯¯\ |\ |5
+ ¯  /¯\ | \| \__/  \/ /--\   |¯¯\ |__  \/  \__/ |__ \_/   |   | \__/ | \|Core.
+ * @author: Copyright (C) 2011 by Brayan Narvaez (Prinick) developer of xNova Revolution
+ * @link: http://www.xnovarevolution.con.ar
+
+ * @package 2Moons
+ * @author Slaver <slaver7@gmail.com>
+ * @copyright 2009 Lucky <douglas@crockford.com> (XGProyecto)
+ * @copyright 2011 Slaver <slaver7@gmail.com> (Fork/2Moons)
+ * @license http://www.gnu.org/licenses/gpl.html GNU GPLv3 License
+ * @version 1.3 (2011-01-21)
+ * @link http://code.google.com/p/2moons/
+
+ * Please do not remove the credits
+*/
+
+body {
+color: rgb(166,184,203);/*Color hora,recursos y letra mensajes*/
+background:url(img/bkd_page.jpg) top left fixed no-repeat #000;
+margin:0;
+padding:0;
+margin-top:0px;
+margin-left:0px;
+height:100%;
+width:100%;
+}
+
+body,input,select,textarea,a,td,th,tr,table,#planet_menu_content  a:hover {
+color:#CCC;
+font-family:Verdana;
+font-size:10px;
+text-shadow: #333333 0.1em 0.1em 0.2em;
+}
+
+input,select,option,textarea {
+background:#393939
+}
+   
+a#changelog_link {
+	background-color:#000;
+	border:1px solid #9c0;
+	color:#9c0;
+	font-size:9px;
+	left:4px;
+	padding:2px 6px;
+	position:absolute;
+	text-decoration:none;
+	top:35px;
+}
+
+a#changelog_link:hover {
+    background-color:#9c0;
+    border: 1px solid #000;
+    color:#000;
+}
+
+/* Noticias del menu */
+div[id="links"] p {padding: 0px;margin-bottom: 3px;display: block;font-size: 1em;}
+div[id="links"] p:after {
+	content:"XR version";
+	display:block;
+	margin-top:5px;
+	font-size: 11px;
+	color: #9dcbff;
+	width:125px;
+	text-align:left;
+}
+
+a:focus {
+outline:none
+}
+
+a:hover {
+color:#1D92EC;
+text-decoration:none
+}
+
+table,td,th {
+empty-cells:show;
+font-weight:400
+}
+
+table table,img {
+border:0
+}
+
+table {
+margin:0 auto
+}
+
+td, textarea  {
+border:2px solid #000000;  /*BORDE DE TABLAS */
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+}
+
+td {
+padding-left:3px;
+padding-right:3px;
+text-align:center;
+background:url(img/bkd_bg.gif) repeat;
+}
+
+input {
+border:1px solid #212121;
+margin:2px;
+text-align:center
+}
+
+th input {
+margin:0
+}
+
+th {
+background:url(img/bkd_title.png);
+color:#869cb3;
+font-weight:700;
+height:22px;
+line-height:18px;
+padding-left:3px;
+text-align:left
+-moz-border-radius: 7px;
+-webkit-border-radius: 7px;
+border-radius: 7px;
+}
+
+th a:hover {
+text-decoration: none;
+}
+
+textarea {
+background:transparent;
+width:97%
+}
+
+select {
+border:1px solid #212121
+}
+
+.content {
+padding-bottom:26px;
+margin-left:205px;
+margin-top:10px;
+width:80%!important
+}
+
+.left{
+text-align:left
+}
+
+.right{
+text-align:right
+}
+
+.top{
+vertical-align:top
+}
+
+.content > table, form > table {
+max-width:95%;
+min-width:50%;
+width:80%
+}
+
+.res_max,.res_current,.res_current_max {
+min-width:90px
+}
+
+.res_max {
+color:#0F0
+}
+
+.res_name {
+color:#1D92EC;
+float:none;
+font-weight:700
+}
+
+.strong {
+color:#ffa0a0
+}
+
+.vacation {
+color:#659ec7
+}
+
+.inactive {
+color:#ccc
+}
+
+.longinactive {
+color:#999
+}
+
+.ownattack {
+color:#6c3
+}
+
+.owncolony {
+color:#c1c1c1
+}
+
+.owndeploy {
+color:#666
+}
+
+.owndestroy {
+color:#ff9
+}
+
+.ownfederation {
+color:#c66
+}
+
+.ownharvest {
+color:#ceff68
+}
+
+.ownhold {
+color:#80a0c0
+}
+
+.destroy {
+color:#d4a017
+}
+
+.hold {
+color:#39c
+}
+
+.warning {
+color:#FF8040
+}
+
+.notice {
+color:#FF0
+}
+
+.return {
+color:#444
+}
+
+.transparent,td.header {
+background: transparent;
+border:none
+}
+
+#header_top {
+margin-top:-10px;
+height:auto;
+margin-left:210px;
+text-align:center;
+width:70%;
+z-index: 2;
+}
+
+#barra_top {
+background:url(img/barratop.png) repeat;
+text-align:center;
+height: 100%!important;
+border-top: 0px solid #000000;
+border-right: 0px solid #000000;   
+border-bottom: 2px solid #000000;
+border-left: 0px solid #000000;
+width:100%!important
+}
+
+
+tr.header,table.header {
+width:20%;
+}
+
+.header {
+vertical-align:middle
+}
+
+#footer {
+background:#000;
+border:1px solid #FFF;
+bottom:0;
+margin-left:12.5%;
+margin-right:12.5%;
+position:fixed;
+text-align:center;
+width:75%
+}
+
+#menu {
+list-style:none;
+color: transparent;
+margin:0;
+padding:0;
+position:absolute;
+top:-29px;
+width:200px;
+margin-top:10px;
+padding-bottom:26px;
+}
+
+#menu li {
+font:67.5% "Arial", "Lucida Sans Unicode", "Bitstream Vera Sans", "Trebuchet Unicode MS", "Lucida Grande", Verdana, Helvetica, sans-serif;
+margin:0;
+padding:0;
+}
+
+#menu a {
+background:url(img/button.png) #333;
+color:#ccc;
+display:block;
+font-weight:400;
+margin:0;
+padding:4px 20px;
+text-decoration:none;
+background-color: transparent;
+}
+
+input, textarea, select{ 
+-moz-border-radius: 3px;
+background-color: #10181f; 
+border: 1px solid #000000; 
+color: #c8cdd2; 
+font-family: Arial; 
+font-size: 10px; 
+margin: 3px; 
+padding: 3px; 
+}
+input, textarea, select:hover{ 
+background-color: #141e26; 
+border: 1px solid #000000;
+color: #c8cdd2; 
+}
+
+#menu a:hover {
+background:url(img/button-.png) #900;
+color:#fff
+}
+
+#planet_menu {
+width:100%;
+position:fixed;
+bottom:0px;
+z-index:2;
+}
+
+#planet_menu_link{
+font-weight:700;
+vertical-align:middle;
+}
+
+#planet_menu_header{
+background:url(img/bkd_title.png);
+height:21px;
+text-align:right;
+padding-right:10px;
+}
+
+#planet_menu_content{
+background:url(img/bkd_bg.png) repeat transparent;
+text-align:left;
+padding-bottom:5px;
+overflow: auto;
+}
+
+#overDiv > table {
+background:#212121;
+border:1px solid #666;
+color:#666;
+margin:0;
+padding:0
+}
+#overDiv font {
+color:#FFF
+}
+.allymember,.colony,.deploy,.harvest,.transport,.success {
+color:lime
+}
+
+.noob,.owntransport {
+color:#a0ffa0
+}
+
+.banned,.s_button {
+text-decoration:line-through
+}
+
+.ownespionage,.ownmissile {
+color:#fc6
+}
+
+.espionage,.missile {
+color:#f60
+}
+
+a {
+text-decoration:none
+}
+
+th a,.res_current{
+color:#FFF
+}
+
+.table519{
+min-width:519px !important;
+width:519px !important
+}
+
+.table569{
+min-width:569px !important;
+width:569px !important
+}
+
+.res_current_max,.attack,.federation,.error {
+color:red
+}
+
+.ui-progressbar-value {
+background-image: url(img/processbar.png)
+}
+
+#fleetstatustable td{
+background: transparent;
+background-image: none;
+border: 0 none
+}
+
+/***
+* Extras
+*/
+
+/*overview*/
+
+.flight .owntransport {color: #00CC00;}
+.flight .owntransport a:link {color: #FFFFFF;}
+.flight .owntransport a:hover {color: #347680;}
+.flight .owntransport a:visited {color: #FFFFFF;}
+
+.return .owntransport {color: #00CC00;font-style:italic;}
+.return .owntransport a:link {color: #FFFFFF;font-weight:bold;}
+.return .owntransport a:hover {color: #347680;}
+.return .owntransport a:visited {color: #FFFFFF;font-weight:bold;}
+
+.transport {color: #00CC00;}
+.flight .transport a:link {color:#FFFFFF;}
+.flight .transport a:hover {color:#009900;}
+.flight .transport a:visited {color:#FFFFFF;}
+
+.flight .ownattack, .flight .ownfederation {color:#FFCC00;}
+.flight .ownattack a:link, .flight .ownfederation a:link, .flight .attack a:link {color:#FFFFFF;}
+.flight .ownattack a:hover, .flight .ownfederation a:hover, .flight .attack a:hover {color: #347680;}
+.flight .ownattack a:visited, .flight .ownfederation a:visited, .flight .attack a:visited {color:#FFFFFF;}
+
+.return .ownattack, .return .ownfederation {color:#FFCC00;font-style:italic;}
+.return .ownattack a:link, .return .ownfederation a:link, .return .ownattack a:visited, .return .ownfederation a:visited, .flight .ownhold a:link, .holding .ownhold a:link, .return .ownhold a:link, .flight .ownhold a:visited, .holding .ownhold a:visited, .return .ownhold a:visited {color: #FFFFFF;font-weight: bold;}
+.return .ownattack a:hover, .return .ownfederation a:hover, .flight .ownhold a:hover, .holding .ownhold a:hover, .return .ownhold a:hover {color: #347680;}
+ {color: #FFFFFF;font-weight: bold;}
+
+.return .ownfederation {color:#ff9000;}
+.flight .ownfederation {color:#ff9000;}
+
+.attack {color: #FF0000;text-decoration: blink;text-shadow:#FF6600;}
+
+.flight .ownespionage {color:#FFFF00;font-weight:bold;}
+
+.flight .ownespionage a:link {color: #FFFFFF;}
+.flight .ownespionage a:hover {color: #FFFF00;}
+.flight .ownespionage a:visited {color: #FFFFFF;}
+
+.return .ownespionage {color:#FFFF00;font-weight: normal;font-style:italic;}
+.return .ownespionage a:link {color:#FFFFFF;font-weight:bold;}
+.return .ownespionage a:visited {color:#FFFFFF;font-weight:bold;}
+.return .ownespionage a:hover {color:#FFFF00;font-weight:bold;}
+
+.espionage {color: #CC0000;text-decoration: bold;}
+
+.flight .ownharvest {color: #33CCFF;}
+.flight .ownharvest a:link {color: #FFFFFF;}
+.flight .ownharvest a:visited {color: #FFFFFF;}
+.flight .ownharvest a:hover {color: #347680;}
+
+.return .ownharvest {color: #33CCFF;font-weight: normal;font-style:italic;}
+.return .ownharvest a:link {color: #FFFFFF;font-weight: normal;font-weight:bold;}
+.return .ownharvest a:visited {color: #FFFFFF;font-weight: normal;font-weight:bold;}
+.return .ownharvest a:hover {color: #347680;}
+
+.flight .owndeploy {color: #6600CC;}
+.flight .owndeploy a:link {color: #FFFFFF;}
+.flight .owndeploy a:visited {color: #FFFFFF;}
+.flight .owndeploy a:hover {color: #6600CC;}
+
+.return .owndeploy {color: #6600CC;font-weight: normal;}
+.return .owndeploy a:link {color: #FFFFFF;font-weight: normal;font-weight:bold;}
+.return .owndeploy a:visited {color: #FFFFFF;font-weight: normal;font-weight:bold;}
+
+.flight .owncolony {color: #a7a7a7;}
+.flight .owncolony a:link {color:#a7a7a7;}
+.flight .owncolony a:visited {color: #a7a7a7;}
+.flight .owncolony a:hover {color: #347680;}
+
+.return .owncolony {color: #6e6e6e;font-weight: normal;}
+.return .owncolony a:link {color: #6e6e6e;font-weight:bold;}
+.return .owncolony a:visited {color: #6e6e6e;font-weight:bold;}
+.return .owncolony a:hover {color: #347680;}
+
+.flight .owndestroy {color: #CC6633;text-decoration: blink;}
+
+.return .owndestroy {color: #CC6633;text-decoration: bold;font-weight: normal;}
+
+.destroy {color: #CC6633;text-decoration: blink;}
+
+.ownmissile {color: #de0000;}
+
+/* spy- and combatreports */
+table[width="99%"] {border:1px #556 solid;width:620;margin-right:auto;margin-left:auto}
+table[width="99%"] tr > th + th {color: #FFFFFF}
+table[width="99%"] table[width="100%"] > tbody > tr > th > center {color:#00CC00;font-weight: bold;}
+table[width="99%"] table[width="100%"] + table[width="100%"] > tbody > tr > th > center {color: #FF0000;font-weight: bold;}
+table[width="99%"] table[width="100%"] table {margin-top:5px}
+
+/* larger table */
+table[width="530"] {width:580px}
+table[width="519"] {width:550px}
+table[width="569"] {width:580px}
+
+/* Galaxy colors */
+/* inactive for under 7 days */
+.inactive {color: #FE962E;}
+
+/* inactive for under 28 days */
+.longinactive {color: #DE5901;}
+
+/* banned */
+.banned {color: #0000CC;text-decoration: line-through;}
+
+/* vacation */
+.vacation {color: skyblue;}
+
+/* alliance-member */
+.allymember {color: #FCF905;}
+
+/* noob */
+.noob {color: #7ac27a;}
+
+/* strong */
+.strong {color: #ff6969;}
+
+/* Combat reports */
+.combatreport {color:#ff0000;}
+
+/* CORRECCION IMPERIO/GALAXIA */
+
+div[style="top: 10px; height: 760px;"]#content,
+div[style="top: 10px; height: 735px;"]#content{
+
+  left                      : 150px !important;
+  margin-left               : 0px !important;
+  font-size                 : 0px !important;
+  width                     : 900px !important;}
+
+div[style="top: 10px; height: 760px;"]#content table[width="750"],
+div[style="top: 10px; height: 735px;"]#content table[width="750"]{
+
+  margin-left               : 10px !important;
+  padding-left              : 30px !important;
+  padding-top               : 10px !important;}
+
+div[style="top: 10px; height: 760px;"]#content center center table[width="569"],
+div[style="top: 10px; height: 735px;"]#content center center table[width="569"]{
+
+  margin-left               : 200px !important;}
+
+/* IMPERIO VISION ULTRAREDUCIDA */
+
+div[style="top: 10px; height: 760px;"]#content img[border="0"][height="71"][width="75"],
+div[style="top: 10px; height: 735px;"]#content img[border="0"][height="71"][width="75"]{
+
+  width                     : 0px !important;
+  height                    : 0px !important;
+  padding                   : 25px !important;
+  background-image          : url(img/empire.jpg) !important;}
+
+div[style="top: 10px; height: 760px;"]#content div[style="padding: 2px; width: 75px; background-color: rgb(0, 255, 0);"],
+div[style="top: 10px; height: 735px;"]#content div[style="padding: 2px; width: 75px; background-color: rgb(0, 255, 0);"]
+
+  {width                    : 50px !important;
+  height                    : 50px !important;
+  padding                   : 0px !important;}
+  /* COLORES EN LA COLA DEL HANGAR */
+
+tr th select[name="auftr"] option{
+  
+  color                     : #0099FF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="1"]{
+
+  color                     : #1BA4FF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="2"]{
+  
+  color                     : #2CABFF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="3"]{
+  
+  color                     : #41B3FF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="4"]{
+  
+  color                     : #54BBFF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="5"]{
+
+  color                     : #6AC4FF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="6"]{
+
+  color                     : #7ECCFF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="7"]{
+
+  color                     : #8ED2FF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="8"]{
+
+  color                     : #A3DAFF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="9"]{
+
+  color                     : #B7E2FF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="10"]{
+
+  color                     : #CBEAFF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="11"]{
+
+  color                     : #EBF7FF;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="12"]{
+  
+  color                     : #FEFEFE;
+  font-size                 : 10px;}
+
+tr th select[name="auftr"] option[value="1"]:hover{
+  
+  color                     : #0099FF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="1"]:hover{
+
+  color                     : #1BA4FF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="2"]:hover{
+  
+  color                     : #2CABFF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="3"]:hover{
+  
+  color                     : #41B3FF;
+  font-size                 : 10px;
+  background-color          : trasnparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="4"]:hover{
+  
+  color                     : #54BBFF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="5"]:hover{
+  
+  color                     : #6AC4FF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="6"]:hover{
+  
+  color                     : #7ECCFF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="7"]:hover{
+  
+  color                     : #A3DAFF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="8"]:hover{
+
+  color                     : #B7E2FF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="9"]:hover{
+  
+  color                     : #CBEAFF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="10"]:hover{
+  
+  color                     : #D9F0FF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="11"]:hover{
+
+  color                     : #EBF7FF;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+tr th select[name="auftr"] option[value="12"]:hover{
+
+  color                     : #FEFEFE;
+  font-size                 : 10px;
+  background-color          : transparent;
+  font-weight               : bold;}
+
+/* MEJORAS DE LAS NAVES (yellow text) */
+
+div#content center table[width="519"] tbody tr th font[color="yellow"]{
+  
+  color                     : #99CCFF !important;
+  font-weight               : bold !important;
+  font-size                 : 11px !important;}
+
+/* Enlace MAX hangar */
+
+table[width="530"] tr td.k br + a{
+
+  color                     : #0099FF !important;
+  text-decoration           : none !important;
+  font-weight               : bold !important;
+  font-size                 : 10px !important;
+  font-family               : tahoma,arial !important;}
+
+table[width="530"] tr td.k br + a:hover{
+
+  color                     : #99CCFF !important;
+  text-decoration           : none !important;
+  font-weight               : bold !important;
+  font-size                 : 10px !important;
+  font-family               : tahoma,arial !important;}
+
+/* IMAGEN COLONIAS EN VISION GENERAL */
+
+table.s th img{
+
+  width                     : 50px;
+  height                    : 50px;
+  padding                   : 1px;
+  border                    : 1px transparent}
+
+table.s th img:hover{
+
+  width                     : 60px;
+  height                    : 60px;
+  border                    : 1px transparent;
+  padding                   : 1px;}
+
+/* LUNA EN V.GENERAL */
+
+div#content table[width="519"] tr th a img[height="50"][width="50"]{
+
+  width                     : 60px !important;
+  height                    : 60px !important;
+  border                    : 1px #201e1f solid !important;
+  padding                   : 1px !important; 
+  margin-top                : 3px !important;}
+
+div#content table[width="519"] tr th a img[height="50"][width="50"]:hover{
+
+  border                    : 1px #f1991e solid !important;}
+
+/* Velocidad de las naves */
+select[name="speed"] option[value="10"]{color:#00FF00}
+select[name="speed"] option[value="9"]{color:#33FF00}
+select[name="speed"] option[value="8"]{color:#66FF00}
+select[name="speed"] option[value="7"]{color:#99FF00}
+select[name="speed"] option[value="6"]{color:#CCFF00}
+select[name="speed"] option[value="5"]{color:#FFFF00}
+select[name="speed"] option[value="4"]{color:#FFCC00}
+select[name="speed"] option[value="3"]{color:#FF9900}
+select[name="speed"] option[value="2"]{color:#FF6600}
+select[name="speed"] option[value="1"]{color:#FF3300}
+select[name="speed"] option[value="0"]{color:#FF0000}
+
+/* Planetas y colonias del Overview */
+table.s th img
+{ height					: 88px;
+  width						: 88px;
+  padding					: 2px; }
+table.s th img:hover
+{ height					: 84px;
+  width						: 84px;
+  padding					: 4px; }
+
+/* Phalanx */
+body center table tr.flight th span.flight a[title]:after
+{ content					: " ("attr(title)")";
+  color						: #99ddff; }
+body center table tr th font a[title]:after
+{ content					: " ("attr(title)")";
+  color						: orange; }
+
+/* Escombros */
+a[title~="Trümmerfeld:"]:after
+{ content					: " ("attr(title)")";
+  color						: #FFFFFF; }
+
+/* Velocidad de las naves */
+a[title~="Geschwindigkeit:"]:after
+{ content					: " ("attr(title)")";
+  color						: #00FF00;}
+
+/* Colores */
+.allymember { color: lime; }
+.noob { color: #a0ffa0; }
+.strong { color: #ffa0a0; }
+.vacation { color: #0066FF; }
+.inactive { color: #cccccc; }
+.longinactive { color: 999999; }
+.banned { text-decoration: line-through; }
+.ownattack { color: #66CC33; }
+.owncolony { color: #c1c1c1; }
+.owndeploy { color: #666666; }
+.owndestroy { color: #FFFF99; }
+.ownespionage { color: #FFCC66; }
+.ownfederation { color: #CC6666; }
+.ownharvest { color: #CEFF68; }
+.ownhold { color: #80a0C0; }
+.ownmissile { color: #FFCC66; }
+.owntransport { color: #a0ffa0; }
+.attack { color: red; }
+.colony { color: lime; }
+.deploy { color: lime; }
+.destroy { color: gold; }
+.espionage { color: #FF6600; }
+.federation { color: red; }
+.harvest { color: lime; }
+.hold { color: #3399CC; }
+.missile { color: #FF6600; }
+.transport { color: lime; }
+.success { color: lime; }
+.error { color: red; }
+.warning { color: orange; }
+.notice { color: yellow; }
+.return { color: #959595; }

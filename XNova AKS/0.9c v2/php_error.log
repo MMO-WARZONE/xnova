@@ -1,0 +1,17 @@
+php4: PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/mygame/www/includes/functions.php on line 106
+php4: PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/mygame/www/includes/functions.php on line 106
+php4: PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/mygame/www/includes/functions.php on line 106
+php4: PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/mygame/www/includes/functions.php on line 106
+php4: PHP Warning:  mysql_close(): supplied argument is not a valid MySQL-Link resource in /home/mygame/www/includes/functions.php on line 106
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 37
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 40
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 37
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 40
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 37
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 40
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 37
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 40
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 37
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 40
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 37
+php4: PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/.nfs8/mygame/www/includes/functions/RemoveBuildingFromQueue.php:9) in /home/mygame/www/login.php on line 40

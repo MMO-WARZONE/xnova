@@ -1,0 +1,24 @@
+Der Pfad zu dem Spiel ist folgender "http://Deine URL/XNova "solltest du einen anderen Pfad haben musst du ihn in der reg.php manuell ändern.
+Als Beispiel dein Pfad lautet:"http://repperbahn.de/html/Spiele/XNova" dann musst du dort wo .GAMEURL. steht folgendes dahinter ändern.
+Statt ".GAMEURL."/XNova  musst du ".GAMEURL."/html/Spiele/XNova einfuegen.
+Das ganze muss geändert werden damit die neuen Spieler ihren Account frei schalten koennen.
+Das heisst du musst in dem folgenden teil der reg.php das ganze 3 mal ändern und die reg.php danach wieder hochladen.
+Für das ändern der reg.php nimmst du am besten das Notepad++ das ist Open Source und du findest den download mit jeder Suchmaschine.
+ACHTUNG !"Nicht das normale Notepad nehmen das produziert nur Fehler."
+
+// Das ist der Teil der reg.php wo die url geändert werden muss!!!!.
+	// Mail au format texte.
+	$message_txt  = "Sie haben sich Angemeldet.<br>";
+	$message_txt .= "Hier koennen sie ihre Registrierung abschliessen : <br><br>";
+	$message_txt .= "<a href=".GAMEURL."/XNova/reg.php?mode=valid&pseudo=$UserName&clef=$clef> Link Druecken um die Registrierung abzuschliessen </a><br><br>";
+	$message_txt .= "Ihre Logindaten : <br>";
+	$message_txt .= "Spielername : $UserName <br>";
+	$message_txt .= "Passwort : $newpass <br>";
+	$message_txt .= "Danke für ihre Anmeldung <h3>".GAMEURL."XNova/login.php</h3>  <br><br>";
+	$message_txt .= "Mit besten Gruessen,<br>";
+	$message_txt .= "Ihr XNova Team<br>";
+	$message_txt .= "<img src=".GAMEURL."/XNova/images/bann.png>";
+	
+Du musst nur ändern wenn du das Spiel in ein Unterverzeichnis legst oder den Spielnamen änderst.
+
+mfg Das Team

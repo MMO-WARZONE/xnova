@@ -1,0 +1,90 @@
+<style type="text/css">
+<!--
+.wrapper #page #main .form form fieldset .login li label {
+	color: #FFF;
+}
+.wrapper #page #main .form form fieldset .help li a {
+	color: #FFF;
+}
+.wrapper #page #main #footer ul li a {
+	color: #FFF;
+}
+.wrapper #page #main #footer p {
+	color: #FFF;
+}
+-->
+</style>
+<div class="wrapper-guide">
+			<div id="page">
+
+				<div id="header">
+					<ul class="buttons">
+						<li><a href="index.php">{menu_index}</a></li>
+						<li class="skull"><a href="#"></a></li>
+
+						<li class="tour"><a href="{forum_url}" target="_blank">{forum}</a></li>
+					</ul>
+				</div>
+				<div id="main">
+
+					<div class="content-big">
+<div class="register">
+	<div class="form-reg">
+		<form name="reg" action="reg.php" method="post" id="formID">
+			
+				<div class="left-col">
+					<ul class="login">
+
+						<li>
+							<label for="username">{user_reg}</label>
+							<div class="bg"><input id="character" name="character" class="text" type="text" value="" alt="{user_reg}" maxlength="15" /></div>
+						</li>
+						<li>
+
+							<label for="email">{email_reg}</label>
+							<div class="bg"><input id="email" name="email" class="text" type="text" value="" alt="{email_reg}" maxlength="255" /></div>
+						</li>
+						<li>
+							<label for="userpass">{pass_reg}</label>
+							<div class="bg"><input id="password" name="password" class="text" type="password" value="" alt="{pass_reg}" maxlength="15" /></div>
+					    	</li>
+						<li>
+					</ul>
+
+	      </div>
+				<div class="right-col"><br>
+									
+							<label for="universe">{universe}</label><br>
+							<select name="universe" id="universe">
+            <option value="uni1/index.php" >uni1</option>
+			</select>
+					
+			
+							
+					<p class="agb-text"><br>
+							
+								<input class="agb-check" name="rgt" type="checkbox" />	
+								{accept_terms_and_conditions}</p>
+							
+
+					<input class="submit" type="submit" value="{send}" />
+
+				</div>
+			
+		</form>
+	</div>
+</div>
+<strong class="logo">{servername}</strong>
+
+					</div>
+
+<div id="footer">
+						<p>Powered by <a href="http://www.xgproyect.net/" target="_blanck" title="XG Proyect {version}">XG Proyect {version}</a> &#169; 2008 - 2011.</p>
+						<ul>
+						  <li><a href="?lang={$lng}"><img src="./styles/images/login/es.png" alt="" width="16" height="11"></a><br><br>
+                          <p>{creditsdesing}</p>|<p> {creditsadapter}.</p>
+				      </ul>
+					</div>
+				</div>
+			</div>
+		</div>

@@ -1,0 +1,118 @@
+<br />
+<div id="content">
+       
+    <table width="600">
+
+        <tr>
+        	<td class="c" colspan="4"><a href="game.php?page=overview&mode=renameplanet" title="{Planet_menu}">{ov_planet} "{planet_name}"</a>  </td>
+        </tr>
+       </th>  
+        <tr>
+            <td colspan="4" class="c"><div align="center" class="Estilo4">Noticias</div></td>
+        </tr>
+            {NewsFrame}
+            {Have_new_message}
+        </tr>
+    
+                {STAATSFORM_LINK}
+            	<th>{ov_server_time}</th>
+        	<th colspan="3">{date_time}</th>
+        </tr>
+        <tr>
+            	<th><img src="styles/img-rango/{rankimg}" width="20" height="40"></th>
+        	<th colspan="3"><b>Rank:</b><b></b> {rankgame}</th>
+        </tr>
+          <tr>
+        	<td colspan="4" class="c">Nome da Aliança:  {ally_name}</td>
+         <tr>
+        <th>Online Administrators</th>
+            <th colspan="3"><font color="Green"><b>{OnlineAdmins}</b></font></th>
+        </tr> 
+        	<td colspan="4" align="Center" class="c"><div class="pre-spoiler"> <span style="float:left; padding-top: 3px;"></span> <input type="button" value="Eventos" style="width:80px;font-size:10px;margin:1px;padding:0px;" onclick="if (this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display != '') { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = '';this.innerText = ''; this.value = 'FECHAR'; } else { this.parentNode.parentNode.getElementsByTagName('div')[1].getElementsByTagName('div')[0].style.display = 'none'; this.value = 'Eventos';}"> </div> <div> <div class="spoiler" style="display: none;"> 
+          <table  align="center"> 
+          {fleet_list} 
+       </table>  </th> 
+     </tr></div> 
+      </div>  
+        <tr>
+        		<th><img src="{imgrace}"/" " height="100" width="100"></th>
+        	<th colspan="2" rowspan="3"><img src="{dpath}planeten/{planet_image}.jpg" height="200" width="200"><br></th>
+        	<th class="s" rowspan="3">
+            	<table class="s" align="top" border="0">
+                	<tr>{anothers_planets}</tr>
+               </table>
+            </th>
+        </tr>
+        <tr>
+        	<th>{race}</th>
+        </tr>
+        <tr>
+        	<th height="93">{moon_img}<br>{moon}</th>
+        </tr>
+        <tr>
+            <th>{ov_diameter}</th>
+            <th colspan="3">{planet_diameter} {ov_distance_unit} (<a title="{Developed_fields}">{planet_field_current}</a> / <a title="{max_eveloped_fields}">{planet_field_max}</a> {fields})</th>
+        </tr>
+<tr>
+            <th>Campo de escombros</th> 
+            <th colspan="3"><font color=yellow>Metal:</font> <strong>{metal_debris}</strong> / <font color="#0174DF">Cristal:</font> <strong>{crystal_debris}</strong>{get_link}</th>
+        </tr>
+<tr>
+            <th colspan="4">{overview_produccion}
+            </th> 
+        </tr>
+<tr>
+<!--Ajout du pourcentage de case utilis?e et d'une barre-->
+<th >Campos ocupados</th>
+<th colspan="3" align="center">
+<div  style="border: 1px solid rgb(153, 153, 255); width: 400px;">
+<div  id="CaseBarre" style="background-color: {case_barre_barcolor}; width: {case_barre}px;">
+<font color="#CCF19F">{case_pourcentage}%</font>&nbsp;</div>        </th>
+</tr>
+            <th>{ov_temperature}</th>
+            <th colspan="3">{ov_aprox} {planet_temp_min}{ov_temp_unit} {ov_to} {planet_temp_max}{ov_temp_unit}</th>
+        </tr>
+        <tr>
+            <th>{ov_position}</th>
+            <th colspan="3"><a href="game.php?page=galaxy&mode=0&galaxy={galaxy_galaxy}&system={galaxy_system}">[{galaxy_galaxy}:{galaxy_system}:{galaxy_planet}]</a></th>
+        </tr>
+
+        <tr>
+            <th colspan="4">Puntos</th>
+        </tr>
+
+        <tr>
+            <th colspan="2"><font color="#00CC99">Edificios</font></th>
+            <th colspan="2">{puntos_edificios} <font color="lime">({top_edificios})</font></th>
+        </tr>
+
+        <tr>
+            <th colspan="2"><font color="#00CC99">Flota</font></th>
+            <th colspan="2">{puntos_naves} <font color="lime">({top_naves})</font></th>
+        </tr>
+
+        <tr>
+            <th colspan="2"><font color="#00CC99">Defensa</font></th>
+            <th colspan="2">{puntos_defensa} <font color="lime">({top_defensa})</font></th>
+        </tr>
+
+        <tr>
+            <th colspan="2"><font color="#00CC99">Investigaciones</font></th>
+            <th colspan="2">{puntos_investigaciones} <font color="lime">({top_investigaciones})</font></th>
+        </tr>
+
+                <tr>
+            <th colspan="2"><font color="red">Puntuación Total</font></th>
+            <th colspan="2"><font color="red">{user_rank}</font></th>
+        </tr>
+<tr>
+        <th colspan="1">BANNER</th>
+            <th colspan="3"><input  value="http://rstuga.com/299/banner.php?id={id}" size=40 type="text"  readonly="readonly"></th>
+                </tr><tr>
+            <th colspan="4"><img  src="banner.php?id={id}"> </th>
+        
+        </tr>
+<tr> 
+   <td class="c" colspan="4" align="Center">&nbsp;</td></tr> 
+   	</table>
+</div>

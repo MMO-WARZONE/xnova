@@ -1,0 +1,61 @@
+includes/functions.php
+	added function Nr2Str()
+	added function str_makerand()
+
+admin/
+	included a check before writing to log file to avoid warnings
+
+includes/functions/SendNewPassword.php
+	changed password generation
+
+include/functions/ResearchBuildingsPage.php
+	replaced all strchr checks with one preg_match
+
+weiter mit overview
+
+
+MAINTENANCE
+	removed
+		backupfiles (~xxx)
+		Thumbs.db
+		desktop.ini
+		admin/aksinvitation.php
+		includes/functions/aksinvitation.php
+		include/aksinvitation.php
+		badqrys.txt
+		changelogold.php
+	converted some files to utf-8
+	created language files:
+		admin/alliancelist.mo
+		fleetcontrol.mo
+		functions.mo
+		formatCR.mo
+		debug.mo
+		aksinvitation.mo
+		ainfo.mo
+		annonce.mo
+		fleetshortcut.mo
+		melden.mo
+		mipattack.mo
+		phalanx.mo
+		rak.mo
+		rw.mo
+		savekb.mo
+	renamed ChecUser.php -> CheckUser.php
+
+
+FINDINGS
+	MissionCaseEvoAttack: presumeably no longer in use
+	includes/aks.php: strings not moved; file needs complete rewrite (template);
+		should even be no longer used (integrate aks in normal combat system)
+	calc.php, contact2.php, raketenangriff.php, verband.php: strings not moved; needs a template first
+	common.php, common-secure.php, windows-common.php: needs template
+	simulator.php: the combat code again? for what? -> needs rewrite
+	wing.php: seems to be identical with alliance.php; should be merged
+	tmp/: may have no purpose
+	agb.php: is more a template than a php; should be moved to language folder
+
+
+BUGS
+	Resourcespeed is squared
+	Energybonus of Energytechnology is not used (at least not shown on ressource page)

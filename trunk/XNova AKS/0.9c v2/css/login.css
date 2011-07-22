@@ -1,0 +1,81 @@
+/*---------------------Login "Basic" for XNova | Designed by Pfahli---------*/
+body{
+background: #000000;
+font-size: 13px;
+font-family: Georgia, "Times New Roman", Times, serif;
+line-height: 1.2em;
+color:#FFFFFF;
+padding: 0;
+margin:auto ;
+height: auto;
+}
+
+p{
+text-align:justify;
+}
+
+#main_preview{
+padding-top:100px;
+margin:auto;
+}
+#inhalt{
+width: 536px;
+height:350px;
+margin:auto ;
+background:url(images/background.png) no-repeat center ;
+}
+/*---------------------Inhalte---------*/
+#logo{
+width:158px;
+height:174px;
+float:left;
+padding:10px 10px 10px 18px;
+}
+#haupt_inhalt{
+width:300px;
+height:300px;
+float:left;
+padding:20px 10px 0 30px;
+}
+.login{
+font-family: "Monotype Corsiva";
+font-size:17px;
+padding:10px 0px 0 15px;
+}
+#message{
+padding:20px 5px 5px 5px;
+}
+
+/*-------------------footer-------*/
+#footer{
+width:750px;
+height:auto;
+color:#808080;
+text-align:center;
+font-size:10px;
+position:absolute;
+top:600px;
+left:40px;
+}
+#footer a{
+text-decoration:none;
+color:#FFFFFF;
+}
+#footer_preview{
+width:536px;
+height:auto;
+margin:auto ;
+color:#FFFFFF;
+text-align:center;
+font-size:10px;
+padding-top:80px;
+}
+#footer_preview a{
+text-decoration:none;
+color:#FFFFFF;
+}
+.footer_menu{
+width:auto;
+height:16px;
+color:#CCCCCC;
+}

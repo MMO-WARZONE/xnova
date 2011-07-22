@@ -1,0 +1,11 @@
+Es wurde viel mehr geändert aber das ist in etwa das wichtigste:
+
+'<font color="red">0.9c AKS</font>' => '- FIX : Ueberarbeitete Installation (Metusalem)
+- FIX : Flotten Cheat (Metusalem)
+- MOD : Neue Forschung Produktionsoptimierung (Metusalem)
+- FIX : Anpassen der DB:Schiffe;Verteidigung;AKS (Metusalem)
+- MOD : Uebersetzen der Mo Dateien ins Deutsche (Metusalem)
+- ADD : Halten (Metusalem)
+- ADD : AKS (Metusalem)
+- FIX : Statistik und Banner (Metusalem)
+- MOD : Neues Schiff Gigarecykler (Metusalem)

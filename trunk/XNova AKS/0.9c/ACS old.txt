@@ -1,0 +1,51 @@
+This file is now out datad and support is now ended for this version. If you want a more up-to-date version please download the DarkEvo repack which will be released soon.
+
+
+Description
+This script works by when an attack happens, the script searchers for any fleets on mission ACS Attack with the same fleetgroup number as the original fleet.  The fleets are then entered into an array, and passed through to the combat engine. The comabt engine is mostly X-Nova code, it was then converted to work with a different game by Tom so full credit to him for the new parts of that file (calculateAttack.php). If was then modified by me again to work with X-nova and my ACS script.
+
+
+Features
+ACS,  style user interface.
+Messages to invited participants.
+Combat Simulator which works with the combat engine. (Therefore the most accurate combat engine you can get to go with this script)
+Combat Report Sharing system - Allow users to share reports with friends.
+New combat engine.
+
+
+Coming soon
+Automatic BBCode generation
+Top 100 / Hall of Fame
+
+
+Status
+The script is nearly completed. The only this that remains to be sorted is that sometime you get very odd results in battles. Also joining acs fleets don't effect the mission time.
+
+MySQL commands
+This mod requires a slightly altered database, simply run these commands, change {prefix} to you game prefix, usually "game_"
+Code:
+
+ALTER TABLE `{prefix}rw` ADD `owners` VARCHAR( 255 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0';
+ALTER TABLE `{prefix}fleets` CHANGE `fleet_group` `fleet_group` VARCHAR( 15 ) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL DEFAULT '0' ;
+ALTER TABLE `{prefix}aks` ADD `planet_type` INT( 1 ) NOT NULL DEFAULT '1' AFTER `planet` ;
+
+
+
+Files
+Most of the files are brand new. Other like verband.php were hardly used by the existing game. Simply download the file below and upload the files to your server.
+DOWNLOAD
+
+
+Terms
+Lets get the boring bit done first.
+Distribution - You may distribute this file where ever you want, providing you.
+1) Give me, MadnessRed credit for creating the mod.
+2) Link to MadnessRed.co.cc.
+3) Do not edit any of the comment blocks.
+4) Include LISCENCE.TXT!!!
+5) This file must not be hosted on anywhere apart from xnova.fr, ks32793.kimsufi.com, darkevo.org or madnessred.co.cc unless you have messaged me first. Links to this forum are perfectly acceptable.
+
+Usage - Anyone is free to use this mod or include it in repacks, providing.
+1) In the credits page MadnessRed must be mentioned. IF the credit page has been removed then you must place it on the closest page (by content).
+2) In Repacks, you must give credit as stated in the above. Also i would be very pleased if someone could drop me an email. I like to know if people like my mod or if I just wasted my time.
+3) License. This script is on a GPL license, which must be included with the distribution. If anyone asks for the file you MUST provide a link to this Topic or to XNovaUK. Furthermore, any changes you make are also included in the GPL license. If you modify this code then you must release it for download.

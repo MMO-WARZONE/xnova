@@ -1,0 +1,12 @@
+ALTER TABLE  `uni1_users` ADD  `darkmatter_moon` TINYINT( 3 ) UNSIGNED NOT NULL DEFAULT  '0' AFTER  `deuterium_proc_tech` ;  
+
+ALTER TABLE  `uni1_config` ADD  `norio_basic_income` INT( 11 ) NOT NULL AFTER `deuterium_basic_income` ;
+ALTER TABLE  `uni1_fleets` ADD  `fleet_resource_norio` DOUBLE( 50,0 ) UNSIGNED NOT NULL DEFAULT '0' AFTER `fleet_resource_darkmatter` ;
+ALTER TABLE  `uni1_planets` ADD   `norio` DOUBLE( 50,0 ) UNSIGNED NOT NULL DEFAULT '0' AFTER `deuterium_max` ;
+ALTER TABLE  `uni1_planets` ADD   `norio_perhour` DECIMAL( 10,0 ) UNSIGNED NOT NULL DEFAULT '0' AFTER `norio` ;
+ALTER TABLE  `uni1_planets` ADD   `norio_max` BIGINT( 20 ) UNSIGNED DEFAULT '100000' AFTER `norio_perhour` ;
+ALTER TABLE  `uni1_planets` ADD   `norio_mine` TINYINT( 3 ) UNSIGNED NOT NULL DEFAULT '0' AFTER `university` ;
+ALTER TABLE  `uni1_planets` ADD   `norio_store` TINYINT( 3 ) UNSIGNED NOT NULL DEFAULT '0' AFTER `deuterium_store` ;
+ALTER TABLE  `uni1_planets` ADD   `norio_mine_porcent` ENUM( '0','1','2','3','4','5','6','7','8','9','10' ) NOT NULL DEFAULT '10' AFTER `deuterium_sintetizer_porcent` ;
+ALTER TABLE  `uni1_planets` ADD   `der_norio` DOUBLE( 50,0 ) UNSIGNED NOT NULL DEFAULT '0' AFTER `der_crystal` ;
+ALTER TABLE  `uni1_users` ADD   `kbnorio` BIGINT( 20 ) UNSIGNED NOT NULL DEFAULT '0' AFTER `kbcrystal` ;

@@ -1,0 +1,66 @@
+<?php
+/**
+ * This file is part of XNova:Legacies
+ *
+ * @license http://www.gnu.org/licenses/gpl-3.0.txt
+ * @see http://www.xnova-ng.org/
+ *
+ * Copyright (c) 2009-2010, Grégory PLANCHAT <g.planchat at gmail.com>
+ * All rights reserved.
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+ *                                --> NOTICE <--
+ *  This file is part of the core development branch, changing its contents will
+ * make you unable to use the automatic updates manager. Please refer to the
+ * documentation for further information about customizing XNova.
+ *
+ * @category   design_base
+ * @package    Nova
+ */
+?>
+<?php
+/**
+ * Template for Nova_Page_Block_Html
+ */
+?>
+<!DOCTYPE html PUBLIC
+    "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xml:lang="<?php echo $this->getLang() ?>"
+    lang="<?php echo $this->getLang() ?>">
+<head>
+<?php echo $this->getChildRender('head') ?>
+</head>
+<body<?php if ($this->hasBodyClass()):?> class="<?php echo $this->getBodyClass()?>"<?php endif?>>
+<?php echo $this->getAbsoluteHeader() ?>
+<div class="wrapper">
+    <div class="page">
+        <?php echo $this->getChildHtml('header') ?>
+        <div class="main">
+            <div class="subnav-container">
+                <?php echo $this->getChildRender('subnav-container') ?>
+            </div>
+            <div class="col-main center">
+                <?php echo $this->getChildRender('content') ?>
+            </div>
+        </div>
+        <?php echo $this->getChildRender('footer') ?>
+        <?php echo $this->getChildRender('before_body_end') ?>
+    </div>
+</div>
+<?php echo $this->getAbsoluteFooter() ?>
+</body>
+</html>

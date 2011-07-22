@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <global>
+        <install>
+            <date></date>
+        </install>
+        <resources>
+            <db>
+                <table_prefix>nova_</table_prefix>
+            </db>
+            <default_setup>
+                <connection>
+                    <host>localhost</host>
+                    <username>root</username>
+                    <password/>
+                    <dbname>db_nova</dbname>
+                    <active>true</active>
+                </connection>
+            </default_setup>
+        </resources>
+    </global>
+</config>

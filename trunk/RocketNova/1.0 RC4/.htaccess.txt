@@ -1,0 +1,7 @@
+php_flag display_errors	On
+php_value error_reporting 7
+php_value include_path "."
+#php_value session.save_path "/srv/www/vhosts/mmogbay.com/httpdocs/tmp"
+#php_value upload_tmp_dir "/srv/www/vhosts/mmogbay.com/httpdocs/tmp"
+php_flag register_globals Off
+php_flag magic_quotes_gpc Off

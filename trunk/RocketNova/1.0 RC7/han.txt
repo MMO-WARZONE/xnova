@@ -1,0 +1,14 @@
+Kleiner Transporter: 2000 2000 0
+Gro&szlig;er Transporter: 6000 6000 0
+Kleiner J&auml;ger: 3000 1000 0
+Gro&szlig;er J&auml;ger: 6000 4000 0
+Kreuzer: 20000 7000 2000
+Schlachtschiff: 45000 15000 0
+Kolonieschiff: 10000 20000 10000
+Recycler: 10000 6000 2000
+Spionagesonde: 0 1000 0
+Bomber: 50000 25000 15000
+Solarsatellit: 0 2000 500
+Zerst&ouml;rer: 60000 50000 15000 0
+Todesstern: 5000000 4000000 1000000
+Schlachtkreuzer: 30000 40000 15000 0

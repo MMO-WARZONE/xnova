@@ -1,0 +1,9 @@
+Datein mit dem wort ogame:
+7_nieaktywni.user.js
+functions.js
+gsc1.js
+res.js
+
+Datein die ogame verlinken:
+functions.js
+gsc1.js

@@ -1,0 +1,10 @@
+Raketenwerfer: 2000 0 0
+Kleines Lasergeschütz: 1500 500 0
+Großes Lasergeschütz: 6000 2000 0
+Gaußkanone: 20000 15000 2000
+Ionengeschütz: 2000 6000 0
+Plasmawerfer: 50000 50000 30000
+Kleine Schildkuppel: 10000 10000 0
+Große Schildkuppel: 50000 50000 0
+Bodenluftabfangrakete: 8000 0 2000
+Intercontinental Rakete: 12500 2500 10000

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Nova_User>
+            <codePool>core</codePool>
+            <active>true</active>
+            <requires>
+                <Nova_core />
+            </requires>
+        </Nova_User>
+    </modules>
+</config>

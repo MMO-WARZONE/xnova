@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+    <default>
+        <block type="page/html" name="root">
+            <action method="setTemplate">
+                <template>page/2columns-left.phtml</template>
+            </action> 
+
+            <block type="page/html_head" name="head" template="page/html/head.phtml">
+                <action method="addCss"><stylesheet>css/base.css</stylesheet></action>
+            </block>
+
+            <block type="core/concat" name="content"></block>
+
+            <block type="core/concat" name="left"></block>
+
+            <block type="core/concat" name="right"></block>
+        </block>
+
+        <block type="core/profiler" name="profiler"></block>
+    </default>
+</layout>

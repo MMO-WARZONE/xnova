@@ -1,0 +1,49 @@
+/*======= Copyright by Dr.Isaacx für XNova-Germany und Sky-Game =======*/
+
+#main {width:980px; margin:0 auto; text-align:left;}
+
+#header {height:430px;}
+#header, #content, #footer { font-size:0.69em;}
+
+.col_1, .col_2, .col_3, .column1, .column2, .column3 { float:left;}
+
+/*======= index.php =======*/
+#page1 #content .col_1 {width:160px; margin-right:41px;}
+#page1 #content .col_2 { width:504px; margin-right:41px;}
+#page1 #content .col_3 { width:160px;}
+
+
+#page1 #content .col_1 .column1 { width:209px;}
+#page1 #content .col_1 .column2 { width:208px;}
+
+/*======= reg.php und pw.php =======*/
+#page2 #content .col_1 {width:587px; margin-right:41px;}
+#page2 #content .col_2 { width:279px;}
+#page2 #content .col_3 { width:286px;}
+
+/*======= chat.php =======*/
+#page3 #content .col_1 {width:880px; margin-right:41px;}
+#page3 #content .col_2 { width:279px;}
+#page3 #content .col_3 { width:278px;}
+
+/*======= pranger.php =======*/
+#page4 #content .col_1 { width:437px; margin-right:35px;}
+#page4 #content .col_2 { width:440px;}
+
+/*======= gameinfos.php =======*/
+#page5 #content .col_1 {width:587px; margin-right:41px;}
+#page5 #content .col_2 { width:279px;}
+
+#page5 #content .col_1 .column1 { width:209px;}
+#page5 #content .col_1 .column2 { width:208px;}
+
+/*======= kontakt.php =======*/
+#page6 #content .col_1 {width:395px; margin-right:46px;}
+#page6 #content .col_2 { width:214px; margin-right:42px;}
+#page6 #content .col_3 { width:213px;}
+
+
+/*=========================*/
+
+
+#footer {height:81px;}

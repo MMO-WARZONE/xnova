@@ -1,0 +1,14 @@
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+Options All Indexes
+IndexOptions FancyIndexing
+ErrorDocument 404 /error.php
+ErrorDocument 403 /error.phpAuthName fusion
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*

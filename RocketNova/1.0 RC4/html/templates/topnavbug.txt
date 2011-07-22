@@ -1,0 +1,178 @@
+<div id="main">
+<!-- topnav.tpl -->
+<div id="header_top">
+
+       <center>
+      <table>
+         <tr>
+           <td><img src="{dpath}planeten/small/s_{image}.jpg" height="50" width="50"></td>
+           <td align="center">
+           <input style="width: 20px;" value="&lt;" onclick="eval('location=\''+pselector.options[pselector.selectedIndex-1].value+'\'');" type="button">
+           <select id="pselector" size="1" onChange="eval('location=\''+this.options[this.selectedIndex].value+'\'');">
+                       {planetlist}
+          
+           <input style="width: 20px;" value="&gt;" onclick="eval('location=\''+pselector.options[pselector.selectedIndex+1].value+'\'');" type="button">
+            <table border="1"></table>
+           </td>
+         </tr>
+      </table>
+ 
+
+<table width="100" border="0" cellpadding="0" cellspacing="0" class="header" id="resources" style="width: 170px;" padding-right="30">
+            	<tr class="header">
+<td>
+<div id="bar">
+<ul id="resources">           
+<li class="metal tips" title="|{Message}: {message}">
+<img src="{dpath}images/message.gif" border="0" height="22" width="42"> 
+<span class="value">
+<font id="resources_metal" >{message}</font>
+</span>
+</li>
+<td>
+<li class="metal tips" title="|{Metal}: {metal}">
+<img src="{dpath}images/metall.gif">
+<span class="value">
+<font id="resources_metal" >{metal}</font>
+</span>
+</li>
+</td><td>
+<li class="crystal tips" title="|{Crystal}: {crystal}">
+<img src="{dpath}images/kristall.gif">
+<span class="value">
+<font id="resources_crystal" >{crystal}</font>
+</span>
+</li>
+</td><td>
+<li class="crystal tips" title="|{Deuterium}: {deuterium}">
+<img src="{dpath}images/deuterium.gif">
+<span class="value">
+<font id="resources_crystal" >{deuterium}</font>
+</span>
+</li>
+<td>
+<li class="crystal tips" title="|{Energy}: {energy}">
+<img src="{dpath}images/energie.gif">
+<span class="value">
+<font id="resources_crystal" >{energy_total}/{energy_max}</font>
+</span>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+{show_umod_notice}
+</center>
+</div>
+
+
+<div id=leftmenu1>
+<body  class="style1" topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+<center>
+<div id='menu'>
+<br>
+<table cellspacing="0" cellpadding="0">
+<tr>
+	<td colspan="2" style="border-top: 1px #545454 solid"><div><center>{servername}<br><a href="changelog.php" target="{mf}"><font color="red">{XNovaRelease}</font></a><center></div></td>
+</tr>
+
+<tr>
+<td width="90" height="29">
+<a class="menu" href="overview.php" accesskey="g" target="{mf}" title="{Overview}">
+<span class="textlabel">{Overview}</span></a>
+</td>
+</tr>
+<tr>
+<td width="90" height="29">
+<a class="menu" href="imperium.php" accesskey="g" target="{mf}" title="{Imperium}">
+<span class="textlabel">{Imperium}</span></a>
+</td>
+</tr>
+<tr>
+<td width="90" height="29">
+<a class="menu" href="galaxy.php?mode=0" accesskey="g" target="{mf}" title="{Galaxy}">
+<span class="textlabel">{Galaxy}</span></a>
+</td>
+</tr>
+
+
+<!--<a class="menu" href="overview.php" accesskey="g" target="{mf}" title="{Overview}">{Overview}</a>
+<a class="menu" href="imperium.php" accesskey="g" target="{mf}" title="{Imperium}">{Imperium}</a>
+<a class="menu" href="galaxy.php?mode=0" accesskey="g" target="{mf}" title="{Galaxy}">{Galaxy}</a>
+<a class="menu" href="fleet.php" accesskey="t" target="{mf}">{Fleet}</a>
+<tr><td colspan="2" background="{dpath}img/bg1.gif"><center>{Building}</center></td></tr>
+<a href="buildings.php" accesskey="b" target="{mf}">{Buildings}</a></div></td>
+<a href="buildings.php?mode=research" accesskey="r" target="{mf}">{Research}</a></div></td>
+<a href="buildings.php?mode=fleet" accesskey="f" target="{mf}">{Shipyard}</a></div></td>
+<a href="buildings.php?mode=defense" accesskey="d" target="{mf}">{Defense}</a></div></td>
+<tr><td colspan="2" background="{dpath}img/bg1.gif"><center>{Wirt}</center></td></tr>
+<a href="resources.php" accesskey="r" target="{mf}">{Resources}</a></div></td>
+<a href="officier.php" accesskey="o" target="{mf}">{Officiers}</a></div></td>
+<a href="marchand.php" accesskey="m" target="{mf}">{Marchand}</a></div></td>
+<a href="annonce.php" accesskey="3" target="{mf}">{Annonces}</a></div></td>
+<a href="techtree.php" accesskey="g" target="{mf}">{Technology}</a></div></td>
+<tr><td colspan="2" background="{dpath}img/bg1.gif"><center>{Alli}</center></td></tr>
+<a href="alliance.php" accesskey="a" target="{mf}">{Alliance}</a></div></td>
+<a href="buddy.php" accesskey="c" target="{mf}">{Buddylist}</a></div></td>
+<a href="notes.php" accesskey="n" target="{mf}">{Notes}</a></div></td>
+<a href="messages.php" accesskey="c" target="{mf}">{Messages}</a></div></td>
+<tr><td colspan="2" background="{dpath}img/bg1.gif"><center>{observ}</center></td></tr>
+<tr>
+	<td height="1px" colspan="2" style="background-color:#FFFFFF"></td>
+</tr><tr>
+	<td colspan="2"><div><a href="records.php" accesskey="3" target="{mf}">{Records}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="stat.php?start={user_rank}" accesskey="k" target="{mf}">{Statistics}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="search.php" accesskey="b" target="{mf}">{Search}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="banned.php" accesskey="3" target="{mf}">{blocked}</a></div></td>
+</tr><tr>
+	<td colspan="2" background="{dpath}img/bg1.gif"><center>{commun}</center></td>
+</tr><tr>
+	<td colspan="2"><div><a href="helpme.php" accesskey="3" target="{mf}" >{Helpme}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="rules.html" accesskey="3" target="Fenster" >{rules}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="contact.php" accesskey="3" target="{mf}" >{Contact}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="link_us.php" accesskey="3" target="{mf}" >{link_us}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="{forum_url}" accesskey="1" target="fenster">{Board}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="chat.php" accesskey="a" target="{mf}">{Chat}</a></div></td>
+</tr><tr>
+	<td colspan="2" background="{dpath}img/bg1.gif"><center>{sonstiges}</center></td>
+</tr><tr>
+	<td colspan="2"><div><a href="options.php" accesskey="o" target="{mf}">{Options}</a></div></td>
+</tr><tr>
+	<td colspan="2"><div><a href="javascript:top.location.href='logout.php'" accesskey="s" style="color:red">{Logout}</a></div></td>
+</tr>-->
+<tr>
+	{ADMIN_LINK}
+<tr>
+	<td colspan="1" background="{dpath}img/bg1.gif"><center>{infog}</center></td>
+</tr>
+	{server_info}
+<tr>
+	<td colspan="2"><div><center><font color=gold><a href="credit.php" accesskey="T" target="{mf}"><font color=gold>heinzel </a>&copy; Copyright 2008</center></div></td>
+</tr>
+</table>
+</div>
+</center>
+</body>
+</div>
+
+<div id="testsieger">
+<p>
+<a href="http://jigsaw.w3.org/css-validator/">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="CSS ist valide!" />
+</a>
+</p>
+</div>
+
+
+<!-- end topnav.tpl -->
